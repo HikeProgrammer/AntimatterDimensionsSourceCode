@@ -24,10 +24,10 @@ export default {
       const first = this.nextIC?.id === 1;
       const next = InfinityChallenges.nextICUnlockAM;
 
-      if (first) return `The first Infinity Challenge unlocks at ${format(next)} antimatter.`;
+      if (first) return `The first Infinity Challenge unlocks at ${format(next)} hi's.`;
       return next === undefined
         ? "All Infinity Challenges unlocked"
-        : `Next Infinity Challenge unlocks at ${format(next)} antimatter.`;
+        : `Next Infinity Challenge unlocks at ${format(next)} hi's.`;
     }
   },
   methods: {
@@ -47,7 +47,7 @@ export default {
     <ChallengeTabHeader />
     <div>
       An active Big Crunch Autobuyer will Crunch immediately when
-      reaching an Infinity Challenge's antimatter goal, regardless of settings.
+      reaching an Infinity Challenge's hi's goal, regardless of settings.
     </div>
     <div>{{ nextAtDisplay }}</div>
     <ChallengeGrid

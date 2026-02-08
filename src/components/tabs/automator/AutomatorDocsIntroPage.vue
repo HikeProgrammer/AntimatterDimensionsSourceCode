@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    Welcome to the Antimatter Dimensions Automator!
+    Welcome to the Hi Dimensions Automator!
     <br>
     <br>
     This page is an introduction page which gives a very broad overview of everything you can do with the Automator.

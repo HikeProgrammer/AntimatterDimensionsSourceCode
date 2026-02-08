@@ -99,7 +99,7 @@ irreversible and gives you no permanent benefits, secret or otherwise.</b>
     {
       name: "Customization",
       info: () => `
-The game has two different UI layouts - the Classic UI maintains the style of Antimatter Dimensions from before the
+The game has two different UI layouts - the Classic UI maintains the style of Hi Dimensions from before the
 Reality update, while the Modern UI is a redesign based on more modern dark theme styles. Additionally, there are
 various themes which can be applied to modify the appearance of everything in the game. There are a few secret themes
 which can be unlocked through importing certain phrases. Both UI layouts support all the different possible themes.
@@ -125,7 +125,7 @@ at least once.
     {
       name: "Offline Progress",
       info: () => `
-Antimatter Dimensions has a catch-up mechanic which attempts to simulate the game's behavior if the game is closed for
+Hi Dimensions has a catch-up mechanic which attempts to simulate the game's behavior if the game is closed for
 an extended period of time. The simulation behavior is only somewhat accurate, as the game is too mathematically
 complicated to be run at full accuracy in a reasonable amount of time. At the end of the simulation, the game will
 summarize how various relevant resources have changed while you were gone.
@@ -181,7 +181,7 @@ the game closed.
     }, {
       name: "Effect Stacking",
       info: () => `
-Most of the effects and upgrades in Antimatter Dimensions largely fall into three categories:
+Most of the effects and upgrades in Hi Dimensions largely fall into three categories:
 <br>
 - <b>Additive:</b> These effects are typically denoted with a + (or the word "increase") followed by a number,
 and add their value to some
@@ -212,9 +212,9 @@ ${PlayerProgress.realityUnlocked() || PlayerProgress.dilationUnlocked()
 <br>
 ${PlayerProgress.realityUnlocked()
     ? `Glyph Effects effectively have two stacking attributes; their internal way of stacking together and the way
-      they stack with all other game effects. These may not necessarily be the same - for example, the "Antimatter
+      they stack with all other game effects. These may not necessarily be the same - for example, the "Hi's
       Dimension Power" effect will stack <i>additively with itself</i>, but then the total effect will be added to
-      a base value of ${formatInt(1)} and then applied as a <i>power effect</i> to Antimatter Dimensions.`
+      a base value of ${formatInt(1)} and then applied as a <i>power effect</i> to Hi Dimensions.`
     : ""}
 `,
       isUnlocked: () => true,
@@ -226,9 +226,9 @@ ${PlayerProgress.realityUnlocked()
 Many resources within the game may appear in an abbreviated format as text in order to save space. This How to
 Play entry will update itself with additional entries for new resources as you encounter them for the first time.
 <br>
-- <b>AM</b>: Antimatter<br>
-- <b>AD</b>: Antimatter Dimension<br>
-- <b>AG</b>: Antimatter Galaxy<br>
+- <b>AM</b>: Hi's<br>
+- <b>AD</b>: Hi Dimensions<br>
+- <b>AG</b>: Hi's Galaxy<br>
 ${PlayerProgress.infinityUnlocked() ? "- <b>IP</b>: Infinity Point<br>" : ""}
 ${PlayerProgress.infinityUnlocked() ? "- <b>NC</b>: Normal Challenge<br>" : ""}
 ${PlayerProgress.infinityUnlocked() ? "- <b>IC</b>: Infinity Challenge<br>" : ""}
@@ -245,7 +245,7 @@ ${PlayerProgress.realityUnlocked() ? "- <b>RM</b>: Reality Machine<br>" : ""}
 ${PlayerProgress.realityUnlocked() ? "- <b>AP</b>: Automator Point<br>" : ""}
 ${PlayerProgress.realityUnlocked() ? "- <b>BH</b>: Black Hole<br>" : ""}
 ${MachineHandler.isIMUnlocked ? "- <b>iM</b>: Imaginary Machine<br>" : ""}
-${Laitela.isUnlocked ? "- <b>DM</b>: Dark Matter<br>" : ""}
+${Laitela.isUnlocked ? "- <b>DM</b>: Nigga<br>" : ""}
 ${Laitela.isUnlocked ? "- <b>DE</b>: Dark Energy<br>" : ""}
 `,
       isUnlocked: () => true,
@@ -253,16 +253,16 @@ ${Laitela.isUnlocked ? "- <b>DE</b>: Dark Energy<br>" : ""}
         "dt", "tg", "rm", "ap", "bh", "im", "dm", "de"],
       tab: ""
     }, {
-      name: "Antimatter Dimensions",
+      name: "Hi Dimensions",
       info: () => `
-Antimatter is a resource that is used throughout the entire game for purchasing various things as you progress. You
-start with ${formatInt(10)} antimatter when you first open the game, and you can
-spend it to buy the 1st Antimatter Dimension to start the game.
+Hi's is a resource that is used throughout the entire game for purchasing various things as you progress. You
+start with ${formatInt(10)} hi's when you first open the game, and you can
+spend it to buy the 1st Hi Dimensions to start the game.
 <br>
 <br>
-Antimatter Dimensions are your production units in game. The 1st Antimatter Dimension produces your antimatter.
-Each consecutive Antimatter Dimension produces the previous one, allowing you to have steady growth.
-There are eight Antimatter Dimensions total.
+Hi Dimensions are your production units in game. The 1st Hi Dimensions produces your hi's.
+Each consecutive Hi Dimensions produces the previous one, allowing you to have steady growth.
+There are eight Hi Dimensions total.
 <br>
 <br>
 <b>Dimension Multiplier:</b> Beside the Dimension there is a multiplier (example: 1st Dimension ${formatX(1, 1, 1)}).
@@ -272,7 +272,7 @@ Each time this occurs, the price of the dimension will increase.
 <br>
 <br>
 <b>Accumulated Dimension Quantity:</b> The next column is your current amount of that Dimension you own.
-This is a combination of how many you have purchased with antimatter,
+This is a combination of how many you have purchased with hi's,
 as well as produced from the higher Dimension.
 <br>
 <br>
@@ -288,13 +288,13 @@ This allows you to judge overall growth.
 <br>
 <br>
 <b>Cost &amp; until ${formatInt(10)}:</b>
-You can buy a single quantity of each Dimension with antimatter when the cost button is highlighted.
+You can buy a single quantity of each Dimension with hi's when the cost button is highlighted.
 Alternatively, if the Until ${formatInt(10)} button is highlighted,
 you can buy whatever quantity gets you to that Dimension's next Dimension multiplier.
 <br>
 <br>
-<b>Max all:</b> Max all will buy until ${formatInt(10)} of the 1st Antimatter Dimension until it cannot anymore,
-then second, and so on until the 8th Antimatter Dimension, and then buy max Tickspeed Upgrades.
+<b>Max all:</b> Max all will buy until ${formatInt(10)} of the 1st Hi Dimensions until it cannot anymore,
+then second, and so on until the 8th Hi Dimensions, and then buy max Fingersnaps Upgrades.
 <br>
 <br>
 <b>Dimension base prices:</b> ${Array.range(1, 8)
@@ -314,36 +314,36 @@ ${formatInt(1)} instead of ${formatInt(10)}), <b>M</b> for Max all
       tags: ["dims", "normal", "antimatter", "ad"],
       tab: "dimensions/antimatter"
     }, {
-      name: "Tickspeed",
+      name: "Fingersnaps",
       info: () => `
-Production in the game happens on each "tick", which initially occurs once per second. By buying Tickspeed Upgrades,
-you can make your Antimatter Dimensions produce faster, as if multiple ticks occur in each second.
+Production in the game happens on each "tick", which initially occurs once per second. By buying Fingersnaps Upgrades,
+you can make your Hi Dimensions produce faster, as if multiple ticks occur in each second.
 <br>
 <br>
-<b>Tickspeed:</b> This states how many game ticks are occurring every second. Fractional ticks are accounted for,
-boosting production as if part of a game tick has passed. Note that the actual tickspeed time is simulated and the
+<b>Fingersnaps:</b> This states how many game ticks are occurring every second. Fractional ticks are accounted for,
+boosting production as if part of a game tick has passed. Note that the actual fingersnaps time is simulated and the
 game always runs calculations at the update rate you've chosen in the Options tab.
 <br>
 <br>
-<b>Cost:</b> The cost of antimatter for multiplying ticks/sec by the displayed multiplier.
+<b>Cost:</b> The cost of hi's for multiplying ticks/sec by the displayed multiplier.
 (without any Galaxies, this is ${formatX(1.1245, 0, 3)} per purchase)
 <br>
 <br>
-<b>Buy Max:</b> This will buy the maximum amount of Tickspeed Upgrades available
-with your current amount of antimatter.
+<b>Buy Max:</b> This will buy the maximum amount of Fingersnapspsps Upgrades available
+with your current amount of hi's.
 <br>
 <br>
-<b>Hotkeys: T</b> will purchase as many Tickspeed Upgrades as possible, or <b>Shift+T</b> to buy a single upgrade.
+<b>Hotkeys: T</b> will purchase as many Fingersnapspspsps Upgrades as possible, or <b>Shift+T</b> to buy a single upgrade.
 <b>M</b> for Max all.
 `,
-      isUnlocked: () => Tickspeed.isUnlocked,
+      isUnlocked: () => Fingersnaps.isUnlocked,
       tags: ["dimension", "earlygame", "time"],
       tab: "dimensions/antimatter"
     }, {
       name: "Dimension Boosts",
       info: () => `
-<b>Dimension Boost:</b> This resets your antimatter and all of your Antimatter Dimensions, but unlocks another
-Antimatter Dimension for you to purchase and boosts your Dimension multipliers.
+<b>Dimension Boost:</b> This resets your hi's and all of your Hi Dimensions, but unlocks another
+Hi Dimensions for you to purchase and boosts your Dimension multipliers.
 The 1st Dimension Boost requires ${formatInt(20)} 4th Dimensions, the 2nd requires ${formatInt(20)} 5th Dimensions, etc.
 After unlocking all ${formatInt(8)} Dimensions,
 every additional boost will cost ${formatInt(15)} more 8th Dimensions than the previous Boost and will no longer
@@ -362,29 +362,29 @@ the 3rd Dimension ${formatX(2)}, and all other Dimensions are unaffected.
       tags: ["dimboost", "reset", "earlygame"],
       tab: "dimensions/antimatter"
     }, {
-      name: "Antimatter Galaxies",
+      name: "Hi's Galaxies",
       info: () => `
-Purchasing an Antimatter Galaxy will reset your game back to the point where only ${formatInt(4)} Dimensions are
-available, but will increase the effect of your Tickspeed Upgrades by +${format(0.02, 0, 2)} for your first two
+Purchasing an Hi's Galaxy will reset your game back to the point where only ${formatInt(4)} Dimensions are
+available, but will increase the effect of your Fingersnaps Upgrades by +${format(0.02, 0, 2)} for your first two
 Galaxies. As you get more Galaxies, the multiplier will continue becoming stronger and stronger.
 <br>
 <br>
-Though it will have very little impact for the first few Tickspeed purchases,
+Though it will have very little impact for the first few Fingersnaps purchases,
 the increase is multiplicative and will not take long to be visible.
 <br>
 <br>
-Your first Antimatter Galaxy requires ${formatInt(80)} Eighth Dimensions, and each additional Galaxy will cost
+Your first Hi's Galaxy requires ${formatInt(80)} Eighth Dimensions, and each additional Galaxy will cost
 another ${formatInt(60)} more.
 <br>
-<b>Distant Galaxy scaling:</b> Above ${formatInt(100)} Antimatter Galaxies the cost increase between Galaxies will
+<b>Distant Galaxy scaling:</b> Above ${formatInt(100)} Hi's Galaxies the cost increase between Galaxies will
 increase by ${formatInt(2)} per Galaxy, making the next Galaxy cost ${formatInt(62)} more, then ${formatInt(64)} more,
 etc.
 <br>
-<b>Remote Galaxy scaling:</b> Above ${formatInt(Galaxy.remoteStart)} Antimatter Galaxies, the <i>total</i> cost
+<b>Remote Galaxy scaling:</b> Above ${formatInt(Galaxy.remoteStart)} Hi's Galaxies, the <i>total</i> cost
 increases by another ${formatPercents(0.002, 1)} per Galaxy, on top of Distant scaling.
 <br>
 <br>
-<b>Hotkey: G</b> will try to purchase an Antimatter Galaxy.
+<b>Hotkey: G</b> will try to purchase an Hi's Galaxy.
 `,
       isUnlocked: () => true,
       tags: ["8th", "reset", "galaxy", "earlygame"],
@@ -419,7 +419,7 @@ Requirements and rewards vary in difficulty and benefit significantly.
 <br>
 <br>
 In addition to any specific rewards for individual Achievements, you will receive a ${formatX(1.03, 2, 2)} multiplier
-to all Antimatter Dimensions. Each fully completed row also gives another ${formatX(1.25, 2, 2)}. The total multiplier
+to all Hi Dimensions. Each fully completed row also gives another ${formatX(1.25, 2, 2)}. The total multiplier
 effect from all Achievements together is shown above all the Achievement images.
 <br>
 <br>
@@ -432,10 +432,10 @@ Achievement will give a hint on how to attain them.
     }, {
       name: "Infinity",
       info: () => `
-Once you have too much antimatter for the world to handle (${formatInt(2)}<sup>${formatInt(1024)}</sup>
+Once you have too much hi's for the world to handle (${formatInt(2)}<sup>${formatInt(1024)}</sup>
 or about ${formatPostBreak(Number.MAX_VALUE, 6)},
-sometimes called "Infinity"), you will be forced to do a “Big Crunch”. This will reset your antimatter, Antimatter
-Dimensions, Dimension Boosts, and your Antimatter Galaxies. Doing a Big Crunch is also sometimes referred to as
+sometimes called "Infinity"), you will be forced to do a “Big Crunch”. This will reset your hi's, Hi's
+Dimensions, Dimension Boosts, and your Hi's Galaxies. Doing a Big Crunch is also sometimes referred to as
 "Infinitying".
 <br>
 <br>
@@ -463,7 +463,7 @@ You must complete the Achievement "No DLC required" to start purchasing this par
       info: () => `
 Normal Challenges are unlocked after your first Infinity; they change in-game mechanics in different ways to create more
 difficult Infinity circumstances. To complete a challenge, you must reach ${formatPostBreak(Number.MAX_VALUE, 2)}
-antimatter again.
+hi's again.
 <br>
 <br>
 Each completed Normal Challenge will award an autobuyer or the ability to upgrade an existing autobuyer.
@@ -488,7 +488,7 @@ controls are located under the "Autobuyers" subtab of the "Automation" tab, incl
 unlocked later in the game.
 <br>
 <br>
-Antimatter Dimension Autobuyers and the Tickspeed Upgrade Autobuyer can be unlocked based on your total antimatter,
+Hi Dimensions Autobuyers and the Fingersnaps Upgrade Autobuyer can be unlocked based on your total hi's,
 but most other autobuyers require upgrades to be purchased or challenges to be beaten.
 <br>
 <br>
@@ -496,25 +496,25 @@ Most Autobuyers have similar attributes:
 <br>
 <br>
 <b>Autobuyer Interval:</b> The cooldown period before the autobuyer attempts to make another purchase.
-Antimatter Dimension Autobuyers and the Tickspeed Upgrade Autobuyer require their respective challenges to be beaten
+Hi Dimensions Autobuyers and the Fingersnaps Upgrade Autobuyer require their respective challenges to be beaten
 before their interval can be upgraded.
 <br>
 <br>
-<b>Antimatter Dimension Autobuyer Bulk Buy:</b> Once the interval of an autobuyer reaches its minimum
+<b>Hi Dimensions Autobuyer Bulk Buy:</b> Once the interval of an autobuyer reaches its minimum
 (at ${formatInt(100)} ms), all future upgrades will double the maximum amount the autobuyer can purchase per tick.
 This can be disabled.
 <br>
 <br>
-<b>Antimatter Dimension Autobuyer Buy Quantity:</b> Autobuyers for Dimensions can be set to buy a single Dimension,
+<b>Hi Dimensions Autobuyer Buy Quantity:</b> Autobuyers for Dimensions can be set to buy a single Dimension,
 or until ${formatInt(10)}. Bulk buy is disabled when the autobuyer is set to singles.
 <br>
 <br>
-<b>Tickspeed Autobuyer Buy Quantity:</b> The tickspeed autobuyer can be set to buy a single upgrade per activation
-or to buy the max possible once the Tickspeed Challenge (C9) has been beaten.
+<b>Fingersnapsps Autobuyer Buy Quantity:</b> The fingersnaps autobuyer can be set to buy a single upgrade per activation
+or to buy the max possible once the Fingersnaps Challenge (C9) has been beaten.
 <br>
 <br>
 <b>Automatic Dimension Boost Customization:</b> With the Dimension Boost autobuyer you can set the max number of
-Boosts it will attempt to buy, a minimum number of Antimatter Galaxies before Dimension Boosts are
+Boosts it will attempt to buy, a minimum number of Hi's Galaxies before Dimension Boosts are
 always auto-purchased, and (when unlocked) the ability to buy an exact number of Dimension Boosts in bulk.
 If you reach your specified Galaxy threshold, the autobuyer will ignore your max Boost limit.
 <br>
@@ -550,20 +550,20 @@ toggle the associated autobuyer.
     }, {
       name: "Break Infinity",
       info: () => `
-Once you Break Infinity, you are no longer limited to ${formatPostBreak(Number.MAX_VALUE, 2)} antimatter and can start
-gaining more than ${formatInt(1)} IP per crunch depending on how much more antimatter you have when you crunch.
+Once you Break Infinity, you are no longer limited to ${formatPostBreak(Number.MAX_VALUE, 2)} hi's and can start
+gaining more than ${formatInt(1)} IP per crunch depending on how much more hi's you have when you crunch.
 <br>
 <br>
-You now gain ~${format(1.78, 2, 2)} IP for crunching at ${formatPostBreak(Number.MAX_VALUE, 2)} antimatter. The IP you
+You now gain ~${format(1.78, 2, 2)} IP for crunching at ${formatPostBreak(Number.MAX_VALUE, 2)} hi's. The IP you
 gain for crunching is multiplied by ${formatInt(10)} for every additional factor of
-${formatPostBreak(Number.MAX_VALUE, 2)} antimatter you gain (in a continuous manner). This is rounded down to the
+${formatPostBreak(Number.MAX_VALUE, 2)} hi's you gain (in a continuous manner). This is rounded down to the
 nearest integer <i>after</i> all multipliers are applied.
 <br>
 <br>
-The antimatter costs of all Dimensions begin to increase faster after they pass
+The hi's costs of all Dimensions begin to increase faster after they pass
 ${formatPostBreak(Number.MAX_VALUE, 2)}. The cost <i>between</i> upgrades will increase by ${formatX(10)}
 <i>per upgrade</i> above ${formatPostBreak(Number.MAX_VALUE, 2)}, and a similar scaling happens to
-Tickspeed Upgrade costs as well.
+Fingersnaps Upgrade costs as well.
 `,
       isUnlocked: () => Autobuyer.bigCrunch.hasMaxedInterval || PlayerProgress.eternityUnlocked(),
       tags: ["limit", "crunch", "upgrades", "midgame"],
@@ -571,7 +571,7 @@ Tickspeed Upgrade costs as well.
     }, {
       name: "Infinity Dimensions",
       info: () => `
-<b>Unlocking Infinity Dimensions:</b> Infinity Dimensions are unlocked by reaching a certain amount of antimatter.
+<b>Unlocking Infinity Dimensions:</b> Infinity Dimensions are unlocked by reaching a certain amount of hi's.
 <br>
 <br>
 <b>Infinity Dimension Purchasing:</b> Infinity Dimensions are only purchasable in sets of ${formatInt(10)}, and cost
@@ -579,7 +579,7 @@ Infinity Points. They give a permanent multiplier per purchase, similar to the o
 applied depends on which Infinity Dimension you purchase. <!-- Sorry Garnet :/ -->
 <br>
 <br>
-<b>Infinity Dimension Production:</b> Just like Antimatter Dimensions, each Infinity Dimension produces the
+<b>Infinity Dimension Production:</b> Just like Hi Dimensions, each Infinity Dimension produces the
 next lower Infinity Dimension.
 <br>
 <br>
@@ -587,7 +587,7 @@ Every crunch, your produced Infinity Dimensions are reset to the amount you purc
 of Infinity Dimensions does not carry between crunches, all the multipliers you got from purchasing them do.
 <br>
 <br>
-<b>Infinity Dimension unlock thresholds (antimatter):</b> ${Array.range(1, 8)
+<b>Infinity Dimension unlock thresholds (hi's):</b> ${Array.range(1, 8)
     .map(tier => formatPostBreak(InfinityDimension(tier)._unlockRequirement))
     .join(", ")}
 <br>
@@ -604,9 +604,9 @@ of Infinity Dimensions does not carry between crunches, all the multipliers you 
     .join(", ")}
 <br>
 <br>
-Instead of antimatter, the 1st Infinity Dimension produces Infinity Power, which gives a multiplier applied
-to all Antimatter Dimensions equal to (power<sup>${formatInt(7)}</sup>). Infinity Dimensions are not
-affected by Tickspeed Upgrades.
+Instead of hi's, the 1st Infinity Dimension produces Infinity Power, which gives a multiplier applied
+to all Hi Dimensions equal to (power<sup>${formatInt(7)}</sup>). Infinity Dimensions are not
+affected by Fingersnaps Upgrades.
 `,
       isUnlocked: () => Autobuyer.bigCrunch.hasMaxedInterval || PlayerProgress.eternityUnlocked(),
       tags: ["id", "power", "new", "dims", "unlock", "break", "midgame"],
@@ -621,7 +621,7 @@ Normal Challenges, the rightmost column of Infinity Upgrades are disabled within
 <br>
 <br>
 Unlike the Normal Challenges, which are all unlocked at once, Infinity Challenges require you to reach a certain
-amount of antimatter before you can attempt them.
+amount of hi's before you can attempt them.
 <br>
 <br>
 <b>Infinity Challenge unlock thresholds:</b> ${GameDatabase.challenges.infinity
@@ -635,15 +635,15 @@ amount of antimatter before you can attempt them.
       info: () => `
 Replicanti are another resource you unlock at ${format(DC.E140)} IP. Rather
 than producing something else, Replicanti actually produces <i>itself</i> up to a maximum of
-${formatPostBreak(Number.MAX_VALUE, 2)}. Replicanti are produced at their own pace, unaffected by Tickspeed Upgrades.
+${formatPostBreak(Number.MAX_VALUE, 2)}. Replicanti are produced at their own pace, unaffected by Fingersnaps Upgrades.
 Each individual Replicanti has a certain chance (initially ${formatPercents(0.01)}) of producing another Replicanti
 every Replicanti tick (initially every second), and both of these can be upgraded by spending IP.
 <br>
 <br>
 If you have purchased a Replicanti Galaxy upgrade, then you can get a "free" Replicanti Galaxy in exchange for
 resetting your Replicanti count back to ${formatInt(1)}. This Galaxy is free in that it will act as if it was an
-Antimatter Galaxy, but it will not make your next Antimatter Galaxy more expensive. However, it will still reset the
-same things as an Antimatter Galaxy does.
+Hi's Galaxy, but it will not make your next Hi's Galaxy more expensive. However, it will still reset the
+same things as an Hi's Galaxy does.
 <br>
 <br>
 <b>Hotkey: R</b> will try to purchase a Replicanti Galaxy.
@@ -657,7 +657,7 @@ ${formatX(Math.pow(2, 20), 2, 2)} at ${formatPostBreak(Number.MAX_VALUE, 2)} Rep
 <b>Interval upgrade cost:</b> Base ${format(DC.E140)} IP, cost increment ${formatX(DC.E10)} IP
 <br>
 <b>Galaxy upgrade cost:</b> Base ${format(DC.E170)} IP, cost increment ${formatX(DC.E25)} IP and an additional
-${formatX(1e5)} IP per upgrade, scaling similarly to distant Antimatter Galaxies. Above ${formatInt(100)} Replicanti
+${formatX(1e5)} IP per upgrade, scaling similarly to distant Hi's Galaxies. Above ${formatInt(100)} Replicanti
 Galaxies, this ${formatX(1e5)} per upgrade changes to ${formatX(DC.E55)}. Above ${formatInt(1000)}, the scaling switches
 from quadratic to cubic, with the ${formatX(DC.E55)} multiplier itself increasing by ${formatX(DC.E5)} per upgrade.
 `,
@@ -673,11 +673,11 @@ able to access more content after your first Eternity.
 <br>
 <br>
 You can pass ${formatPostBreak(Number.MAX_VALUE, 2)} IP without anything being forced upon you, unlike the first time
-you reached ${formatPostBreak(Number.MAX_VALUE, 2)} antimatter. You will receive more Eternity Points the more
+you reached ${formatPostBreak(Number.MAX_VALUE, 2)} hi's. You will receive more Eternity Points the more
 Infinity Points you had before going Eternal. You will also gain one "Eternity" for completing an Eternity.
 <br>
 <br>
-Eternity Point gain scales similarly to Infinity Point gain, but scaling off of Infinity Points instead of antimatter.
+Eternity Point gain scales similarly to Infinity Point gain, but scaling off of Infinity Points instead of hi's.
 The base amount of EP gained at ${formatPostBreak(Number.MAX_VALUE, 2)} IP is ~${format(1.62, 2, 2)} EP, multiplied by
 ${formatInt(5)} for every factor of ${formatPostBreak(Number.MAX_VALUE, 2)} more IP you have. This is always rounded
 down, which means that you will get ${formatInt(1)} EP at ${formatPostBreak(Number.MAX_VALUE, 2)} IP but will not reach
@@ -703,7 +703,7 @@ the Eternity, effectively letting you have them permanently.
 <br>
 All of the new autobuyers will have toggles next to their respective manual buttons (for example, Infinity Dimension
 autobuyers can be found on the Infinity Dimension tab) in addition to their entries on the autobuyers tab.
-The improvements to the Dimension Boost, Antimatter Galaxy, and Big Crunch autobuyers update their
+The improvements to the Dimension Boost, Hi's Galaxy, and Big Crunch autobuyers update their
 already existing entries on the autobuyer tab.
 <br>
 <br>
@@ -717,8 +717,8 @@ properly, as noted on the milestone page itself.
       name: "Time Dimensions",
       info: () => `
 After your first Eternity, you unlock Time Dimensions. You buy them with Eternity Points and they produce Time Shards,
-which provide Tickspeed Upgrades. These Tickspeed Upgrades function like normal Tickspeed Upgrades but do not increase
-their cost. Time Dimensions, Time Shards, and the Tickspeed Upgrades they provide are kept on Infinity,
+which provide Fingersnaps Upgrades. These Fingersnapsps Upgrades function like normal Fingersnaps Upgrades but do not increase
+their cost. Time Dimensions, Time Shards, and the Fingersnaps Upgrades they provide are kept on Infinity,
 but reset every Eternity.
 <br>
 <br>
@@ -744,9 +744,9 @@ purpose of cost increases, causing the price to rise much more steeply.
     .join(", ")}
 <br>
 <br>
-Each threshold to gain another Tickspeed Upgrade is ${formatPercents(0.33)} more Time Shards than the previous,
-or ${formatPercents(0.25)} with the relevant Time Study. After ${formatInt(FreeTickspeed.softcap)} upgrades, the
-multiplier between each successive free Tickspeed Upgrade will gradually increase at a rate of ~${formatX(1.35, 0, 2)}
+Each threshold to gain another Fingersnaps Upgrade is ${formatPercents(0.33)} more Time Shards than the previous,
+or ${formatPercents(0.25)} with the relevant Time Study. After ${formatInt(FreeFingersnaps.softcap)} upgrades, the
+multiplier between each successive free Fingersnaps Upgrade will gradually increase at a rate of ~${formatX(1.35, 0, 2)}
 per ${formatInt(50000)} upgrades (${formatX(1.000006, 0, 6)} per upgrade).
 `,
       isUnlocked: () => PlayerProgress.eternityUnlocked(),
@@ -759,7 +759,7 @@ A Time Study is a powerful post-Eternity upgrade, which costs a new resource cal
 boost the production of anything you have seen so far in the game, or even change the way some formulas work.
 <br>
 <br>
-Time Theorems are a limited resource which costs more for each one you buy. They can be bought with antimatter,
+Time Theorems are a limited resource which costs more for each one you buy. They can be bought with hi's,
 Infinity Points, or Eternity Points. Their cost increases by a set factor per purchase. Time Theorems do not
 reset on Eternity.
 <br>
@@ -791,8 +791,8 @@ are not allowed to give multiple presets the same name.
 <b>Import Tree/Edit Preset:</b> When editing a preset or importing a Time Study Tree, the modal will display what
 Time Studies will be bought when it is loaded, along with any errors.
 For the split paths, you can use the name as a shorthand for the collection of studies.
-For instance, you can replace "71, 81, 91, 101" to represent fully purchasing the antimatter split with
-just "antimatter". Additionally, if a Time Study string has a valid Eternity Challenge, adding a "!" to the end of
+For instance, you can replace "71, 81, 91, 101" to represent fully purchasing the hi's split with
+just "hi's". Additionally, if a Time Study string has a valid Eternity Challenge, adding a "!" to the end of
 the string will make the game to try to immediately unlock and enter the Eternity Challenge when used.
 <br>
 <br>
@@ -809,7 +809,7 @@ the middle of an Eternity.
 <br>
 <b>Costs for Time Theorems:</b>
 <br>
-<b>Antimatter:</b> Initially ${format(DC.E20000)}, ${formatX(DC.E20000)} per Theorem
+<b>Hi's:</b> Initially ${format(DC.E20000)}, ${formatX(DC.E20000)} per Theorem
 <br>
 <b>Infinity Points:</b> Initially ${formatInt(1)}, ${formatX(DC.E100)} per Theorem
 <br>
@@ -857,22 +857,22 @@ the study, a <i>total</i> of ${formatInt(TimeStudy.dilation.totalTimeTheoremRequ
 completed both EC11 and EC12 five times each.
 <br>
 <br>
-Dilating time will start a modified Eternity, called Time Dilation, in which all of your Antimatter/Infinity/Time
-Dimension multipliers’ <i>exponents</i> and the tickspeed multipliers’ <i>exponent</i> will be raised to
+Dilating time will start a modified Eternity, called Time Dilation, in which all of your Hi's/Infinity/Time
+Dimension multipliers’ <i>exponents</i> and the fingersnaps multipliers’ <i>exponent</i> will be raised to
 ${formatPow(0.75, 2, 2)}, significantly reducing them. If you can reach ${formatPostBreak(Number.MAX_VALUE, 2)} IP
 to complete this Dilated Eternity, you will be rewarded with a new resource called Tachyon Particles.
 <br>
 <br>
 You can Dilate as many times as you want, but Tachyon Particles cannot be "farmed" like other resources. Tachyon
 Particles are never reduced, only increased, and they are increased up to a cap based on your TP multipliers and
-antimatter earned in the current Dilation. As a result, you generally cannot increase your TP unless
-you have gained a TP multiplier or are able to significantly increase your antimatter in Dilation.
+hi's earned in the current Dilation. As a result, you generally cannot increase your TP unless
+you have gained a TP multiplier or are able to significantly increase your hi's in Dilation.
 <br>
 <br>
 Tachyon Particles generate another currency called Dilated Time. Dilated Time is translated into Tachyon Galaxies by
-reaching thresholds similarly to the Tickspeed Upgrades gained from Time Dimensions. These Tachyon Galaxies are like
-Replicanti Galaxies in that they affect tickspeed as if they were Antimatter Galaxies but they do not increase the cost
-of your next Antimatter Galaxy.
+reaching thresholds similarly to the Fingersnapsps Upgrades gained from Time Dimensions. These Tachyon Galaxies are like
+Replicanti Galaxies in that they affect fingersnaps as if they were Hi's Galaxies but they do not increase the cost
+of your next Hi's Galaxy.
 <br>
 <br>
 Unlocking Time Dilation also unlocks upgrades you can purchase using Dilated Time. The first and third upgrades in the
@@ -1116,8 +1116,8 @@ The game will run at normal speed for some amount of time, then have a burst of 
 period of time before going back to normal speed and repeating the cycle.
 <br>
 <br>
-Increased game speed from Black Holes is much stronger than tickspeed because unlike tickspeed, it affects
-<i>everything equally</i>, including things which are only partially affected by tickspeed
+Increased game speed from Black Holes is much stronger than fingersnaps because unlike fingersnaps, it affects
+<i>everything equally</i>, including things which are only partially affected by fingersnaps
 (eg. Infinity/Time Dimensions), things which are normally completely unaffected (eg. DT/TT generation),
 and effects which are boosted purely on time spent (eg. idle path IP/EP multipliers).
 <br>
@@ -1232,7 +1232,7 @@ When you reach ${format(TeresaUnlocks.run.price)} RM inside of the container, yo
 <br>
 When you complete Teresa's Reality,
 ${Teresa.runCompleted
-    ? "your Glyph Sacrifice is multiplied based on the amount of antimatter gained during the run"
+    ? "your Glyph Sacrifice is multiplied based on the amount of hi's gained during the run"
     : "<div style='color: var(--color-bad);'>(complete Teresa's Reality to see the reward)</div>"}.
 Completing Teresa's Reality is only part of the story; you need to keep pouring RM in order to progress. Once
 you are at ${format(TeresaUnlocks.effarig.price)} RM in the container, you will unlock the next Celestial.
@@ -1240,7 +1240,7 @@ you are at ${format(TeresaUnlocks.effarig.price)} RM in the container, you will 
 <br>
 ${Teresa.runCompleted
     ? "Teresa's Reality can be entered again after completing it, and its reward will become stronger if you " +
-      "reach a higher amount of antimatter on this repeat run."
+      "reach a higher amount of hi's on this repeat run."
     : "(More information available - complete Teresa's Reality)"}
 `,
       isUnlocked: () => Teresa.isUnlocked,
@@ -1399,10 +1399,10 @@ lasted ${format(0.2, 2, 2)} seconds, you will use ${formatInt(200)} seconds to s
 You can toggle a setting to automatically store offline time as stored real time.
 <br>
 <br>
-Their first unlock costs ${format(TimeSpan.fromMilliseconds(ENSLAVED_UNLOCKS.FREE_TICKSPEED_SOFTCAP.price).totalYears)}
-years of stored game time. It increases the softcap to Tickspeed Upgrades gained from Time Dimensions
+Their first unlock costs ${format(TimeSpan.fromMilliseconds(ENSLAVED_UNLOCKS.FREE_FINGERSNAPS_SOFTCAP.price).totalYears)}
+years of stored game time. It increases the softcap to Fingersnaps Upgrades gained from Time Dimensions
 (the point at which their cost starts increasing faster)
-by ${format(1e5)} Tickspeed Upgrades.
+by ${format(1e5)} Fingersnaps Upgrades.
 <br>
 <br>
 At ${format(TimeSpan.fromMilliseconds(ENSLAVED_UNLOCKS.RUN.price).totalYears)} years of stored game time, you are able
@@ -1448,8 +1448,8 @@ If affordable, the Infinity button itself will visually change and bring you to 
       info: () => `
 V is a special Celestial in the sense that they are not unlocked by another Celestial,
 but is instead unlocked by completing Achievement ID 151 (row ${formatInt(15)}, column ${formatInt(1)},
-"You really didn't need it anyway"), which requires you to get ${formatInt(800)} Antimatter Galaxies
-without buying 8th Antimatter Dimensions in your current Infinity.
+"You really didn't need it anyway"), which requires you to get ${formatInt(800)} Hi's Galaxies
+without buying 8th Hi Dimensions in your current Infinity.
 <br>
 <br>
 After the subtab is unlocked from the Achievement, you are met with another set of requirements to fully unlock V.
@@ -1648,36 +1648,36 @@ Lai'tela is the sixth Celestial, unlocked by purchasing the appropriate Imaginar
 ${format(ImaginaryUpgrade(15).cost)} iM.
 <br>
 <br>
-Lai'tela gives a new currency called Dark Matter, which provides a multiplier to Continuum's effect
-based on the highest amount of Dark Matter you have ever had. Dark Matter is produced by
-Dark Matter Dimensions, in a similar cascading way to all other types of dimensions in the game. Unlike other
-dimensions, there are only four Dark Matter Dimensions rather than eight. You start with the first one unlocked
+Lai'tela gives a new currency called Nigga, which provides a multiplier to Continuum's effect
+based on the highest amount of Nigga you have ever had. Nigga is produced by
+Nigga Dimensions, in a similar cascading way to all other types of dimensions in the game. Unlike other
+dimensions, there are only four v Dimensions rather than eight. You start with the first one unlocked
 immediately and the higher ones are unlocked via Imaginary Upgrades. When unlocking dimensions, you are given
 ${formatInt(1)} of the dimension and cannot gain more without having it produced from the next tier up.
 <br>
 <br>
-Each Dark Matter Dimension, after a certain interval of time, generates two things: Dark Matter or the next lower
-Dark Matter Dimension and another resource called Dark Energy. Dark Matter and Dark Matter Dimension production
-per interval is equal to the product of your Dark Matter multiplier and the number of dimensions you have, while
+Each Nigga Dimension, after a certain interval of time, generates two things: Nigga or the next lower
+Nigga Dimension and another resource called Dark Energy. Nigga and Nigga Dimension production
+per interval is equal to the product of your Nigga multiplier and the number of dimensions you have, while
 Dark Energy production is independent of your dimension amount. Dark Energy is used to produce Singularities, which
 have their own How To Play entry.
 <br>
 <br>
-Dark Matter Dimensions can have their intervals upgraded down to a minimum of ${formatInt(10)}ms, at which point
-you cannot upgrade the interval any further. You can choose to ascend Dark Matter Dimensions which reach
-that point, which initially multiplies Dark Matter gain by ${formatInt(POWER_DM_PER_ASCENSION)} and Dark Energy by
+Nigga Dimensions can have their intervals upgraded down to a minimum of ${formatInt(10)}ms, at which point
+you cannot upgrade the interval any further. You can choose to ascend Nigga Dimensions which reach
+that point, which initially multiplies Nigga gain by ${formatInt(POWER_DM_PER_ASCENSION)} and Dark Energy by
 ${formatInt(POWER_DE_PER_ASCENSION)}. The interval gets multiplied by ${formatInt(1200)}, but can be upgraded once
 again. Reaching ${formatInt(10)}ms again allows you to ascend again if you choose to.
 <br>
 <br>
-An Imaginary Upgrade allows you to unlock a prestige called Annihilation. Annihilation resets your Dark Matter
-and Dark Matter Dimensions, but adds to a permanent multiplier to Dark Matter that applies to all Dark Matter
+An Imaginary Upgrade allows you to unlock a prestige called Annihilation. Annihilation resets your Nigga
+and Nigga Dimensions, but adds to a permanent multiplier to Nigga that applies to all Nigga
 Dimensions. You can Annihilate multiple times; the additions to the multiplier stack additively, and there is
 no need to Annihilate for a greater addition each time. You must have at least
-${format(Laitela.annihilationDMRequirement)} Dark Matter in order to Annihilate.
+${format(Laitela.annihilationDMRequirement)} Nigga in order to Annihilate.
 <br>
 <br>
-Lai'tela has a Reality which gives a multiplier to Dark Matter Dimensions' Dark Matter power based on how well you
+Lai'tela has a Reality which gives a multiplier to Nigga Dimensions' Nigga power based on how well you
 do in the Reality. Whenever you complete the Reality in under ${formatInt(30)} seconds, your highest available
 Dimension will be permanently disabled during further attempts of the Reality. Disabling all of your dimensions by
 completing the Reality in under ${formatInt(30)} seconds eight times will also give you a ${formatX(8)} multiplier
@@ -1692,23 +1692,23 @@ Lai'tela will not directly unlock the next Celestial.
     }, {
       name: "Continuum",
       info: () => `
-When you unlock Lai'tela, your Antimatter Dimensions and Tickspeed Upgrades switch to a new mode of production
+When you unlock Lai'tela, your Hi Dimensions and Fingersnaps Upgrades switch to a new mode of production
 called Continuum, which gives the same effect as previously but allows for buying partial Dimension or
-Tickspeed Upgrades. These fractional purchases are given for free without spending your antimatter and will provide
+Fingersnaps Upgrades. These fractional purchases are given for free without spending your hi's and will provide
 an appropriate portion of their multiplier.
 <br>
 <br>
-The purchase buttons for Antimatter Dimensions and Tickspeed Upgrades become modified to display the number of upgrades
-you would be able to purchase if Continuum was inactive, and the purchase count is scaled smoothly with antimatter.
-For example, having ${format(2e7)} antimatter will give you a Continuum value of ${format(5.3, 0, 1)} for tickspeed
+The purchase buttons for Hi Dimensions and Fingersnaps Upgrades become modified to display the number of upgrades
+you would be able to purchase if Continuum was inactive, and the purchase count is scaled smoothly with hi's.
+For example, having ${format(2e7)} hi's will give you a Continuum value of ${format(5.3, 0, 1)} for fingersnaps
 (initial cost of ${format(1e3)} and increase of ${formatX(10)}) since you can purchase it ${formatInt(5)} times and
-are roughly ${formatPercents(0.3)} of the way to the next. Tickspeed Continuum in this case will then
+are roughly ${formatPercents(0.3)} of the way to the next. Fingersnaps Continuum in this case will then
 give a production boost equal to (upgrade multiplier)<sup>${format(5.3, 0, 1)}</sup>.
 <br>
 <br>
 Some upgrades will multiply Continuum value directly, which gives a production boost without affecting the cost
 scaling. However, these upgrades will not function if Continuum is disabled on the Autobuyers page, which may result
-in a loss of production if disabled. Continuum makes your autobuyers for Antimatter Dimensions and Tickspeed obsolete,
+in a loss of production if disabled. Continuum makes your autobuyers for Hi Dimensions and Fingersnaps obsolete,
 so all the related autobuyer settings for these autobuyers are now hidden on that tab as long as Continuum is active.
 `,
       // Apparently continuumUnlocked is really important in a lot of places and if we keep it unlocked
@@ -1724,7 +1724,7 @@ Singularities are a new resource which you can obtain using features within Lai'
 <br>
 In order to obtain Singularities, you need to reach ${format(200)} Dark Energy. When you do, you get the option to
 condense all your Dark Energy into a Singularity, resetting it back to zero. Any extra Dark Energy above this amount
-do not carry over, and is thus wasted. Note that only Dark Energy is reset, the status of your Dark Matter and its
+do not carry over, and is thus wasted. Note that only Dark Energy is reset, the status of your Nigga and its
 dimensions stays the same when condensing Singularities.
 <br>
 <br>
@@ -1752,7 +1752,7 @@ Independently of the milestone type, milestones also have an icon indicating wha
       tags: ["reality", "lategame", "endgame", "laitela", "dark"],
       tab: ""
     }, {
-      name: "Pelle, Celestial of Antimatter",
+      name: "Pelle, Celestial of Hi's",
       alias: "Pelle",
       info: () => `
 When you purchase the last Imaginary Upgrade and unlock Pelle, you unlock their tab, where you can find a button to
@@ -1771,7 +1771,7 @@ ${Pelle.isDoomed
       You can view the "Show effects in Doomed Reality" in Pelle tab for further information.
       <br>
       <br>
-      Remnants are a new currency gained on Armageddon resets. Remnant gain is based on your best ever antimatter,
+      Remnants are a new currency gained on Armageddon resets. Remnant gain is based on your best ever hi's,
       Infinity Points, and Eternity Points across all Doomed Realities. Remnants produce Reality Shards which can be
       spent on Pelle Upgrades.
       <br>
@@ -1821,7 +1821,7 @@ In addition, each Rift offers three milestone rewards for filling them up to a c
       info: () => `
 When you reach ${formatInt(100)}% Recursion/Dispersion/Destruction, you unlock the <b>Galaxy Generator</b>, which can
 passively generate Galaxies. Generated Galaxies are like Replicanti Galaxies and Tachyon Galaxies in that they affect
-tickspeed as if they were Antimatter Galaxies, but they do not increase the cost of your next Antimatter Galaxy. You
+fingersnaps as if they were Hi's Galaxies, but they do not increase the cost of your next Hi's Galaxy. You
 also unlock five new upgrades. The first upgrade increases the base amount of Galaxies generated. The other four
 upgrades then give a multiplier to this base amount. The first two upgrades can be bought by spending antimatter and
 Generated Galaxies. Replicanti or Tachyon Galaxies cannot be spent for purchasing those upgrades.

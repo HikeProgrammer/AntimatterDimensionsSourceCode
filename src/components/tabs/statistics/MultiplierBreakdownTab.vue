@@ -3,9 +3,9 @@ import { createEntryInfo } from "./breakdown-entry-info";
 import MultiplierBreakdownEntry from "./MultiplierBreakdownEntry";
 
 const MULT_TAB_OPTIONS = [
-  { id: 0, key: "AM", text: "Antimatter Production" },
-  { id: 1, key: "tickspeed", text: "Tickspeed" },
-  { id: 2, key: "AD", text: "Antimatter Dimensions" },
+  { id: 0, key: "AM", text: "Hi's Production" },
+  { id: 1, key: "fingersnaps", text: "Fingersnaps" },
+  { id: 2, key: "AD", text: "Hi Dimensions" },
   { id: 3, key: "IP", text: "Infinity Points" },
   { id: 4, key: "ID", text: "Infinity Dimensions" },
   { id: 5, key: "infinities", text: "Infinities" },
@@ -129,7 +129,7 @@ export default {
   margin: 0 0.5rem -0.1rem;
   z-index: 1;
   text-align: center;
-  font-family: Typewriter;
+  font-family: monospace;
   font-size: 1rem;
   font-weight: bold;
   color: var(--color-text);

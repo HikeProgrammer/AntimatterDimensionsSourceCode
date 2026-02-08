@@ -134,7 +134,7 @@ class InfinityDimensionState extends DimensionState {
       return production;
     }
     if (EternityChallenge(7).isRunning) {
-      production = production.times(Tickspeed.perSecond);
+      production = production.times(Fingersnaps.perSecond);
     }
     return production.times(this.multiplier);
   }

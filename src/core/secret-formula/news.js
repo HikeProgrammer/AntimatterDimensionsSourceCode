@@ -18,31 +18,31 @@ export const news = [
   },
   {
     id: "a2",
-    text: "Antimatter ghosts do not exist. Just like matter ghosts. They don't have any matter, for that matter."
+    text: "Hi's ghosts do not exist. Just like bye ghosts. They don't have any bye, for that matter."
   },
   {
     id: "a3",
-    text: "Nuclear power plants have been abandoned in favor of antimatter power."
+    text: "Nuclear power plants have been abandoned in favor of hi power."
   },
   {
     id: "a4",
-    text: "Antimatter cookies have been confirmed to not exist, whoever claims that, stop."
+    text: "Hi's cookies have been confirmed to not exist, whoever claims that, stop."
   },
   {
     id: "a5",
-    text: "Antimatter prices have drastically dropped due to newfound abundance."
+    text: "Hi's prices have drastically dropped due to newfound abundance."
   },
   {
     id: "a6",
-    text: "In the news today, humans make an antimatter animal sacrifice to the antimatter god."
+    text: "In the news today, humans make an hi based animal sacrifice to the hi god."
   },
   {
     id: "a7",
-    text: "You made one antimatter! Whatever that means."
+    text: "You made one hi! Whatever that means."
   },
   {
     id: "a8",
-    text: "\"IN THE END, IT DOESN'T ANTIMATTER\" -hevipelle"
+    text: "\"\"IN THE END, IT DOESN'T ANTIMATTER\" -hevipelle\" - Hi Dimensions"
   },
   {
     id: "a9",
@@ -50,11 +50,11 @@ export const news = [
   },
   {
     id: "a10",
-    text: "How does it matter if it's antimatter?"
+    text: "How does it bye if it's hi?"
   },
   {
     id: "a11",
-    text: "Scientists confirm that the colour of antimatter is Blurple."
+    text: "Scientists confirm that the colour of hi is redish."
   },
   {
     id: "a12",
@@ -84,7 +84,7 @@ export const news = [
   },
   {
     id: "a17",
-    text: "Due to antimatter messing with physics, a creature that was once a moose is now a human."
+    text: "Due to hi's messing with physics, a creature that was once a moose is now a human."
   },
   {
     id: "a18",
@@ -96,7 +96,7 @@ export const news = [
   },
   {
     id: "a20",
-    text: "The English greeting is not present in Antimatter speak."
+    text: "The English greeting is not present in Hi's speak."
   },
   {
     id: "a21",
@@ -126,13 +126,13 @@ export const news = [
     id: "a27",
     get text() {
       return `A new religion has been created, and it's spreading like wildfire. The believers of this religion worship
-        the Heavenly Pelle, the goddess of antimatter. They also believe that ${format(Number.MAX_VALUE, 2)}
+        the Heavenly Pelle, the goddess of hi's. They also believe that ${format(Number.MAX_VALUE, 2)}
         is infinite.`;
     }
   },
   {
     id: "a28",
-    text: "Someone has just touched a blob, and blown up. Was the blob antimatter, or was the guy made of Explodium?"
+    text: "Someone has just touched a blob, and blown up. Was the blob hi's, or was the guy made of Explodium?"
   },
   {
     id: "a29",
@@ -165,15 +165,15 @@ export const news = [
   },
   {
     id: "a36",
-    text: "You feel like making antimatter. But nobody wants to eat your antimatter."
+    text: "You feel like making hi's. But nobody wants to eat your hi's."
   },
   {
     id: "a37",
-    text: "Somebody wasn't nice, he got an antimatter-storm."
+    text: "Somebody wasn't nice, he got an hi's-storm."
   },
   {
     id: "a38",
-    text: "You are living, you occupy space, you have a mass, you matter... unless you antimatter."
+    text: "You are living, you occupy space, you have a mass, you bye... unless you hi."
   },
   {
     id: "a39",
@@ -189,7 +189,7 @@ export const news = [
   {
     id: "a41",
     text:
-      "There must always be an equal amount of matter as compared to antimatter; I guess your mom balances that a bit."
+      "There must always be an equal amount of bye as compared to hi; I guess your mom balances that a bit."
   },
   {
     id: "a42",
@@ -197,19 +197,19 @@ export const news = [
   },
   {
     id: "a43",
-    text: "We dug a big hole to store this antimatter... Adele's rolling in it."
+    text: "We dug a big hole to store this hi's... Adele's rolling in it."
   },
   {
     id: "a44",
-    text: "If everything is antimatter, how can you see yourself?"
+    text: "If everything is hi's, how can you see yourself?"
   },
   {
     id: "a45",
-    text: "The stock markets have crashed due to antimatter beings somehow knowing what they will be tomorrow."
+    text: "The stock markets have crashed due to hi's beings somehow knowing what they will be tomorrow."
   },
   {
     id: "a46",
-    text: "My dog ate too much antimatter, now he's' saying 'meow!'"
+    text: "My dog ate too much hi's, now he's' saying 'meowello!'"
   },
   {
     id: "a47",
@@ -217,7 +217,7 @@ export const news = [
   },
   {
     id: "a48",
-    text: "You have found the rarest antimatter pepe, it's ultra rare!"
+    text: "You have found the rarest hi's pepe, it's ultra rare!"
   },
   {
     id: "a49",
@@ -227,11 +227,11 @@ export const news = [
   },
   {
     id: "a50",
-    text: "The smell of antimatter has been revealed. It smells like kittens."
+    text: "The smell of hi's has been revealed. It smells like kittens."
   },
   {
     id: "a51",
-    text: "Just another antimatter in the wall."
+    text: "Just another hi in the wall."
   },
   {
     id: "a52",
@@ -258,7 +258,7 @@ export const news = [
   {
     id: "a57",
     text:
-      `A new chat server has been created for antimatter people to spy on matter people,
+      `A new chat server has been created for hi people to spy on bye people,
       and the world has fallen into chaos and discord.`
   },
   {
@@ -286,12 +286,12 @@ export const news = [
   {
     id: "a63",
     text:
-      `Antimatter guns don't kill antimatter people, antimatter people kill antimatter people but does that mean
-      that antimatter toaster doesn't toast antimatter toasts, antimatter toast toasts antimatter toasts?`
+      `Hi's guns don't kill hi people, hi people kill hi people but does that mean
+      that hi toaster doesn't toast hi toasts, hi toast toasts hi toasts?`
   },
   {
     id: "a64",
-    text: "But to an antimatter person, wouldn't they be matter and us antimatter?"
+    text: "But to an hi person, wouldn't they be bye and us hi?"
   },
   {
     id: "a65",
@@ -301,7 +301,7 @@ export const news = [
     id: "a66",
     text:
       `School starting up strikes fear in students universe-wide, as schools are no longer segregated between
-      matter and antimatter. Annihilation is prominent.`
+      bye and hi. Annihilation is prominent.`
   },
   {
     id: "a67",
@@ -347,11 +347,11 @@ export const news = [
   },
   {
     id: "a77",
-    text: "If matter exists, then does antimatter not exist?"
+    text: "If bye exists, then does hi not exist?"
   },
   {
     id: "a78",
-    text: "Antimatter=Life. Not cobblestone, not dirt, nothing like that. Antimatter."
+    text: "Hi's=Life. Not cobblestone, not dirt, nothing like that. Hi's."
   },
   {
     id: "a79",
@@ -383,7 +383,7 @@ export const news = [
   },
   {
     id: "a86",
-    text: "Antimatter is honest, matter makes up everything."
+    text: "Hi's is honest, bye's makes up everything."
   },
   {
     id: "a87",
@@ -393,7 +393,7 @@ export const news = [
   },
   {
     id: "a88",
-    text: "You either die as matter or live long enough to be consumed by the antimatter, and then die again."
+    text: "You either die as bye or live long enough to be consumed by the hi, and then die again."
   },
   {
     id: "a89",
@@ -405,14 +405,14 @@ export const news = [
   },
   {
     id: "a91",
-    text: "Antimatter Dimensions: the next update is always 5 hours away. Always."
+    text: "Hi Dimensions: the next update is always 5 hours away. Always."
   },
   {
     id: "a92",
     get text() {
       const games = [
         {
-          name: "Antimatter Dimensions",
+          name: "Hi Dimensions",
           link: "https://ivark.github.io/"
         },
         {
@@ -457,7 +457,7 @@ export const news = [
         }
       ];
       const game = games.randomElement();
-      return `An unidentified developer of Antimatter Dimensions would like to
+      return `An unidentified developer of Hi Dimensions would like to
         recommend that you play <a href="${game.link}" target="_blank">${game.name}</a>`;
     },
   },
@@ -487,17 +487,17 @@ export const news = [
   },
   {
     id: "a98",
-    text: "Antimatter is like the internet. If you're reading this, you can't have enough of it."
+    text: "Hi's is like the internet. If you're reading this, you can't have enough of it."
   },
   {
     id: "a99",
     text:
-      `"Antimatter has made time travel possible and I'm here to make the
+      `"Hi's has made time travel possible and I'm here to make the
       past great again." - 2nd President of the World`
   },
   {
     id: "a100",
-    text: "Please insert Disc -1 to continue playing Antimatter Dimensions™."
+    text: "Please insert Disc -1 to continue playing Coffee Dimensions™."
   },
   {
     id: "a101",
@@ -505,22 +505,22 @@ export const news = [
   },
   {
     id: "a102",
-    text: "I was a part of antimatter like you once. But then I got matter in my knee."
+    text: "I was a part of antimatter like you once. But then I got a bye in my knee."
   },
   {
     id: "a103",
     text:
-      `Antimatter... antimatter never changes... until you get to quantum physics of antimatter,
+      `Hi's... hi never changes... until you get to quantum physics of hi,
       but we don't have enough tachyon particles for that.`,
     get unlocked() { return PlayerProgress.realityUnlocked() || PlayerProgress.dilationUnlocked(); }
   },
   {
     id: "a104",
-    text: "There is no war in Antimatter Dimensions. Here we are safe. Here we are free."
+    text: "There is no war in Hi Dimensions. Here we are safe. Here we are free."
   },
   {
     id: "a105",
-    text: "Antimatter has solved global warming. In unrelated news, the Earth no longer exists."
+    text: "Hi's has solved global warming. In unrelated news, the Earth no longer exists."
   },
   {
     id: "a106",
@@ -528,7 +528,7 @@ export const news = [
       `Anti-water, anti-Earth, anti-fire, anti-air. Long ago, the four anti-nations lived together in harmony.
       Then, everything changed when the anti-Fire Nation attacked. Only the anti-Avatar, the master of all 4
       anti-elements could bring balance to the anti-world, but when the world needed him most, he accidentally
-      touched some regular matter and exploded.`
+      touched some regular bye and exploded.`
   },
   {
     id: "a107",
@@ -541,7 +541,7 @@ export const news = [
   {
     id: "a109",
     text:
-      `Antimatter Dimensions is proud to be sponsored by Lehmä! Now offering - grass eating lessons! Learn what
+      `Hi Dimensions is proud to be sponsored by Lehmä! Now offering - grass eating lessons! Learn what
       grass is safe to eat and what grass isn't.`,
     isAdvertising: true
   },
@@ -560,16 +560,16 @@ export const news = [
     id: "a112",
     text:
       `What the f*ck did you just f*cking say about me, you little b*tch? I'll have you know I graduated top of my
-      class in the Antimatter Seals, and I've been involved in numerous secret raids on the 9th Dimension, and I
+      class in the Hi's Seals, and I've been involved in numerous secret raids on the 9th Dimension, and I
       have over 300 NNnNeMI-NNnNe confirmed kills. I am trained in potato warfare and I'm the top sniper in the
-      entire Antimatter Galactic armed forces. You are nothing to me but just another infinity. I will wipe you
+      entire Hi's Galactic armed forces. You are nothing to me but just another infinity. I will wipe you
       the f*ck out with Max All mashing the likes of which has never been seen before in this dimension, mark my
       f*cking words. You think you can get away with saying that shit to me over the Interdimensional network?
       Think again, f*cker. As we speak I am contacting my secret network of autobuyers across the galaxy and your
       IP is being traced right now so you better prepare for the Big Crunch, maggot. The Big Crunch that wipes out
       the pathetic little thing you call your life. You're f*cking dead, kid. I can be anywhere, anytime, and I can
       kill you in over seven 😠💩 different ways, and that's just with my mouse. Not only am I extensively trained
-      in dimension boost combat, but I have access to the entire arsenal of the Antimatter Marine Corps and I will
+      in dimension boost combat, but I have access to the entire arsenal of the Hi's Marine Corps and I will
       use it to its full extent to wipe your miserable ass off the face of the universe, you little shit. If only
       you could have known what unhevi retribution your little “clever” comment was about to bring down upon you,
       maybe you would have held your f*cking tongue. But you couldn't, you didn't, and now you're buying until 10,
@@ -579,7 +579,7 @@ export const news = [
   {
     id: "a113",
     text:
-      `So I've pondered this question for a long time. Antimatter Dimensions... what does it mean? I mean it's a
+      `So I've pondered this question for a long time. Hi Dimensions... what does it mean? I mean it's a
       game, that's clear. You buy the first dimension, and it gives you antimatter, and the second dimension
       provides more first dimensions and so on... But what does it mean? It can't just be a game, it seems too
       plain for that. The developer must have made it as a metaphor. I was doing my weekly ritual of using the
@@ -601,8 +601,8 @@ export const news = [
       seemingly no hope of return. But with time, you grow back stronger and happier than ever before. 'Dimensional
       Sacrifice' is moving away. You have to give up a lot of the things you had that made you happy, but there is
       new opportunity in where you move to. And that new opportunity gives you more happiness than you ever had.
-      'Tickspeed' is how easy it is to make you happy, and 'Time Dimensions' make it even easier to be happy.
-      Antimatter Dimensions is a metaphor for a depressed man's successful battle against his illness.`,
+      'Fingersnaps' is how easy it is to make you happy, and 'Time Dimensions' make it even easier to be happy.
+      Hi Dimensions is a metaphor for a depressed man's successful battle against his illness.`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
@@ -746,14 +746,14 @@ export const news = [
   },
   {
     id: "a139",
-    text: "We have updated our Antimatter Privacy Policy."
+    text: "We have updated our Hi's Privacy Policy."
   },
   {
     id: "a140",
     text:
-      `Attention all Antimatter Dimensions Gamers, Hevipelle is in great danger, and he needs YOUR help to wipe out
+      `Attention all Hi Dimensions Gamers, Hevipelle is in great danger, and he needs YOUR help to wipe out
       all the bad memes in #news-ticker-suggestions. To do this, he needs a dozen new dank memes and a couple of
-      discord bots. To help him, all he needs is your Antimatter card number, the three numbers on the back, and
+      discord bots. To help him, all he needs is your Hi's card number, the three numbers on the back, and
       the expiration month and date. But you gotta be quick so that Hevipelle can secure the good memes, and
       achieve the epic meme R O Y A L.`,
     isAdvertising: true
@@ -779,7 +779,7 @@ export const news = [
   {
     id: "a145",
     text:
-      `The game "Matter Dimensions" by Lghtellep has just reached -1,000,000 plays on the gaming website Etagergnok.`
+      `The game "Bye Dimensions" by Lghtellep has just reached -1,000,000 plays on the gaming website Etagergnok.`
   },
   {
     id: "a146",
@@ -853,7 +853,7 @@ export const news = [
   },
   {
     id: "a160",
-    text: `Turns out all our news is being stolen and broadcast to a game called "Antimatter Dimensions", damn Fins.`
+    text: `Turns out all our news is being stolen and broadcast to a game called "Hi Dimensions", damn Fins.`
   },
   {
     id: "a161",
@@ -963,11 +963,11 @@ export const news = [
   {
     id: "a178",
     text:
-      `WARNING: Use of Antimatter Dimensions may result in Tuberculosis, HIV/AIDS, sudden belief that the 9th
+      `WARNING: Use of Hi Dimensions may result in Tuberculosis, HIV/AIDS, sudden belief that the 9th
       dimension is real, spontaneous implosion, Polio, Measles, existential dread, incurable insanity or <span
       style='color: black; background: black;'>REDACTED</span>. Please contact your insurance to see if you are
-      covered. By continuing you absolve Antimatter Dimensions of blame should any of the above mentioned, or those
-      that have not been mentioned yet, occur to you. Antimatter Dimensions reserves the right to alter this at any
+      covered. By continuing you absolve Hi Dimensions of blame should any of the above mentioned, or those
+      that have not been mentioned yet, occur to you. Hi Dimensions reserves the right to alter this at any
       time, with or without warning.`
   },
   {
@@ -987,8 +987,8 @@ export const news = [
   {
     id: "a182",
     text:
-      `With the final update, Antimatter Dimensions has been finished. Thank you for playing. However, in the very
-      near future, ANTIMATTER DIMENSIONS will be released. And before you ask, it's not a sequel, it's a reboot.
+      `With the final update, Hi Dimensions has been finished. Thank you for playing. However, in the very
+      near future, Hi Dimensions will be released. And before you ask, it's not a sequel, it's a reboot.
       Look forward to it in 5 hours!`
   },
   {
@@ -1061,7 +1061,7 @@ export const news = [
     text:
       `Good morning viewers, this is Josh, and I'm your ANN host for today. Speaking of today, I'm told we've got
       some really exciting news for you today, so let's just jump right into it. Looks like apparently somebody
-      was <i>not<i> nice today, and got an "Antimatter-storm", whatever that means... Guys is this the right
+      was <i>not<i> nice today, and got an "Hi's-storm", whatever that means... Guys is this the right
       script? This is just nonsensical. It is? Alright... Next up we learn that "Nothing is created, nothing is
       destroyed."... Okay seriously guys, this is a joke right? This isn't news, these are just random sentences!
       You all said you'd help me out on my first day here but you're just hazing me! This is <i>not</i> the kind of
@@ -1216,7 +1216,7 @@ export const news = [
   {
     id: "a213",
     text:
-    `Antimatter giraffes have incredibly fast reaction times. This explains why they've won 90% of
+    `Hi's giraffes have incredibly fast reaction times. This explains why they've won 90% of
     all gaming championships since anti-giraffe friendly controllers were invented.`
   },
   {
@@ -1331,12 +1331,12 @@ export const news = [
     id: "a233",
     get text() {
       return `Level 10 crook, Level ${format(Number.MAX_VALUE, 2)} Boss,
-        that's how Antimatter Dimensions works.`;
+        that's how Hi Dimensions works.`;
     }
   },
   {
     id: "a234",
-    text: "Antimatter will never threaten to stab you. And, in fact, cannot speak."
+    text: "Hi's will never threaten to stab you. And, in fact, cannot speak."
   },
   {
     id: "a235",
@@ -1433,7 +1433,7 @@ export const news = [
           `it has a crisp and soothing design that really appeals, and its background is complex and enthralling.
           It gives you the feeling of standing at the helm of a futuristic interstellar ship.`,
         S11:
-          `the Blob is an iconic character in the Antimatter Dimensions official Discord server. It is widely used
+          `the Blob is an iconic character in the Hi Dimensions official Discord server. It is widely used
           to express emotions in a lovely way. It is a fact that the Blobs are evolving. ${BLOB} always seek to be
           more expressive. Then someday, a new ${BLOB} is born in the server, to express further emotions. Usually,
           ${BLOB} are just blobbling and bouncing around, occasionally merging and dividing. Only ${BLOB} know where
@@ -1523,13 +1523,13 @@ export const news = [
     id: "a253",
     text:
       `After a surge of complaints from our viewers, we have decided to allow you at home to write your own
-      messages. Give it a try here: <input style='border: none; outline: none; font-family: Typewriter;
+      messages. Give it a try here: <input style='border: none; outline: none; font-family: monospace;
       font-weight: bold; font-size: 1.5rem'></input>. Or don't. That's fine too.`
   },
   {
     id: "a254",
     text:
-      `Antimatter Dimensions Anonymous has shut down due to the failure of their 12-step program.
+      `Hi Dimensions Anonymous has shut down due to the failure of their 12-step program.
       People would only get to step 8 and then reset.`
   },
   {
@@ -1561,7 +1561,7 @@ export const news = [
       TJ "Slabdrill" Yoshi, hear me out. An M press actually has three parts to it: when M is pressed, when M is
       held, and when M is released. Now, usually is the pressing that's useful because that's the only part that
       matters; however, sometimes it's sufficient to just use the holding part, which also buys dimensions and
-      tickspeed upgrades. And as for the release, well, there are currently no cases where that's useful or
+      fingersnaps upgrades. And as for the release, well, there are currently no cases where that's useful or
       important, so don't worry about that part. Now, if we map out the required presses for challenge 2 it would
       look like this: /¯\\. We merely need to hold (¯) M to reach the first galaxy, we need to press (/) M to
       finish the challenge, and we need to press M again to start another challenge. So, how many presses is that
@@ -1587,7 +1587,7 @@ export const news = [
   {
     id: "a261",
     text:
-      `Antimatter Dimensions is actually a Roguelite game! If you die, in the afterlife you unlock alternative
+      `Hi Dimensions is actually a Roguelite game! If you die, in the afterlife you unlock alternative
       features, like having Space Dimensions instead of Time Dimensions. You can even unlock new characters to
       play as, including an antimatter clone of yourself!`
   },
@@ -1633,7 +1633,7 @@ export const news = [
     id: "a270",
     text:
       `The Galactic Association of News Writers has filed a class action lawsuit against the developers of the
-      small web game "Antimatter Dimensions" for mass plagiarism.`
+      small web game "Hi Dimensions" for mass plagiarism.`
   },
   {
     id: "a271",
@@ -1668,8 +1668,8 @@ export const news = [
   {
     id: "a277",
     text:
-      `Inside you there are two wolves. One is made out of matter. The other
-      is made out of antimatter. You are exploding.`
+      `Inside you there are two wolves. One is made out of bye. The other
+      is made out of hi. You are exploding.`
   },
   {
     id: "a278",
@@ -1680,24 +1680,24 @@ export const news = [
   {
     id: "a279",
     get text() {
-      return `Coming soon to all good retailers- Antimatter Dimensions: The Board Game! Enjoy the thrill of watching
+      return `Coming soon to all good retailers- Hi Dimensions: The Board Game! Enjoy the thrill of watching
       huge numbers go up without the need for a PC or mobile phone. Comes complete with everything you need including a
-      mixed scientific calculator, ${format(Number.MAX_VALUE, 2)} antimatter counters, a high quality plastic
+      mixed scientific calculator, ${format(Number.MAX_VALUE, 2)} hi counters, a high quality plastic
       BUY MAX button, and over a
       thousand news message cards with all the irrelevant memes you know and love! You can finally enjoy AD the way
       it was meant to be played. AD: The Board Game is also available in travel size, so you can even experience
       the joy of calculating logarithmic growth while you're on the go! BUY AD: The Board Game TODAY! Warning: may
-      contain traces of actual matter. Replicanti sold separately. 9th Dimension not included.`;
+      contain traces of actual bye. Replicanti sold separately. 9th Dimension not included.`;
     },
     isAdvertising: true
   },
   {
     id: "a280",
-    text: "I hate antimatter. It's rough, coarse, irritating, and it gets everywhere."
+    text: "I hate hi's. It's rough, coarse, irritating, and it gets everywhere."
   },
   {
     id: "a281",
-    text: "What if instead of creating antimatter, you're actually just losing matter?"
+    text: "What if instead of creating hi's, you're actually just losing bye's?"
   },
   {
     id: "a282",
@@ -1820,7 +1820,7 @@ export const news = [
   {
     id: "a299",
     get text() {
-      return `Buy the new Antimatter Dimensions puzzle set now! With a combined ${format(Number.MAX_VALUE, 2)}
+      return `Buy the new Hi Dimensions puzzle set now! With a combined ${format(Number.MAX_VALUE, 2)}
         pieces, these puzzles are the perfect way to spend some quality time with your family!`;
     },
     isAdvertising: true
@@ -1837,7 +1837,7 @@ export const news = [
   },
   {
     id: "a302",
-    text: "Introducing Antimatter Lite! Zero calories... Same great Crunch.",
+    text: "Introducing Hi's Lite! Zero calories... Same great Crunch.",
     isAdvertising: true
   },
   {
@@ -1939,7 +1939,7 @@ export const news = [
   {
     id: "a310",
     text:
-      `You have reached the automated Antimatter Dimensions support hotline. If you are experiencing a bug in the
+      `You have reached the automated Hi Dimensions support hotline. If you are experiencing a bug in the
       game try closing and reopening the app. If that doesn't work, press 1 for web, or 2 for mobile. If you need
       advice, press 3. If you need to max all, press m. To support the developers, press 4. To access the FAQ,
       press 5. To fix a broken save, press 6. To get an invite to the Discord server, press 7. To see the change
@@ -1954,12 +1954,12 @@ export const news = [
   {
     id: "a312",
     text:
-      `But before we start, today's video is brought to you by Antimatter Dimensions™! It's got over 100,000
+      `But before we start, today's video is brought to you by Coffee Dimensions™! It's got over 100,000
       downloads, and it's completely redefined what a mobile game can do for me. It's got great mechanics, 5
       prestige layers, unique and original challenges, a deep skill tree, and the largest numbers I've ever seen.
       Like, seriously, look at them. And the best part is, it's free! Yes, that's right. Free. And if you use the
       link in the description, you'll start the game with 10 septillion antimatter. Yes, that's right, 10
-      septillion. So what are you waiting for, click the link in the description and start playing Antimatter
+      septillion. So what are you waiting for, click the link in the description and start playing Hi's
       Dimensions™ today!`
   },
   {
@@ -2024,7 +2024,7 @@ export const news = [
   {
     id: "a322",
     text:
-      `Hevipelle announces an Antimatter Dimensions spinoff where you gamble matter in a game of
+      `Hevipelle announces an Hi Dimensions spinoff where you gamble matter in a game of
       poker in Dutch mansions: "Ante matter d'mansions"`
   },
   {
@@ -2046,12 +2046,12 @@ export const news = [
   },
   {
     id: "a326",
-    text: "Antimatter Dimensions is like an ogre... it has layers."
+    text: "Hi Dimensions is like an ogre... it has layers."
   },
   (function() {
     let wasClicked = false;
     const normal = "Click here to restart your device.";
-    const clicked = "Please give Antimatter Dimensions admin access to your device.";
+    const clicked = "Please give Hi Dimensions admin access to your device.";
     return {
       id: "a327",
       get text() {
@@ -2123,7 +2123,7 @@ export const news = [
     text:
       `Technological convergence is the concept that all technologies will converge into a single technology. It is
       a commonly expressed idea since the dawn of the Information Age, and can be seen in many places and devices
-      such as smartphones, or the internet. Antimatter Dimensions is an example of technological convergence,
+      such as smartphones, or the internet. Hi Dimensions is an example of technological convergence,
       specifically within media. Using a genius idea called 'not caring' mixed in with the innovative solution of
       'blind luck', it merges together a subpar game, and a subpar news ticker, to create a mediocre experience
       that despite being mostly a game, occasionally acts as a news source slightly above the Matter Dimensions
@@ -2175,7 +2175,7 @@ export const news = [
       return `Global Challenge - across all AD players, accumulate ${format(Number.MAX_VALUE, 2)} contest-paperclips
         (noted by the
         square ends), to receive an event-exclusive metal bagpipe, capable of giving +2 AM/s, as well as an extra
-        tickspeed while above ${format(1e200)} tickspeed upgrades! Current global progress -
+        fingersnaps while above ${format(1e200)} fingersnaps upgrades! Current global progress -
         ${format(fakeProgress)}/${format(Number.MAX_VALUE, 2)}
         (${formatPercents(Math.log10(fakeProgress) / Math.log10(Number.MAX_VALUE), 3)})`;
     }
@@ -2195,7 +2195,7 @@ export const news = [
   {
     id: "a346",
     text:
-      `Did you know Antimatter Dimensions is also available on Android? <a
+      `Did you know Hi Dimensions is also available on Android? <a
       href="https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions" target="_blank">
       Click here to check it out!<a>`
   },
@@ -2339,10 +2339,10 @@ export const news = [
     text:
       `Hevipelle Incorporated is proud to present a new brand of cereal: The Big Crunch! This nutritious breakfast
       meal contains crunchy antimatter O's, pocket dimensions, Infinity-flavored Sugar Cubes, exponentially-growing
-      Replicanti, and Eternity-flavored Marshmallows. Now you can experience Antimatter Dimensions inside of your
+      Replicanti, and Eternity-flavored Marshmallows. Now you can experience Hi Dimensions inside of your
       stomach! Warning: Side effects may include spontaneous combustion, nausea, vomiting, diarrhea,
       dematerialization, vaporization, heart failure, the end of the world, or death. If you are not made out of
-      antimatter, consult an educated professional on Antimatter Consumption before eating 'The Big Crunch'.`,
+      antimatter, consult an educated professional on Hi's Consumption before eating 'The Big Crunch'.`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
   {
@@ -2374,7 +2374,7 @@ export const news = [
         of god such as lightning or merciful purifications by deities.`
       ];
       const product = products.randomElement();
-      return `Antimatter Office Supplies and Co present their new "Modern Office" catalogue! Each template
+      return `Hi's Office Supplies and Co present their new "Modern Office" catalogue! Each template
         design can be customised for your business, and offers a unique way to promote business synergy! Here
         is a sneak preview of one of their newest items: ${product}`;
     },
@@ -2474,8 +2474,8 @@ export const news = [
   {
     id: "a373",
     text:
-      `As a symbol of friendship between the Matter and Antimatter Periodic Tables, they have done an exchange of
-      elements. The element of Mony is now part of the Antimatter Periodic Table, while Antimony has been added
+      `As a symbol of friendship between the Matter and Hi's Periodic Tables, they have done an exchange of
+      elements. The element of Mony is now part of the Hi's Periodic Table, while Antimony has been added
       to the regular Periodic Table.`
   },
   {
@@ -2515,7 +2515,7 @@ export const news = [
   },
   {
     id: "a378",
-    text: "If every antimatter were an apple, you would have enough to keep all the doctors away for 3000 years"
+    text: "If every hi were an apple, you would have enough to keep all the doctors away for 3000 years"
   },
   {
     id: "a379",
@@ -2573,7 +2573,7 @@ export const news = [
   {
     id: "a388",
     text:
-      `In light of recent events, we'd like to issue an official statement. Antimatter Dimensions™ is in no way
+      `In light of recent events, we'd like to issue an official statement. Coffee Dimensions™ is in no way
       affiliated with Jimmy's Causality Violating Brainworms™. We do not endorse, nor were we involved in their creation
       of the product which was involved in several catastrophic dimension-destabilising and reality-toppling incidents.
       We almost certainly did not sign a contract at 5:30:26 UTC on 08/12/1994 after discussing how we could benefit
@@ -2621,7 +2621,7 @@ export const news = [
   {
     id: "l6",
     text:
-      `Antimatter people seem to be even more afraid of 13 than we are. They destroyed
+      `Hi's people seem to be even more afraid of 13 than we are. They destroyed
       entire galaxies just to remove 13 from their percents.`,
     get unlocked() { return player.galaxies > 0 || Currency.infinities.gt(0); }
   },
@@ -2637,7 +2637,7 @@ export const news = [
   },
   {
     id: "l9",
-    text: "Antimatter ice cream stand has recently opened- they have octillions of flavors!",
+    text: "Hi's ice cream stand has recently opened- they have octillions of flavors!",
     get unlocked() { return player.records.totalAntimatter.e >= 27; }
   },
   {
@@ -2868,7 +2868,7 @@ export const news = [
   },
   {
     id: "l44",
-    text: "Where does Antimatter Nemo live? In a NNnNeMI-NNnNe.",
+    text: "Where does Hi's Nemo live? In a NNnNeMI-NNnNe.",
     get unlocked() { return player.records.totalAntimatter.e >= 3e6; }
   },
   {
@@ -2982,11 +2982,11 @@ export const news = [
   {
     id: "l58",
     text:
-      `The Holy trinity of Hevipelle, Antimatter, Infinity Points, and Eternity Points. These 3 resources let us
+      `The Holy trinity of Hevipelle, Hi's, Infinity Points, and Eternity Points. These 3 resources let us
       access Hevi's gift, Time Theorems. And with these Time Theorems, we reach out to Hevi, and call, “Hevi, bless
       us on this fine day!” And Hevi does. He give us the blessing of Time Studies. These Time Studies were
       blessings so powerful, Hevi restricted their power. He said, “I will give you a choice of three paths” and
-      then humanity chose. The short, cheap route of Antimatter Dimensions, giving instant gratification, the
+      then humanity chose. The short, cheap route of Hi Dimensions, giving instant gratification, the
       powerful choice of Infinity Dimensions, which were a fast, middle ground path, or Time Dimension, the long
       wait, and struggle, of humanity. Then, as humanity chose, a crack broke the earth. A serpent snaked out and
       sneered to humanity, “I will offer the powerful choice of a ninth dimension! I am Slabdrill, lord of all
@@ -3037,7 +3037,7 @@ export const news = [
   {
     id: "l64",
     text:
-      `Injustice in the Antimatter Academia: Beginners are only allowed to choose one field of study while the elite
+      `Injustice in the Hi's Academia: Beginners are only allowed to choose one field of study while the elite
       can pick all three. "Its just not fair, man. How come they can do it?" Questions frustrated student.`,
     get unlocked() { return PlayerProgress.eternityUnlocked(); }
   },
@@ -3087,7 +3087,7 @@ export const news = [
       else
         protestText =
           `Finally, let's chat with this woman who doesn't seem to be in either side. What's your opinion on the
-          matter? "Personally, I thought Tickspeed Autobuyer Challenge was worse than both-" "GET HER!!" "WAIT NO-"
+          matter? "Personally, I thought Fingersnaps Autobuyer Challenge was worse than both-" "GET HER!!" "WAIT NO-"
           Well, seems like this just took a turn, so I'm getting as far away as I possibly can. This is your local
           news host, and we'll come back with further information... someday.`;
       return `Hello, this is your local always reliable news source, and today people are taking over the streets
@@ -3131,7 +3131,7 @@ export const news = [
         "we witness the release of the hypnodrones.",
         "our great and grand overlord lets us have a single antimatter.",
         `Bill Nye explains how Replicanti replicate, and teaches how to spot dangerous conspiracy theories
-        such as "ingesting antimatter is perfectly fine" and "Antimatter Galaxies aren't worth it".`,
+        such as "ingesting antimatter is perfectly fine" and "Hi's Galaxies aren't worth it".`,
         "the world's greatest philosophers debate if we are the real antimatter.",
         "resident baker explains how ordinary objects can transmorph into cake if not watched constantly."
       ];
@@ -3153,7 +3153,7 @@ export const news = [
   {
     id: "l75",
     text:
-      `Here at Antimatter Dimensions, we pride ourselves in the quality of our products. For example: Did you know
+      `Here at Hi Dimensions, we pride ourselves in the quality of our products. For example: Did you know
       that every Infinity Point is unique? That's right! They all have different personalities, their own feelings,
       their own thoughts... I hope you can sleep well tonight, knowing this... Remember all of those Infinity
       points you've spent? They had families, and they miss them... Look at what you've done. You're a monster.`,
@@ -3180,7 +3180,7 @@ export const news = [
   {
     id: "l79",
     text:
-      `The Intergalactic Antimatter Revenue Service, contrary to popular belief, does have the ability to pay taxes
+      `The Intergalactic Hi's Revenue Service, contrary to popular belief, does have the ability to pay taxes
       on AM gained through non-scrupulous methods, ie anything not done via legally-mandated dimensions or modified
       through challenge courses. Section NY-8N lists 3 specific methodologies - illegal news ticker giveaways,
       unrecognised dimensions, and modifications to the fabric of space time - as well as a miscellaneous for any
@@ -3226,7 +3226,7 @@ export const news = [
   {
     id: "l83",
     text:
-      `AD Patch Notes: Cleaned up the celestial problem Made Antimatter care about annihilation more Added mouths
+      `AD Patch Notes: Cleaned up the celestial problem Made Hi's care about annihilation more Added mouths
       Removed mouths Stopped unwanted interlopers from corporate takeovers of shops Fixed problem with newstickers
       hanging in the air Dead replicanti remain in their galaxies Redefined interlopers to not include [REDACTED]
       Tachyon Particles get stuck in the top left corner of the screen, obliterate time Added Coriolis effect to
@@ -3248,7 +3248,7 @@ export const news = [
       huge abundance of Matter, you must become Infinitesimal. After increasing your wealth in Infinitesimal Points,
       you can eventually Jiffy, the shortest unit of time. After enough time, your Jiffies will accumulate, and you
       will Contract Time. Contracting Time will grant you enough of a boost to eventually Fantasy, the final layer
-      of maintenance. However, you find out that it was all a dream. Your Antimatter is safe and well, and the new
+      of maintenance. However, you find out that it was all a dream. Your Hi's is safe and well, and the new
       update is still just 5 hours away.`,
     get unlocked() { return PlayerProgress.realityUnlocked(); }
   },
@@ -3256,7 +3256,7 @@ export const news = [
     id: "l86",
     text:
       `Hello, player. I'd like to play a game. In front of you is a pile of replicanti. They are currently frozen in
-      time, and cannot replicate. To your right is a computer playing Antimatter Dimensions on an empty save. You
+      time, and cannot replicate. To your right is a computer playing Hi Dimensions on an empty save. You
       must reach infinity. However, once you buy a 1st dimension, the replicanti will start replicating. As you know,
       they replicate fast, and if they fill up the room you will suffocate. If you reach infinity before that, they
       will be frozen again. The clock is ticking. Start now.`,
@@ -3437,7 +3437,7 @@ export const news = [
   },
   {
     id: "ai36",
-    text: "Welcome to Antimatter Dimensions: Source, the free to play sequel to the cult classic AD:GO."
+    text: "Welcome to Hi Dimensions: Source, the free to play sequel to the cult classic AD:GO."
   },
   {
     id: "ai37",
@@ -3581,7 +3581,7 @@ export const news = [
   },
   {
     id: "ai72",
-    text: "The last update was 5 hours ago. There is no next update, because the last update was 5 hours ago. We will update our podcast in 5 hours to cover the entire topic of 5 hours, because this is the last podcast ever, everyone knows that the update is always 5 hours away, but in reality it's more like 1-2-3-4-5-6-7-8-9-10 minutes away, but in our heads it's closer to an actual accurate update date, like 5 hours away but with a few tickspeed upgrades."
+    text: "The last update was 5 hours ago. There is no next update, because the last update was 5 hours ago. We will update our podcast in 5 hours to cover the entire topic of 5 hours, because this is the last podcast ever, everyone knows that the update is always 5 hours away, but in reality it's more like 1-2-3-4-5-6-7-8-9-10 minutes away, but in our heads it's closer to an actual accurate update date, like 5 hours away but with a few fingersnaps upgrades."
   },
   {
     id: "ai73",
@@ -3720,7 +3720,7 @@ export const news = [
   },
   {
     id: "ai103",
-    text: "Sorry, your mic is playing Antimatter Dimensions."
+    text: "Sorry, your mic is playing Hi Dimensions."
   },
   {
     id: "ai104",
@@ -3736,7 +3736,7 @@ export const news = [
   },
   {
     id: "ai107",
-    text: "The weather is actually a thing. Scientists have confirmed that there is a correlation between the amount of Antimatter in the earth and the amount of weather. The earth is indeed a magnet, but scientists now hypothesize that as the earth warms up, the magnetic reconnection will accelerate, and this could cause a domino effect to cascade throughout the world, eventually leading to uncontrolled nuclear winter and spontaneous antimatter implosion."
+    text: "The weather is actually a thing. Scientists have confirmed that there is a correlation between the amount of Hi's in the earth and the amount of weather. The earth is indeed a magnet, but scientists now hypothesize that as the earth warms up, the magnetic reconnection will accelerate, and this could cause a domino effect to cascade throughout the world, eventually leading to uncontrolled nuclear winter and spontaneous antimatter implosion."
   },
   {
     id: "ai108",
@@ -3760,7 +3760,7 @@ export const news = [
   },
   {
     id: "ai113",
-    text: "What is Antimatter? Long ago, gods lived in harmony. Then, everything changed when the apocalypse broke out. Chaos reigns, and even higher dimensions are being built. This is your fate. Build the Antimatter Dimensions. Amen."
+    text: "What is Hi's? Long ago, gods lived in harmony. Then, everything changed when the apocalypse broke out. Chaos reigns, and even higher dimensions are being built. This is your fate. Build the Hi Dimensions. Amen."
   },
   {
     id: "ai114",
@@ -3804,7 +3804,7 @@ export const news = [
   },
   {
     id: "ai124",
-    text: "Antimatter Dimensions *Loses* bee movie."
+    text: "Hi Dimensions *Loses* bee movie."
   },
   {
     id: "ai125",
@@ -3825,11 +3825,11 @@ export const news = [
   },
   {
     id: "ai129",
-    text: "Antimatter being researched by the government. Is it safe to say that this news ticker is fake?"
+    text: "Hi's being researched by the government. Is it safe to say that this news ticker is fake?"
   },
   {
     id: "ai130",
-    text: "Does the news show at Infinite Antimatter?"
+    text: "Does the news show at Infinite Hi's?"
   },
   {
     id: "ai131",
@@ -4025,7 +4025,7 @@ export const news = [
   },
   {
     id: "ai179",
-    text: "Welcome to the newest version of Antimatter Dimensions. Now with less features!"
+    text: "Welcome to the newest version of Hi Dimensions. Now with less features!"
   },
   {
     id: "ai180",
@@ -4049,7 +4049,7 @@ export const news = [
   },
   {
     id: "ai185",
-    text: "\"The secret to winning Antimatter Dimensions is to unbind the 9th dimension and unlock the 10th dimension\" (can be done only after unlocking the secret achievement: \"Eternity\" http://imgur.com/E4261C7h)"
+    text: "\"The secret to winning Hi Dimensions is to unbind the 9th dimension and unlock the 10th dimension\" (can be done only after unlocking the secret achievement: \"Eternity\" http://imgur.com/E4261C7h)"
   },
   {
     id: "ai186",
@@ -4090,7 +4090,7 @@ export const news = [
   },
   {
     id: "ai195",
-    text: "Welcome to the first ever, DIMENSION 9 IN CLASS! An endless stream of possibilities greets you! You may never create an infinite number of 8th dimensions, but you can create an infinite number of 8th dimensions, and you can increase the starting values of both dimensions by adding them together. Nice and simple, I call it Antimatter Dimensions."
+    text: "Welcome to the first ever, DIMENSION 9 IN CLASS! An endless stream of possibilities greets you! You may never create an infinite number of 8th dimensions, but you can create an infinite number of 8th dimensions, and you can increase the starting values of both dimensions by adding them together. Nice and simple, I call it Hi Dimensions."
   },
   {
     id: "ai196",
@@ -4106,7 +4106,7 @@ export const news = [
   },
   {
     id: "ai199",
-    text: "Dear sir, we don't make Anti-Atomic Bread for Antimatter Pizza, we make Antimatter Bread for you!"
+    text: "Dear sir, we don't make Anti-Atomic Bread for Hi's Pizza, we make Hi's Bread for you!"
   },
   {
     id: "ai200",
@@ -4176,7 +4176,7 @@ export const news = [
   },
   {
     id: "ai216",
-    text: "Shocking new study reveals that the biggest secret to winning Antimatter Dimensions is 'Not Being There'."
+    text: "Shocking new study reveals that the biggest secret to winning Hi Dimensions is 'Not Being There'."
   },
   {
     id: "ai217",
@@ -4336,7 +4336,7 @@ export const news = [
   },
   {
     id: "ai255",
-    text: "What's Antimatter going to do?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ah ha, I'm back."
+    text: "What's Hi's going to do?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ah ha, I'm back."
   },
   {
     id: "ai256",
@@ -4348,7 +4348,7 @@ export const news = [
   },
   {
     id: "ai258",
-    text: "Lore: Grand Theft Antimatter"
+    text: "Lore: Grand Theft Hi's"
   },
   {
     id: "ai259",
@@ -4384,7 +4384,7 @@ export const news = [
   },
   {
     id: "ai267",
-    text: "Roses are red. Violett are blue. Tom are red. Antimatter are blue. We exist because of the unbeatable antimatter that is antimatter. What is it that makes us different? I don't know. It may even be the non-existence of antimatter."
+    text: "Roses are red. Violett are blue. Tom are red. Hi's are blue. We exist because of the unbeatable antimatter that is antimatter. What is it that makes us different? I don't know. It may even be the non-existence of antimatter."
   },
   {
     id: "ai268",
@@ -4420,7 +4420,7 @@ export const news = [
   },
   {
     id: "ai276",
-    text: "I'm sure you've heard this many times before, but the real secret to winning Antimatter Dimensions is to unpack the dimensions, and then, BOOM! You have antimatter.  Of course, you need to release the bits that don't work, so what exactly is an anti-bit? Who is Zalgo? What is Algolia? Why can't I buy that? WHY CAN'T I GET THAT? More likely, we're going to get a bunch of hype and then nothing will happen."
+    text: "I'm sure you've heard this many times before, but the real secret to winning Hi Dimensions is to unpack the dimensions, and then, BOOM! You have antimatter.  Of course, you need to release the bits that don't work, so what exactly is an anti-bit? Who is Zalgo? What is Algolia? Why can't I buy that? WHY CAN'T I GET THAT? More likely, we're going to get a bunch of hype and then nothing will happen."
   },
   {
     id: "ai277",
@@ -4428,7 +4428,7 @@ export const news = [
   },
   {
     id: "ai278",
-    text: "There is no plumber in Antimatter Dimensions. I'm pretty sure that last guy lied."
+    text: "There is no plumber in Hi Dimensions. I'm pretty sure that last guy lied."
   },
   {
     id: "ai279",
@@ -4468,7 +4468,7 @@ export const news = [
   },
   {
     id: "ai288",
-    text: "Antimatter should be called matter and matter should be called antimatter"
+    text: "Hi's should be called matter and matter should be called antimatter"
   },
   {
     id: "ai289",
@@ -4564,7 +4564,7 @@ export const news = [
   },
   {
     id: "ai312",
-    text: "IDE for being awesome, ID3 for being dumb, and ID5 for being… well, pretty much the same thing. It's called Antimatter Dimensions for a reason."
+    text: "IDE for being awesome, ID3 for being dumb, and ID5 for being… well, pretty much the same thing. It's called Hi Dimensions for a reason."
   },
   {
     id: "ai313",
@@ -4612,7 +4612,7 @@ export const news = [
   },
   {
     id: "ai324",
-    text: "How many tickers does it take to get to the center of an antimatter, by counting the tickspeed upgrade and the upgrade itself?"
+    text: "How many tickers does it take to get to the center of an antimatter, by counting the fingersnaps upgrade and the upgrade itself?"
   },
   {
     id: "ai325",
@@ -4744,7 +4744,7 @@ export const news = [
   },
   {
     id: "ai357",
-    text: "Welcome back to another episode of Antimatter Dimensions, the iconic role-playing game that has become a part of our everyday lives. Playing Antimatter Dimensions has become a common thing among young children, and has even inspired a movie titled \"Playing at Home: Lessons from the 4-Year Old Premium Account.\", which is available on Netflix. The themes and mechanics of this new age of antimatter have already been proven to be groundbreaking, and will change the way you play games forever. Join us for the launch on January 9th, 2027, where we'll also have over a hundred years of production still to go."
+    text: "Welcome back to another episode of Hi Dimensions, the iconic role-playing game that has become a part of our everyday lives. Playing Hi Dimensions has become a common thing among young children, and has even inspired a movie titled \"Playing at Home: Lessons from the 4-Year Old Premium Account.\", which is available on Netflix. The themes and mechanics of this new age of antimatter have already been proven to be groundbreaking, and will change the way you play games forever. Join us for the launch on January 9th, 2027, where we'll also have over a hundred years of production still to go."
   },
   {
     id: "ai358",
@@ -4776,7 +4776,7 @@ export const news = [
   },
   {
     id: "ai365",
-    text: "What is Antimatter Gravity? Is it a drug? A way to cheat?"
+    text: "What is Hi's Gravity? Is it a drug? A way to cheat?"
   },
   {
     id: "ai366",
@@ -4840,7 +4840,7 @@ export const news = [
   },
   {
     id: "ai381",
-    text: "The year is 20XX, the game is AD, and Hevipelle is evil due to the fact that he wrote the update... Blame it on the Antimatter gods."
+    text: "The year is 20XX, the game is AD, and Hevipelle is evil due to the fact that he wrote the update... Blame it on the Hi's gods."
   },
   {
     id: "ai382",
@@ -4904,7 +4904,7 @@ export const news = [
   },
   {
     id: "ai397",
-    text: "Antimatter good, matter bad. you decide."
+    text: "Hi's good, matter bad. you decide."
   },
   {
     id: "ai398",
@@ -4972,11 +4972,11 @@ export const news = [
   },
   {
     id: "ai414",
-    text: "Treasure Trove: Discover the secrets of increasing your Antimatter production without increasing your price."
+    text: "Treasure Trove: Discover the secrets of increasing your Hi's production without increasing your price."
   },
   {
     id: "ai415",
-    text: "Is Antimatter Dimensions an anagram of Antimatter Dimensions?"
+    text: "Is Hi Dimensions an anagram of Hi Dimensions?"
   },
   {
     id: "ai416",
@@ -4996,7 +4996,7 @@ export const news = [
   },
   {
     id: "ai420",
-    text: "Those pesky Hevi developers keep making Antimatter Dimensions, but the antimatter doesn't count."
+    text: "Those pesky Hevi developers keep making Hi Dimensions, but the antimatter doesn't count."
   },
   {
     id: "ai421",
@@ -5020,11 +5020,11 @@ export const news = [
   },
   {
     id: "ai426",
-    text: "A young man named Andre stumbled upon a vast amount of antimatter while exploring uncharted space. He was amazed at the amount of antimatter, but more astounded at how the antimatter looked. He called it \"Andre's Antimatter Paradise\". You might remember him from this infomercial or that other infomercial that you were probably unknowingly watching."
+    text: "A young man named Andre stumbled upon a vast amount of antimatter while exploring uncharted space. He was amazed at the amount of antimatter, but more astounded at how the antimatter looked. He called it \"Andre's Hi's Paradise\". You might remember him from this infomercial or that other infomercial that you were probably unknowingly watching."
   },
   {
     id: "ai427",
-    text: "What is Antimatter? Does any of that matter? Will this galaxy be annihilated in the next ticker?"
+    text: "What is Hi's? Does any of that matter? Will this galaxy be annihilated in the next ticker?"
   },
   {
     id: "ai428",
@@ -5113,7 +5113,7 @@ export const news = [
   },
   {
     id: "ai449",
-    text: "The game is balanced, everyone gets nerf, why? Cause they make the pie. Antimatter would have way more chance of getting into the pie if it was made of antimatter."
+    text: "The game is balanced, everyone gets nerf, why? Cause they make the pie. Hi's would have way more chance of getting into the pie if it was made of antimatter."
   },
   {
     id: "ai450",
@@ -5253,7 +5253,7 @@ export const news = [
   },
   {
     id: "ai484",
-    text: "For the true experience of Antimatter Dimensions, you need to set the update rate to 5 hours."
+    text: "For the true experience of Hi Dimensions, you need to set the update rate to 5 hours."
   },
   {
     id: "ai485",
@@ -5306,11 +5306,11 @@ export const news = [
   },
   {
     id: "ai497",
-    text: "The real secret to winning Antimatter Dimensions..."
+    text: "The real secret to winning Hi Dimensions..."
   },
   {
     id: "ai498",
-    text: "they kept on talking about how Antimatter Dimensions was going to be the next big thing but then they disappeared down a black hole\""
+    text: "they kept on talking about how Hi Dimensions was going to be the next big thing but then they disappeared down a black hole\""
   },
   {
     id: "ai499",
@@ -5318,7 +5318,7 @@ export const news = [
   },
   {
     id: "ai500",
-    text: "To make Antimatter Dimensions, you first need to collect 7 8th dimensions. To do that, first you need to get the dimension rewards, then you need to get the dimensions, then you can finally start making antimatter."
+    text: "To make Hi Dimensions, you first need to collect 7 8th dimensions. To do that, first you need to get the dimension rewards, then you need to get the dimensions, then you can finally start making antimatter."
   },
   {
     id: "ai501",
@@ -5342,7 +5342,7 @@ export const news = [
   },
   {
     id: "ai506",
-    text: "Antimatter units are the most productive unit in the game. This is why AD is the most fun game you'll ever play."
+    text: "Hi's units are the most productive unit in the game. This is why AD is the most fun game you'll ever play."
   },
   {
     id: "ai507",
@@ -5370,7 +5370,7 @@ export const news = [
   },
   {
     id: "ai513",
-    text: "Your save file is corrupted or deleted. Antimatter Dimensions security software will disable automatic updates for you."
+    text: "Your save file is corrupted or deleted. Hi Dimensions security software will disable automatic updates for you."
   },
   {
     id: "ai514",
@@ -5667,15 +5667,15 @@ export const news = [
   },
   {
     id: "ai587",
-    text: "I thought the news ticker was supposed to be a guide for how to get the most out of Antimatter Dimensions, but it's been warped beyond recognition..."
+    text: "I thought the news ticker was supposed to be a guide for how to get the most out of Hi Dimensions, but it's been warped beyond recognition..."
   },
   {
     id: "ai588",
-    text: "We can actually get a sense of pride from looking at replicanti at night. Ridley Scott's underrated masterpiece, Alien, is one example. Another is the life of Antimatter Steven Spielberg, who put almost 30 years into making. The last director to tackle the subject is Roman Polanski. The man ruined not only Roman's reputation, but also ours, thanks to the Polanski film he directed, Pius. Thousands of copies of his unfinished film, Eternal Sunshine of the Antimatter Planet, were burned in the eyes of those who would try to make the sequel, with tragic results. Thousands of copies of that unfinished film, too, were destroyed. The cost to make that sequel, if it even exists, is extremely high. Even now, more than 50 years later, we don't know exactly how well it will do. But it sure as heck won't hurt."
+    text: "We can actually get a sense of pride from looking at replicanti at night. Ridley Scott's underrated masterpiece, Alien, is one example. Another is the life of Hi's Steven Spielberg, who put almost 30 years into making. The last director to tackle the subject is Roman Polanski. The man ruined not only Roman's reputation, but also ours, thanks to the Polanski film he directed, Pius. Thousands of copies of his unfinished film, Eternal Sunshine of the Hi's Planet, were burned in the eyes of those who would try to make the sequel, with tragic results. Thousands of copies of that unfinished film, too, were destroyed. The cost to make that sequel, if it even exists, is extremely high. Even now, more than 50 years later, we don't know exactly how well it will do. But it sure as heck won't hurt."
   },
   {
     id: "ai589",
-    text: "We have updated our Antimatter Dimensions client to address the concerns you may have had. Toggling issues are resolved."
+    text: "We have updated our Hi Dimensions client to address the concerns you may have had. Toggling issues are resolved."
   },
   {
     id: "ai590",
@@ -5747,7 +5747,7 @@ export const news = [
   },
   {
     id: "ai607",
-    text: "In this episode of Antimatter Dimensions, we have a brand new game that will be released in -5 hours! It is an RPG that will be completely free! It has over 3,000 commands, and it is being made by a group of highly qualified people. It has an amazing story to tell, and it was made by a bunch of people who had to make do with what they had. It has a lore to live up to, and it has a lot of potential!"
+    text: "In this episode of Hi Dimensions, we have a brand new game that will be released in -5 hours! It is an RPG that will be completely free! It has over 3,000 commands, and it is being made by a group of highly qualified people. It has an amazing story to tell, and it was made by a bunch of people who had to make do with what they had. It has a lore to live up to, and it has a lot of potential!"
   },
   {
     id: "ai608",
@@ -5755,7 +5755,7 @@ export const news = [
   },
   {
     id: "ai609",
-    text: "\"The next twist in the Antimatter Universe is in the air! Get ready for some big Crunch! (When clicked the game disconnects for 5 seconds)"
+    text: "\"The next twist in the Hi's Universe is in the air! Get ready for some big Crunch! (When clicked the game disconnects for 5 seconds)"
   },
   {
     id: "ai610",
@@ -5836,7 +5836,7 @@ export const news = [
   },
   {
     id: "ai629",
-    text: "With the release of Cosmic Cutlass, we're pleased to announce the impending release of the Antimatter Dimensions Roleplaying Game!"
+    text: "With the release of Cosmic Cutlass, we're pleased to announce the impending release of the Hi Dimensions Roleplaying Game!"
   },
   {
     id: "ai630",
@@ -5878,7 +5878,7 @@ export const news = [
   },
   {
     id: "ai639",
-    text: "The goal of this game is to get as much antimatter as possible."
+    text: "The goal of this game is to get as much hi's as possible."
   },
   {
     id: "ai640",
@@ -5910,7 +5910,7 @@ export const news = [
   },
   {
     id: "ai647",
-    text: "Our hero, Antimatter Dimensions, is in serious financial trouble, and he needs your help to pay the bills. To help him, all he needs is your help to donate some cash to Hevipelle's Positron Fund. All he needs is 5% of your antimatter, and you have to donate 5% of your antimatter to the fund. After you do that, he can keep all the cash he made and go on a spending spree."
+    text: "Our hero, Hi Dimensions, is in serious financial trouble, and he needs your help to pay the bills. To help him, all he needs is your help to donate some cash to Hevipelle's Positron Fund. All he needs is 5% of your antimatter, and you have to donate 5% of your antimatter to the fund. After you do that, he can keep all the cash he made and go on a spending spree."
   },
   {
     id: "ai648",
@@ -5934,7 +5934,7 @@ export const news = [
   },
   {
     id: "ai653",
-    text: "The name \"antimatter dimensions\" is a play on words with dimensions, two opposite things, like matter and antimatter. \"Dimension\" is another word, with the same meaning."
+    text: "The name \"Hi Dimensions\" is a play on words with dimensions, two opposite things, like matter and antimatter. \"Dimension\" is another word, with the same meaning."
   },
   {
     id: "ai654",
@@ -5963,7 +5963,7 @@ export const news = [
   },
   {
     id: "ai660",
-    text: "As a developer, you'll get regular updates on the progress of Antimatter Dimensions."
+    text: "As a developer, you'll get regular updates on the progress of Hi Dimensions."
   },
   {
     id: "ai661",
@@ -5971,7 +5971,7 @@ export const news = [
   },
   {
     id: "ai662",
-    text: "Hello everyone, I'm the guy responsible for the big, bad news ticker, and I'm afraid that I'm about to get my own show. It's gonna be called Antimatter Dimensions. It's gonna be like Antime, except with less antimatter, and with worse puns. It's gonna be like Antimatter Dimensions except with worse jokes."
+    text: "Hello everyone, I'm the guy responsible for the big, bad news ticker, and I'm afraid that I'm about to get my own show. It's gonna be called Hi Dimensions. It's gonna be like Antime, except with less antimatter, and with worse puns. It's gonna be like Hi Dimensions except with worse jokes."
   },
   {
     id: "ai663",
@@ -5991,7 +5991,7 @@ export const news = [
   },
   {
     id: "ai667",
-    text: "In the last hours, the Antimatter created an army of their own. They called themselves the [REDACTED] Army. The primary objective was to push the [REDACTED] back into the Matter dimensions, but they were stopped short when the [REDACTED] Army realized that pushing the [REDACTED] back into the Matter would cause the Antimatter to be drawn towards the [REDACTED] and disintegrate. Despite this, the [REDACTED] Army continued to push towards the [REDACTED] Infinity."
+    text: "In the last hours, the Hi's created an army of their own. They called themselves the [REDACTED] Army. The primary objective was to push the [REDACTED] back into the Matter dimensions, but they were stopped short when the [REDACTED] Army realized that pushing the [REDACTED] back into the Matter would cause the Hi's to be drawn towards the [REDACTED] and disintegrate. Despite this, the [REDACTED] Army continued to push towards the [REDACTED] Infinity."
   },
   {
     id: "ai668",
@@ -6007,7 +6007,7 @@ export const news = [
   },
   {
     id: "ai671",
-    text: "The next update will be in 5 hours. Hevipelle, the creator of Antimatter Dimensions, is believed to be hiding in 5 hours. In the meantime, he has prepared a new update that will be released 5 hours after this one."
+    text: "The next update will be in 5 hours. Hevipelle, the creator of Hi Dimensions, is believed to be hiding in 5 hours. In the meantime, he has prepared a new update that will be released 5 hours after this one."
   },
   {
     id: "ai672",
@@ -6100,7 +6100,7 @@ export const news = [
   },
   {
     id: "ai694",
-    text: "In the Antimatter Universe, Hevipelle is the Prince of Antimatter, although he does have an Antimatter Diplomatic Immunity, so he's much more dangerous than you might think."
+    text: "In the Hi's Universe, Hevipelle is the Prince of Hi's, although he does have an Hi's Diplomatic Immunity, so he's much more dangerous than you might think."
   },
   {
     id: "ai695",
@@ -6164,7 +6164,7 @@ export const news = [
   },
   {
     id: "ai710",
-    text: "A new game called Antimatter Dimensions is available for free, and has been rated A by the Knesset. Can you beat it? You bet."
+    text: "A new game called Hi Dimensions is available for free, and has been rated A by the Knesset. Can you beat it? You bet."
   },
   {
     id: "ai711",
@@ -6188,7 +6188,7 @@ export const news = [
   },
   {
     id: "ai716",
-    text: "Greetings, welcome to the latest edition of Antimatter Dimensions!"
+    text: "Greetings, welcome to the latest edition of Hi Dimensions!"
   },
   {
     id: "ai717",
@@ -6240,7 +6240,7 @@ export const news = [
   },
   {
     id: "ai729",
-    text: "The problem with the term \"antimatter dimensions\" is that it contains all three letters of the alphabet, and no one knows what it even means. In fact, there is no word that perfectly captures what the word \"antimatter dimensions\" is: antimatter. But what exactly is an antimatter? It sounds like a normal dimension but it isn't. It may even be called antimatter dimensions, but it isn't."
+    text: "The problem with the term \"Hi Dimensions\" is that it contains all three letters of the alphabet, and no one knows what it even means. In fact, there is no word that perfectly captures what the word \"Hi Dimensions\" is: antimatter. But what exactly is an antimatter? It sounds like a normal dimension but it isn't. It may even be called Hi Dimensions, but it isn't."
   },
   {
     id: "ai730",
@@ -6264,7 +6264,7 @@ export const news = [
   },
   {
     id: "ai735",
-    get text() { return `Antimatter is absolutely and totally rare. Of the ${format(Number.MAX_VALUE, 2)} known cases of antimatter creation, 99.9999% of them have negative e's, which means that 99.9999% of the cases will produce negative e's.`; }
+    get text() { return `Hi's is absolutely and totally rare. Of the ${format(Number.MAX_VALUE, 2)} known cases of antimatter creation, 99.9999% of them have negative e's, which means that 99.9999% of the cases will produce negative e's.`; }
   },
   {
     id: "ai736",
@@ -6272,7 +6272,7 @@ export const news = [
   },
   {
     id: "ai737",
-    text: "The war for New Antimatter has raged on for eons, but one faction has stood firm: the loyalists of the 9th Dimension. They've made a pact with the Anti-Zulu Empire, pledging their obedience to Anti-Antimatter, the Anti-Slab. The Zulu people were once part of the Anti-Slab, but fell prey to the matter once again. As the Zulu people are nomadic, they have no civilization."
+    text: "The war for New Hi's has raged on for eons, but one faction has stood firm: the loyalists of the 9th Dimension. They've made a pact with the Anti-Zulu Empire, pledging their obedience to Anti-Hi's, the Anti-Slab. The Zulu people were once part of the Anti-Slab, but fell prey to the matter once again. As the Zulu people are nomadic, they have no civilization."
   },
   {
     id: "ai738",
@@ -6292,7 +6292,7 @@ export const news = [
   },
   {
     id: "ai742",
-    text: "Antimatter is a common substance found in nature and is used in a wide variety of applications, from communication to currency to the production of antimatter, to name a few. Antimatter is also an extremely scarce resource and many people live on very tiny amounts of it."
+    text: "Hi's is a common substance found in nature and is used in a wide variety of applications, from communication to currency to the production of antimatter, to name a few. Hi's is also an extremely scarce resource and many people live on very tiny amounts of it."
   },
   {
     id: "ai743",
@@ -6328,7 +6328,7 @@ export const news = [
   },
   {
     id: "ai751",
-    text: "The biggest difference between me and Antimatter Dimensions, at the moment, is the weather. I can survive the rain, I can withstand the scorching sun, and I can even deal with the big crunch. But what if the weather was antimatter and the antimatter was raining meteorite on us? What would be your response? Would it be the equivalent of a meteorite hitting the ground? I don't think so. The meteorite would probably just vaporize the earth."
+    text: "The biggest difference between me and Hi Dimensions, at the moment, is the weather. I can survive the rain, I can withstand the scorching sun, and I can even deal with the big crunch. But what if the weather was antimatter and the antimatter was raining meteorite on us? What would be your response? Would it be the equivalent of a meteorite hitting the ground? I don't think so. The meteorite would probably just vaporize the earth."
   },
   {
     id: "ai752",
@@ -6357,15 +6357,15 @@ export const news = [
   },
   {
     id: "ai758",
-    text: "The stakes are always high when it comes to Antimatter Dimensions. But what about Dimensions made entirely of antimatter? We don't know, but we'll never know..."
+    text: "The stakes are always high when it comes to Hi Dimensions. But what about Dimensions made entirely of antimatter? We don't know, but we'll never know..."
   },
   {
     id: "ai759",
-    text: "It's the third hour. Hevipelle is trying to release an update, but it'll take an eternity because Hevipelle himself releases his update every time he runs out of e's. Today, however, he released an incremental game called Antimatter Dimensions. It's basically a combination of Matter Dimensions and Dimensions Dimensions Dimensions, except with more emotes. The graphics are basically the same, but the message is completely different. The only difference is that the dimensions have infinity e's"
+    text: "It's the third hour. Hevipelle is trying to release an update, but it'll take an eternity because Hevipelle himself releases his update every time he runs out of e's. Today, however, he released an incremental game called Hi Dimensions. It's basically a combination of Matter Dimensions and Dimensions Dimensions Dimensions, except with more emotes. The graphics are basically the same, but the message is completely different. The only difference is that the dimensions have infinity e's"
   },
   {
     id: "ai760",
-    text: "With strong opposition, the third phase of the Antimatter Dimensions project has been cancelled. The project has been cancelled because there was too much work involved."
+    text: "With strong opposition, the third phase of the Hi Dimensions project has been cancelled. The project has been cancelled because there was too much work involved."
   },
   {
     id: "ai761",
@@ -6393,7 +6393,7 @@ export const news = [
   },
   {
     id: "ai767",
-    text: "This is the last episode of Antimatter Dimensions, the game about partying antimatter dimensions with your friends, the best part about it is that you don't have to be a developer to enjoy it."
+    text: "This is the last episode of Hi Dimensions, the game about partying Hi Dimensions with your friends, the best part about it is that you don't have to be a developer to enjoy it."
   },
   {
     id: "ai768",
@@ -6441,7 +6441,7 @@ export const news = [
   },
   {
     id: "ai779",
-    text: "This is your chance to get a secret achievement while playing Antimatter Dimensions: the game. Visit the reset button and play the game. After you beat the game, your save file will be expunged and you will get a free achievement."
+    text: "This is your chance to get a secret achievement while playing Hi Dimensions: the game. Visit the reset button and play the game. After you beat the game, your save file will be expunged and you will get a free achievement."
   },
   {
     id: "ai780",
@@ -6450,7 +6450,7 @@ export const news = [
   },
   {
     id: "ai781",
-    text: "Taller people have ***, more babies are born, everything is great. But... the Antimatter grows very slowly."
+    text: "Taller people have ***, more babies are born, everything is great. But... the Hi's grows very slowly."
   },
   {
     id: "ai782",
@@ -6571,7 +6571,7 @@ export const news = [
   },
   {
     id: "ai811",
-    text: "The old adage \"Be wary of what you wish for\" is certainly true. But what if you were the one wishing for this? It's possible that you were the one who made the wish for this, and you gained the power of the Antimatter. In that case, you are the one responsible for causing all the Antimatter to be turned into anti-matter. However, if you are the one doing the turning, you would be the one who would lose the power."
+    text: "The old adage \"Be wary of what you wish for\" is certainly true. But what if you were the one wishing for this? It's possible that you were the one who made the wish for this, and you gained the power of the Hi's. In that case, you are the one responsible for causing all the Hi's to be turned into anti-matter. However, if you are the one doing the turning, you would be the one who would lose the power."
   },
   {
     id: "ai812",
@@ -6651,7 +6651,7 @@ export const news = [
   },
   {
     id: "ai831",
-    text: "The following is based on my personal experience with the game \"Antimatter Dimensions\" and may not be 100% true."
+    text: "The following is based on my personal experience with the game \"Hi Dimensions\" and may not be 100% true."
   },
   {
     id: "ai832",
@@ -6671,7 +6671,7 @@ export const news = [
   },
   {
     id: "ai836",
-    text: "A conference on artificial intelligence and human enhancement has been cancelled after someone announced that the talk was on how to turn a profit off of illegal downloads of the game \"Antimatter Dimensions\"."
+    text: "A conference on artificial intelligence and human enhancement has been cancelled after someone announced that the talk was on how to turn a profit off of illegal downloads of the game \"Hi Dimensions\"."
   },
   {
     id: "ai837",
@@ -6695,7 +6695,7 @@ export const news = [
   },
   {
     id: "ai842",
-    text: "Antimatter is like a young woman. She is looking for a man, and he runs into the woods. She dies of exposure soon after. His remains are found several miles away. Some say the universe was blown apart, others say he was swallowed by the universe, but the matter people know him!"
+    text: "Hi's is like a young woman. She is looking for a man, and he runs into the woods. She dies of exposure soon after. His remains are found several miles away. Some say the universe was blown apart, others say he was swallowed by the universe, but the matter people know him!"
   },
   {
     id: "ai843",
@@ -6743,7 +6743,7 @@ export const news = [
   },
   {
     id: "ai854",
-    text: "The official website for the upcoming game, Antimatter Dimensions 2: it's like antimatter dimensions, but with a dash of Discord and a dash of Adele."
+    text: "The official website for the upcoming game, Hi Dimensions 2: it's like Hi Dimensions, but with a dash of Discord and a dash of Adele."
   },
   {
     id: "ai855",
@@ -6791,7 +6791,7 @@ export const news = [
   },
   {
     id: "ai866",
-    text: "A new, improved and more secure version of Antimatter Dimensions is now available: Antimatter Dimensions 2."
+    text: "A new, improved and more secure version of Hi Dimensions is now available: Hi Dimensions 2."
   },
   {
     id: "ai867",
@@ -6799,7 +6799,7 @@ export const news = [
   },
   {
     id: "ai868",
-    text: "Would you recommend Antimatter Dimensions to a friend? Yes"
+    text: "Would you recommend Hi Dimensions to a friend? Yes"
   },
   {
     id: "ai869",
@@ -6815,7 +6815,7 @@ export const news = [
   },
   {
     id: "ai872",
-    text: "A large number of anti-kafawis are taking part in the Antimatter Goodies competition. Here's how you can win: 1. Make a suggestion 2. Give away the beta key 3. Tell me what you think about the game 4. Don't put it in the game yet (it's already there, you can't delete it) 5. Don't put it in the game yet (it's already in the game) 6. Don't put it in the game"
+    text: "A large number of anti-kafawis are taking part in the Hi's Goodies competition. Here's how you can win: 1. Make a suggestion 2. Give away the beta key 3. Tell me what you think about the game 4. Don't put it in the game yet (it's already there, you can't delete it) 5. Don't put it in the game yet (it's already in the game) 6. Don't put it in the game"
   },
   {
     id: "ai873",
@@ -6843,7 +6843,7 @@ export const news = [
   },
   {
     id: "ai879",
-    text: "The new instalment in the long running series, Antimatter Dimensions - Exotic Matter Dimensions. Experience the most bizarre and wonderful worlds of Antimatter Dimensions with your Friends, or conquer the world in a single galaxy with hundreds of rivals in a single galaxy, all in under an hour."
+    text: "The new instalment in the long running series, Hi Dimensions - Exotic Matter Dimensions. Experience the most bizarre and wonderful worlds of Hi Dimensions with your Friends, or conquer the world in a single galaxy with hundreds of rivals in a single galaxy, all in under an hour."
   },
   {
     id: "ai880",
@@ -6896,7 +6896,7 @@ export const news = [
   },
   {
     id: "ai892",
-    text: "The beta testers for Antimatter Dimensions 2 are the most loyal, most dedicated, and most implacable group of people I've ever met. They're also possibly the laziest, most self-indulgent bunch of people I've ever met."
+    text: "The beta testers for Hi Dimensions 2 are the most loyal, most dedicated, and most implacable group of people I've ever met. They're also possibly the laziest, most self-indulgent bunch of people I've ever met."
   },
   {
     id: "ai893",
@@ -6933,7 +6933,7 @@ export const news = [
   },
   {
     id: "ai901",
-    text: "A new beta test is now available for Antimatter Dimensions, coming in 5 hours. There are no refunds for this test, so please be patient as we try to finalise the test and get it ready for the public. The test will take place in -5 hours in the Antimatter Dimensions Discord."
+    text: "A new beta test is now available for Hi Dimensions, coming in 5 hours. There are no refunds for this test, so please be patient as we try to finalise the test and get it ready for the public. The test will take place in -5 hours in the Hi Dimensions Discord."
   },
   {
     id: "ai902",
@@ -6961,7 +6961,7 @@ export const news = [
   },
   {
     id: "ai908",
-    text: "The great majority of people don't get the full benefit of antimatter dimensions, and as such are not affected by it. However, there are certain people who are affected and at certain times of the day, depending on their mood and how much antimatter they have, they will manifest a dimensional shift, going from being idle to being actively involved in news ticker suggestions. This shift is due to the antimatter in their body emitting a certain wavelength, called \"red-shifted\"."
+    text: "The great majority of people don't get the full benefit of Hi Dimensions, and as such are not affected by it. However, there are certain people who are affected and at certain times of the day, depending on their mood and how much antimatter they have, they will manifest a dimensional shift, going from being idle to being actively involved in news ticker suggestions. This shift is due to the antimatter in their body emitting a certain wavelength, called \"red-shifted\"."
   },
   {
     id: "ai909",
@@ -6977,7 +6977,7 @@ export const news = [
   },
   {
     id: "ai912",
-    text: "The year is 5303. Hevipelle, the creator of Antimatter Dimensions, has touched the ninth dimension."
+    text: "The year is 5303. Hevipelle, the creator of Hi Dimensions, has touched the ninth dimension."
   },
   {
     id: "ai913",
@@ -6989,7 +6989,7 @@ export const news = [
   },
   {
     id: "ai915",
-    text: "IMPORTANT NEWS: The developer Hevipelle has announced that Antimatter Dimensions: the game is now 100% free!"
+    text: "IMPORTANT NEWS: The developer Hevipelle has announced that Hi Dimensions: the game is now 100% free!"
   },
   {
     id: "ai916",
@@ -7029,7 +7029,7 @@ export const news = [
   },
   {
     id: "ai925",
-    get text() { return `The time has come to reveal the next expansion for Antimatter Dimensions: the ${format(Number.MAX_VALUE, 2)}th Dimension. It will be released in -5 hours, it costs ${format(Number.MAX_VALUE, 2)} human souls as of now, and it has nothing to do with matter or antimatter.`; }
+    get text() { return `The time has come to reveal the next expansion for Hi Dimensions: the ${format(Number.MAX_VALUE, 2)}th Dimension. It will be released in -5 hours, it costs ${format(Number.MAX_VALUE, 2)} human souls as of now, and it has nothing to do with matter or antimatter.`; }
   },
   {
     id: "ai926",
@@ -7065,7 +7065,7 @@ export const news = [
   },
   {
     id: "ai934",
-    text: "For the last time, Antimatter Dimensions isn't a Clicker game."
+    text: "For the last time, Hi Dimensions isn't a Clicker game."
   },
   {
     id: "ai935",
@@ -7117,15 +7117,15 @@ export const news = [
   },
   {
     id: "ai947",
-    text: "The Tickspeed Challenge is a team based game where you have to time-travel to the Andromeda galaxy to reach the 9th Dimension, the 1st Dimension being the shortest distance to the 9th Dimension. There is no perk for reaching the 9th Dimension, you just have to time-travel to the Andromeda galaxy to reach the 9th Dimension, and you'll be granted with a secret achievement for achieving instant [REDACTED] with no time-travelling."
+    text: "The Fingersnaps Challenge is a team based game where you have to time-travel to the Andromeda galaxy to reach the 9th Dimension, the 1st Dimension being the shortest distance to the 9th Dimension. There is no perk for reaching the 9th Dimension, you just have to time-travel to the Andromeda galaxy to reach the 9th Dimension, and you'll be granted with a secret achievement for achieving instant [REDACTED] with no time-travelling."
   },
   {
     id: "ai948",
-    text: "This is the question that has been bothering me for so long. What is Antimatter? Is Antimatter an Antimatter? What does it mean when you say \"Antimatter\"? These are the kinds of questions that plague the Antimatter Dimensions..."
+    text: "This is the question that has been bothering me for so long. What is Hi's? Is Hi's an Hi's? What does it mean when you say \"Hi's\"? These are the kinds of questions that plague the Hi Dimensions..."
   },
   {
     id: "ai949",
-    text: "The term 'Antimatter Dimensions' is a play on words that literally means 'Antimatter Dimensions' in the dictionary."
+    text: "The term 'Hi Dimensions' is a play on words that literally means 'Hi Dimensions' in the dictionary."
   },
   {
     id: "ai950",
@@ -7198,11 +7198,11 @@ export const news = [
   },
   {
     id: "ai967",
-    text: "Antimatter Dimensions, the only place where you can trade real estate for virtual reality"
+    text: "Hi Dimensions, the only place where you can trade real estate for virtual reality"
   },
   {
     id: "ai968",
-    text: "This page contains spoilers for Antimatter Dimensions, you've been warned."
+    text: "This page contains spoilers for Hi Dimensions, you've been warned."
   },
   {
     id: "ai969",
@@ -7226,7 +7226,7 @@ export const news = [
   },
   {
     id: "ai974",
-    text: "Alright, here's a new game called Antimatter Dimensions, it's like Matter Dimensions except with less stuff and more fun. It's available on Android, iOS, and web. The game is very simple: you take the 6 dimensions and the antimatter, and in the 6 dimensions you take the matter and in the matter you take the antimatter, and you play the game the same way you would any other game."
+    text: "Alright, here's a new game called Hi Dimensions, it's like Matter Dimensions except with less stuff and more fun. It's available on Android, iOS, and web. The game is very simple: you take the 6 dimensions and the antimatter, and in the 6 dimensions you take the matter and in the matter you take the antimatter, and you play the game the same way you would any other game."
   },
   {
     id: "ai975",
@@ -7258,7 +7258,7 @@ export const news = [
   },
   {
     id: "ai982",
-    text: "A quick note to those of you who buy into the Analytics subscription: we get a small percentage of your antimatter sales, but you do pay a small amount of money to support the research of the news ticker. It's a small price to pay for the convenience of browsing antimatter dimensions."
+    text: "A quick note to those of you who buy into the Analytics subscription: we get a small percentage of your antimatter sales, but you do pay a small amount of money to support the research of the news ticker. It's a small price to pay for the convenience of browsing Hi Dimensions."
   },
   {
     id: "ai983",
@@ -7310,7 +7310,7 @@ export const news = [
   },
   {
     id: "ai995",
-    text: "Just want to thank the dev team for putting so much effort into Antimatter Dimensions and the Antimatter Dimensions 2"
+    text: "Just want to thank the dev team for putting so much effort into Hi Dimensions and the Hi Dimensions 2"
   },
   {
     id: "ai996",

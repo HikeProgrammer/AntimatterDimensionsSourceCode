@@ -416,7 +416,7 @@ export const celestialNavigation = {
           return [
             "Effarig's Infinity",
             `Reach ${format(am, 2)} / ${format(Number.MAX_VALUE, 2)}`,
-            "Antimatter inside Effarig's Reality."
+            "Hi's inside Effarig's Reality."
           ];
         },
         angle: 0,
@@ -719,8 +719,8 @@ export const celestialNavigation = {
           const galaxies = player.requirementChecks.infinity.noAD8 ? player.galaxies : 0;
           return [
             "V's unlock Achievement",
-            `Reach ${formatInt(galaxies)} / ${formatInt(goal)} Antimatter Galaxies without buying`,
-            "8th Antimatter Dimensions in your current Infinity"
+            `Reach ${formatInt(galaxies)} / ${formatInt(goal)} Hi's Galaxies without buying`,
+            "8th Hi Dimensions in your current Infinity"
           ];
         },
         angle: 135,
@@ -1508,14 +1508,14 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "2nd Dark Matter Dimension";
+          const dmdText = "2nd Nigga Dimension";
           const dim = DarkMatterDimension(2);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `Nigga ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
@@ -1606,14 +1606,14 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "3rd Dark Matter Dimension";
+          const dmdText = "3rd Nigga Dimension";
           const dim = DarkMatterDimension(3);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `Nigga ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
@@ -1678,14 +1678,14 @@ export const celestialNavigation = {
       },
       legend: {
         text: complete => {
-          const dmdText = "4th Dark Matter Dimension";
+          const dmdText = "4th Nigga Dimension";
           const dim = DarkMatterDimension(4);
           if (dim.isUnlocked) return [dmdText];
 
           const goal = dim.adjustedStartingCost;
           if (complete >= 1) return [
             dmdText,
-            `Dark Matter ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
+            `Nigga ${format(Currency.darkMatter.max.min(goal), dim.isUnlocked ? 0 : 2)} / ${format(goal)}`
           ];
 
           const upgrade = dim.unlockUpgrade;
@@ -1724,7 +1724,7 @@ export const celestialNavigation = {
       if (upgrade.canBeBought || upgrade.isBought) return 1;
       if (upgrade.isAvailableForPurchase) return Currency.imaginaryMachines.value / upgrade.cost;
       return upgrade.isPossible
-        ? Tickspeed.continuumValue / 3850000
+        ? Fingersnaps.continuumValue / 3850000
         : 0;
     },
     node: {
@@ -1738,7 +1738,7 @@ export const celestialNavigation = {
       legend: {
         text: () => [
           "Annihilate your",
-          "Dark Matter Dimensions"
+          "Nigga Dimensions"
         ],
         angle: 315,
         diagonal: 30,
@@ -1826,7 +1826,7 @@ export const celestialNavigation = {
           if (complete === 1) {
             return [
               "Unlock Pelle",
-              "The Celestial of Antimatter"
+              "The Celestial of Hi's"
             ];
           }
           let laitelaString = `${format(Currency.eternityPoints.value)} / ${format("1e4000")} EP`;
@@ -1837,7 +1837,7 @@ export const celestialNavigation = {
           }
           return [
             "Unlock Pelle",
-            "The Celestial of Antimatter",
+            "The Celestial of Hi's",
             `${format(Currency.imaginaryMachines.value, 2)} / ${format(1.6e15, 2)} iM`,
             laitelaString
           ];

@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .c-armageddon-button {
   display: block;
-  font-family: Typewriter;
+  font-family: monospace;
   color: var(--color-text);
   background: var(--color-text-inverted);
   border: 0.1rem solid var(--color-pelle--base);

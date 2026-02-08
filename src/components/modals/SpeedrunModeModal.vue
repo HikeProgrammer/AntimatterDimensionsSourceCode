@@ -53,7 +53,7 @@ export default {
       <br>
       Almost all animations and confirmations are disabled by default, but you can change any of these settings before
       you reach their required progression. When you begin the run, the game remains paused until
-      your antimatter changes, allowing you to configure all your settings before starting. In order to avoid having
+      your hi's changes, allowing you to configure all your settings before starting. In order to avoid having
       to wait for a long time before actually starting an optimized run, a few achievements are given for free.
       <br>
       <br>

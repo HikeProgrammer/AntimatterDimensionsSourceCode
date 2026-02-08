@@ -57,7 +57,7 @@ export function startDilatedEternity(auto) {
 const DIL_UPG_NAMES = [
   null, "dtGain", "galaxyThreshold", "tachyonGain", "doubleGalaxies", "tdMultReplicanti",
   "ndMultDT", "ipMultDT", "timeStudySplit", "dilationPenalty", "ttGenerator",
-  "dtGainPelle", "galaxyMultiplier", "tickspeedPower", "galaxyThresholdPelle", "flatDilationMult"
+  "dtGainPelle", "galaxyMultiplier", "fingersnapsPower", "galaxyThresholdPelle", "flatDilationMult"
 ];
 
 export function buyDilationUpgrade(id, bulk = 1) {

@@ -16,7 +16,7 @@ export function startEternityChallenge() {
   player.records.bestInfinity.bestIPminEternity = DC.D0;
   player.records.thisEternity.bestEPmin = DC.D0;
   resetTimeDimensions();
-  resetTickspeed();
+  resetFingersnaps();
   player.records.thisInfinity.maxAM = DC.D0;
   player.records.thisEternity.maxAM = DC.D0;
   Currency.antimatter.reset();
@@ -175,7 +175,7 @@ export class EternityChallengeState extends GameMechanicState {
       GameCache.dimensionMultDecrease.invalidate();
     }
     if (this.id === 11) {
-      GameCache.tickSpeedMultDecrease.invalidate();
+      GameCache.fingerSnapsMultDecrease.invalidate();
     }
   }
 

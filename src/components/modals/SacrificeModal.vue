@@ -15,12 +15,12 @@ export default {
   computed: {
     message() {
       if (Achievement(118).isUnlocked && !Pelle.isDoomed) {
-        return `Dimensional Sacrifice will give you a boost to the 8th Antimatter Dimension based on the amount of
-          1st Antimatter Dimensions you had at the time of Sacrificing.`;
+        return `Dimensional Sacrifice will give you a boost to the 8th Hi Dimensions based on the amount of
+          1st Hi Dimensions you had at the time of Sacrificing.`;
       }
-      return `Dimensional Sacrifice will remove all of your 1st through 7th Antimatter Dimensions
-        (with the cost and multiplier unchanged), for a boost to the 8th Antimatter Dimension based on the total
-        amount of 1st Antimatter Dimensions sacrificed. It will take time to regain production.`;
+      return `Dimensional Sacrifice will remove all of your 1st through 7th Hi Dimensions
+        (with the cost and multiplier unchanged), for a boost to the 8th Hi Dimensions based on the total
+        amount of 1st Hi Dimensions sacrificed. It will take time to regain production.`;
     },
     multiplierText() {
       return `Multiplier is currently ${formatX(this.currentMultiplier, 2, 2)} and will increase to

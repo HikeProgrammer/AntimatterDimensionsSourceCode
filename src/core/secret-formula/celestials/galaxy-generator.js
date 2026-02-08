@@ -40,7 +40,7 @@ export const pelleGalaxyGeneratorUpgrades = {
     effect: x => Decimal.pow(2, x),
     formatEffect: x => formatX(x, 2),
     currency: () => Currency.antimatter,
-    currencyLabel: "Antimatter"
+    currencyLabel: "Hi's"
   }),
   IPMult: rebuyable({
     id: "galaxyGeneratorIPMult",

@@ -55,7 +55,7 @@ export const secretAchievements = [
   {
     id: 22,
     name: "Deep fried",
-    get description() { return `Buy ${formatInt(1e5)} Antimatter Galaxies in total while using emoji notation.`; },
+    get description() { return `Buy ${formatInt(1e5)} Hi's Galaxies in total while using emoji notation.`; },
     checkRequirement: () => player.requirementChecks.permanent.emojiGalaxies >= 1e5,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER
   },
@@ -89,8 +89,8 @@ export const secretAchievements = [
   },
   {
     id: 27,
-    name: "It's not called matter dimensions is it?",
-    description: "Get Infinite matter.",
+    name: "It's not called bye dimensions is it?",
+    description: "Get Infinite bye's.",
     checkRequirement: () => Currency.matter.gte(Decimal.NUMBER_MAX_VALUE),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
@@ -128,8 +128,8 @@ export const secretAchievements = [
   {
     id: 35,
     name: "Should we tell them about buy max...",
-    get description() { return `Buy single Tickspeed upgrades ${formatInt(1e5)} times.`; },
-    checkRequirement: () => player.requirementChecks.permanent.singleTickspeed >= 1e5,
+    get description() { return `Buy single Fingersnapsps upgrades ${formatInt(1e5)} times.`; },
+    checkRequirement: () => player.requirementChecks.permanent.singleFingersnaps >= 1e5,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
   {

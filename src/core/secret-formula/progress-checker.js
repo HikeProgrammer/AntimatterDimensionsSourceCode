@@ -22,9 +22,9 @@ export const progressStages = [
    */
   {
     id: PROGRESS_STAGE.PRE_INFINITY,
-    name: "Antimatter Production",
+    name: "Hi's Production",
     hasReached: () => true,
-    suggestedResource: "Antimatter",
+    suggestedResource: "Hi's",
     // Galaxies are worth 1/3 each, boosts break ties within galaxies, and antimatter breaks ties within boosts
     subProgressValue: save => 0.33 * save.galaxies + 0.02 * save.dimensionBoosts +
       new Decimal(save.antimatter).log10() / 16000,
@@ -149,7 +149,7 @@ export const progressStages = [
     id: PROGRESS_STAGE.LAITELA,
     name: "Lai'tela (6th Celestial)",
     hasReached: save => save.celestials?.laitela?.quoteBits > 0,
-    suggestedResource: "Dark Matter and Singularities",
+    suggestedResource: "Niggas and Singularities",
     subProgressValue: save => new Decimal(save.celestials.laitela.darkMatter).log10() / 308.25,
   },
   {

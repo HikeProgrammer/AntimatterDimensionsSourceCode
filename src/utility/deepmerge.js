@@ -1,4 +1,4 @@
-// Deepmerge library modified for Antimatter Dimensions usage (mainly Decimal integration)
+// Deepmerge library modified for Hi Dimensions usage (mainly Decimal integration)
 // Source: https://github.com/TehShrike/deepmerge
 
 function emptyTarget(val) {

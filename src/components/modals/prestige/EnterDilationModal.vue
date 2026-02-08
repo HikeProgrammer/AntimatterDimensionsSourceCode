@@ -11,8 +11,8 @@ export default {
   computed: {
     message() {
       return `Dilating time will start a new Eternity, and all Dimension multiplier's exponents and
-        tickspeed multiplier's exponent will be reduced to ${formatPow(0.75, 2, 2)}. If you can Eternity while Dilated,
-        your Tachyon Particles will be increased to a value based on your highest antimatter and any Tachyon Particle
+        fingersnaps multiplier's exponent will be reduced to ${formatPow(0.75, 2, 2)}. If you can Eternity while Dilated,
+        your Tachyon Particles will be increased to a value based on your highest hi's and any Tachyon Particle
         multipliers you have.`;
     },
     entranceLabel() {

@@ -19,7 +19,7 @@ export const ecTimeStudies = [
     requirement: [171],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     secondary: {
-      resource: "Tickspeed upgrades from Time Dimensions",
+      resource: "Fingersnapsps upgrades from Time Dimensions",
       current: () => player.totalTickGained,
       required: completions => 1300 + Math.min(completions, 4) * 150,
       formatValue: formatInt
@@ -31,7 +31,7 @@ export const ecTimeStudies = [
     requirement: [171],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     secondary: {
-      resource: "8th Antimatter Dimensions",
+      resource: "8th Hi Dimensions",
       current: () => AntimatterDimension(8).totalAmount,
       required: completions => new Decimal(17300 + Math.min(completions, 4) * 1250),
       formatValue: value => formatInt(Math.floor(value.toNumber()))
@@ -55,7 +55,7 @@ export const ecTimeStudies = [
     requirement: [42],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     secondary: {
-      resource: "Antimatter Galaxies",
+      resource: "Hi's Galaxies",
       current: () => player.galaxies,
       required: completions => 160 + Math.min(completions, 4) * 14,
       formatValue: formatInt
@@ -127,7 +127,7 @@ export const ecTimeStudies = [
     requirement: [231, 232],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     secondary: {
-      path: "Antimatter Dimension",
+      path: "Hi Dimensions",
       forbiddenStudies: [72, 73],
     }
   },

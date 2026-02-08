@@ -46,7 +46,7 @@ Congratulations for the release of Android Reality Update! In order to celebrate
 some changes mainly based on the player comments and feedback from the Android version.
 <br>
 <br>
-<b><i>Once again, thank you so much for playing Antimatter Dimensions!</i></b>
+<b><i>Once again, thank you so much for playing Hi Dimensions!</i></b>
 <br>
 <br>
 <b>Major things:</b><br>
@@ -124,7 +124,7 @@ probably not have their own changelog entries.
 <br>
 <br>
 <b><i>At this point, the official version of the game is largely considered to be complete.
-Thank you so much for playing Antimatter Dimensions!</i></b>
+Thank you so much for playing Hi Dimensions!</i></b>
 <br>
 <br>
 <b>New things:</b><br>
@@ -498,7 +498,7 @@ finishing the game</li>
 <li>Fixed autobuyers being unmodifiable in early cel7</li>
 <li>Fixed ECB using current IP instead of max IP</li>
 <li>Cleared New! notifications upon loading different saves</li>
-<li>Fixed IC5 erroneously applying C9 effect to tickspeed cost</li>
+<li>Fixed IC5 erroneously applying C9 effect to fingersnaps cost</li>
 </ul>
 <br>
 
@@ -529,10 +529,10 @@ finishing the game</li>
 <b>Various Miscellaneous Changes:</b><br>
 <ul>
 <li>Fixed NC6 not actually spending lower dimensions when purchasing upgrades</li>
-<li>Changed matter scale text ("If every antimatter were...") to only change once per second</li>
+<li>Changed bye scale text ("If every hi were...") to only change once per second</li>
 <li>Fixed some text overflow issues in IC3 and reality upgrades</li>
 <li>Reworded reality reminder text</li>
-<li>Fixed Alt-T hotkey not working before completing tickspeed challenge</li>
+<li>Fixed Alt-T hotkey not working before completing fingersnaps challenge</li>
 <li>Fixed glyph tooltips not appearing in a certain secret theme</li>
 <li>Made clicking challenge header switch to the tab of the innermost challenge</li>
 <li>Changed EU1 perk to apply to all forms of eternity gain, not just manual ones</li>
@@ -620,7 +620,7 @@ Wording and Layout Changes:
 <li>Changed "Dimension Shift" to "Dimension Boost".</li>
 <li>Changed "Infinitied stat" to "Infinities".</li>
 <li>Changed "free galaxy" to "Tachyon Galaxy".</li>
-<li>Tickspeed now displays as a X/sec rate instead of a very small fraction X/Y tick time.</li>
+<li>Fingersnaps now displays as a X/sec rate instead of a very small fraction X/Y tick time.</li>
 <li>Changed various texts for better clarity.</li>
 <li>Moved Autobuyers subtab to a new Automation tab and added additional controls for other Autobuyers to the tab,
   such as Infinity Dimension and Replicanti autobuyers.</li>
@@ -637,7 +637,7 @@ Wording and Layout Changes:
 <li>Added colors to the Crunch/Eternity buttons when you have more than e50 of IP/EP; the color shows if you gain less
   (red), around same (white), or more (green) IP/EP than you currently have.</li>
 <li>Moved study 33 to right side.</li>
-<li>Changed "Normal Dimensions" to "Antimatter Dimensions".</li>
+<li>Changed "Normal Dimensions" to "Hi Dimensions".</li>
 <li>Changed "Challenges" to "Normal Challenges".</li>
 <li>Fixed some tpyos.</li>
 </ul>
@@ -645,14 +645,14 @@ Wording and Layout Changes:
 
 New Upgrades and Improved Technical Behavior:
 <ul>
-<li>Autobuyers are now unlockable before Infinity with antimatter, but can only be upgraded after completing their
+<li>Autobuyers are now unlockable before Infinity with hi's, but can only be upgraded after completing their
   respective Challenges.</li>
 <li>Added a new Infinity upgrade for 1e3 IP that gives you 50% of your best IP/min without using Max All,
   while offline.</li>
 <li>Added a new Eternity milestone that gives you 25% of your best EP/min while offline.</li>
 <li>Added another 2 new milestones that give you Infinities and Eternities while offline.</li>
 <li>The "Infinity Point generation based on fastest Infinity" upgrade now takes all IP multipliers into account.</li>
-<li>Tickspeed calculation is now dynamic, updating immediately instead of requiring an upgrade to be purchased.</li>
+<li>Fingersnaps calculation is now dynamic, updating immediately instead of requiring an upgrade to be purchased.</li>
 <li>You can buy multiple RG at once if you have enough replicanti; you are no longer limited to one per game tick.</li>
 <li>Improved Time Dimension Max all behavior.</li>
 <li>Normal and Infinity Challenges now give rewards after Big Crunch.</li>
@@ -663,7 +663,7 @@ New Upgrades and Improved Technical Behavior:
 Balance Changes:
 <ul>
 <li>NC10, 11, and 12 now unlock after 16 Infinities</li>
-<li>Each Achievement grants an additional 1.03x multiplier to Antimatter Dimensions.</li>
+<li>Each Achievement grants an additional 1.03x multiplier to Hi Dimensions.</li>
 <li>The Big Crunch Autobuyer's initial interval has been halved, requiring only half as much IP to max out, and
   other autobuyers have drastically lowered initial intervals.</li>
 <li>The 500 IP Infinity upgrade now costs 300 IP.</li>
@@ -708,7 +708,7 @@ Balance Changes:
 <li>Changed position of "How the antitables have turned" (from 77 to 43).</li>
 <li>Swapped achievements 101 and 117.</li>
 <li>Swapped achievements 113 and 124.</li>
-<li>Lowered initial costs of post-break cost scaling upgrades (Tickspeed cost from 3e6 to 1e6,
+<li>Lowered initial costs of post-break cost scaling upgrades (Fingersnaps cost from 3e6 to 1e6,
   Dimension cost from 1e8 to 1e7).</li>
 <li>NC7 was reworked to not have RNG.</li>
 </ul>
@@ -735,7 +735,7 @@ Bugfixes:
 <li>Fixed a bug where inverted themes were broken.</li>
 <li>Fixed a bug where resetting the game unlocks a secret achievement.</li>
 <li>Fixed a bug where ECs are showing wrong goals after their 5th completion.</li>
-<li>Fixed a bug where non-antimatter galaxies weren't applying for tickspeed if your total galaxy count was less
+<li>Fixed a bug where non-antimatter galaxies weren't applying for fingersnaps if your total galaxy count was less
   than 3.</li>
 <li>Fixed a bug where you could produce more than infinite antimatter for 1 tick even if you had a fixed Infinity or
   were in a challenge.</li>
@@ -756,7 +756,7 @@ Bugfixes:
 <li>Fixed a bug where the Achievement unlock notification for unlocking "4.3333 minutes of Infinity" said
   "Minute of Infinity".</li>
 <li>Fixed a bug where you could still Sacrifice after reaching Infinity.</li>
-<li>Fixed a bug where your free tickspeed upgrade count would display as a negative number shortly after purchasing your
+<li>Fixed a bug where your free fingersnaps upgrade count would display as a negative number shortly after purchasing your
   first Time Dimension.</li>
 <li>Fixed a bug where you were unable to purchase Dimensions if you had exactly their cost and their cost was below
   Infinity.</li>
@@ -840,7 +840,7 @@ toggles.</li>
 <li>Fixed a bug where the auto RG toggle would jiggle left and right 1 pixel in certain cases.</li>
 <li>Fixed a bug where the rate of change on the 7th dimension wouldn't take into account ID1 while in EC7.</li>
 <li>Fixed a bug where EC12 displayed 0.1 seconds after 5 completions, but actually required 0.0 seconds.</li>
-<li>Fixed a bug where tickspeed elements wouldn't hide correctly in certain cases.</li>
+<li>Fixed a bug where fingersnaps elements wouldn't hide correctly in certain cases.</li>
 <li>Fixed a bug where bought eternity challenge unlock studies would show as gray in the dark theme rather than a deep
 purple.</li>
 <li>Fixed a bug where dimensions 5-8 would hide upon eternity even with the 30 eternity milestone.</li>
@@ -932,7 +932,7 @@ the number of studies you have."</li>
 <li>Traction has been slightly increased to reduce unwanted drifts.</li>
 <li>Fixed a bug that in rare cases would cause the offline progress popup to say you gained "NaNeInfinity" time shards
 or infinity power.</li>
-<li>Fixed a bug where the tickspeed visual display wouldn't update upon any form of reset.</li>
+<li>Fixed a bug where the fingersnaps visual display wouldn't update upon any form of reset.</li>
 <li>Bugged a fix where eternity was dumb.</li>
 <li>CS now makes notes go faster in mania.</li>
 <li>Fixed a bug where replicanti were hidden but still unlocked if you eternitied for the 50th time
@@ -1004,7 +1004,7 @@ dimension boosts breaking infinity upgrade.</li>
 <li>Added buy max buttons to Time Dimensions and Time Theorems.</li>
 <li>Added a hotkey for replicanti galaxies. (R)</li><br>
 <li>Nitty gritty:</li>
-<li>Greatly improved the performance of calculating bonus tickspeed from time dimensions.</li>
+<li>Greatly improved the performance of calculating bonus fingersnaps from time dimensions.</li>
 <li>Replaced all references to soft resets with references to dimension boosts.</li>
 <li>Made achievements update on import/hardreset.</li>
 <li>Made the game take into account your infinity points gained on crunch for the purposes of
@@ -1025,7 +1025,7 @@ from "Max dimboost interval:". (To achieve parity with the autobuy max galaxies 
 <li>Made the eternity autobuyer number multiply by 5 when you buy the eternity point multiplier.</li>
 <li>Increased the requirement for "Is This Hell?". (5 > 6.66 seconds)</li>
 <li>Reduced the starting replicanti interval upgrade cost. (1e160 > 1e140)</li>
-<li>Galaxies are labeled "Distant Antimatter Galaxies" when the cost scaling starts. (At 100 galaxies)</li>
+<li>Galaxies are labeled "Distant Hi's Galaxies" when the cost scaling starts. (At 100 galaxies)</li>
 <li>Dimensions no longer produce anything after reaching challenge goal, or after reaching infinity with fixed infinity.
 This is due to the c6 being abusable.</li>
 <li>Made the 7 and 25 eternity milestones work much faster.</li>
@@ -1034,7 +1034,7 @@ This is due to the c6 being abusable.</li>
 and 7 respectively.</li>
 <li>Added a visual display of how many galaxies/dim boosts you have next to the cost.</li>
 <li>Added an explanation of hotkeys to the options page.</li>
-<li>Made shift+1-8 purchase singular dimensions and shift+T purchase a singular tickspeed upgrade.</li>
+<li>Made shift+1-8 purchase singular dimensions and shift+T purchase a singular fingersnaps upgrade.</li>
 <li>Reworked the display of the buy time theorem buttons.</li>
 <li>The milestones page now has 2 columns.</li>
 <li>Extended support for standard notation to e3e18, and letter/cancer notation (almost) infinitely.</li>
@@ -1120,7 +1120,7 @@ if you eternitied while changing it.</li>
 <li>Infinity Challenges- additional challenges to do going from Inf Dim 2 to current end game and beyond.</li>
 <li>Main Screen UI updates- IP points are now visible everywhere.</li>
 <li>Hotkeys- C for Big Crunch, M for Max All, S for Dimensional Sacrifice, D for Dimension Shift/Boost,
-G for Antimatter Galaxy, Numbers 1-8 for Buy 10 (D1-8), A for Toggle Autobuyers.</li>
+G for Hi's Galaxy, Numbers 1-8 for Buy 10 (D1-8), A for Toggle Autobuyers.</li>
 <li>Bug Fixes- At least 2, including a percentage buff.</li>
 </ul>`
   },
@@ -1153,7 +1153,7 @@ increase infinity point gains.</li>
 instantly buying once they are able to.</li>
 <li>Automatic DimBoosts, Galaxies, and Big Crunches now have an input box.</li>
 <li>Unique achievement rewards for multiple achievements.</li>
-<li>Zero galaxies now gives 11% tickspeed.</li>
+<li>Zero galaxies now gives 11% fingersnaps.</li>
 <li>Galaxies past two give diminishing returns, Faster than a Potato made easier to compensate.</li>
 <li>Game now updates 20 times a second with increased performance, max autobuyer speed is not impacted.</li>
 <li>Autobuyer settings are now saved in between sessions.</li>

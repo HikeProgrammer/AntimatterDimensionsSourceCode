@@ -105,7 +105,7 @@ export const v = {
     {
       id: 3,
       name: "Young Boy",
-      description: value => `Get ${format(Decimal.pow10(value))} Antimatter in Eternity Challenge 12 without
+      description: value => `Get ${format(Decimal.pow10(value))} Hi's in Eternity Challenge 12 without
         unlocking Time Dilation.`,
       values: [400e6, 450e6, 500e6, 600e6, 700e6, 800e6],
       condition: () => V.isRunning && EternityChallenge(12).isRunning && !PlayerProgress.dilationUnlocked(),
@@ -207,7 +207,7 @@ export const v = {
     },
     adPow: {
       id: 2,
-      reward: "Antimatter Dimension power based on total Space Theorems.",
+      reward: "Hi Dimensions power based on total Space Theorems.",
       description: () => `Have ${formatInt(5)} V-Achievements`,
       effect: () => 1 + Math.sqrt(V.spaceTheorems) / 100,
       format: x => formatPow(x, 3, 3),

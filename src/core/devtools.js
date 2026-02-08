@@ -224,17 +224,17 @@ dev.buyAllPerks = function() {
 
 // This should help for balancing different glyph types, strong rounding of values is intentional
 dev.printResourceTotals = function() {
-  console.log(`Antimatter: e${Currency.antimatter.exponent.toPrecision(3)}`);
+  console.log(`Hi's: e${Currency.antimatter.exponent.toPrecision(3)}`);
   console.log(`RM: e${Math.round(MachineHandler.gainedRealityMachines.log10())}`);
   console.log(`Glyph level: ${100 * Math.floor(gainedGlyphLevel().actualLevel / 100 + 0.5)}`);
 
-  console.log(`Tickspeed: e${-Tickspeed.current.exponent.toPrecision(3)}`);
+  console.log(`Fingersnaps: e${-Fingersnaps.current.exponent.toPrecision(3)}`);
   console.log(`Gamespeed: ${Math.pow(getGameSpeedupFactor(), 1.2).toPrecision(1)}`);
   const aGalaxy = 100 * Math.floor(player.galaxies / 100 + 0.5);
   const rGalaxy = 100 * Math.floor(Replicanti.galaxies.total / 100 + 0.5);
   const dGalaxy = 100 * Math.floor(player.dilation.totalTachyonGalaxies / 100 + 0.5);
   console.log(`Galaxies: ${aGalaxy}+${rGalaxy}+${dGalaxy} (${aGalaxy + rGalaxy + dGalaxy})`);
-  console.log(`Tick reduction: e${-Math.round(getTickSpeedMultiplier().log10())}`);
+  console.log(`Tick reduction: e${-Math.round(getFingerSnapsMultiplier().log10())}`);
 
   let ADmults = DC.D1;
   for (let i = 1; i <= 8; i++) {
@@ -251,7 +251,7 @@ dev.printResourceTotals = function() {
     TDmults = TDmults.times(TimeDimension(i).multiplier);
   }
   console.log(`TD mults: e${TDmults.log10().toPrecision(3)}`);
-  console.log(`Tickspeed from TD: ${formatWithCommas(1000 * Math.floor(player.totalTickGained / 1000 + 0.5))}`);
+  console.log(`Fingersnaps from TD: ${formatWithCommas(1000 * Math.floor(player.totalTickGained / 1000 + 0.5))}`);
 
   console.log(`Infinities: e${Math.round(player.infinities.log10())}`);
   console.log(`Eternities: e${Math.round(player.eternities.log10())}`);

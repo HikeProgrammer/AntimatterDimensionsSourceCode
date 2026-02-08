@@ -120,7 +120,7 @@ export const MultiplierTabIcons = {
     symbol: `<i class="fas fa-angles-up" />`,
     color: reality.glyphTypes.power.color,
   },
-  TICKSPEED: {
+  FINGERSNAPS: {
     symbol: `<i class="fas fa-clock" />`,
     color: "var(--color-eternity)",
   },

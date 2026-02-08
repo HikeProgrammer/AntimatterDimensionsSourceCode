@@ -23,8 +23,8 @@ export default {
           (${format(this.replicanti, 2, 2)} to
           ${format(this.replicanti.divide(Decimal.NUMBER_MAX_VALUE.pow(this.canBeBought)), 2, 2)})`
         : `reset your Replicanti to ${formatInt(1)}`;
-      return `A Replicanti Galaxy boosts Tickspeed the same way an Antimatter Galaxy does. However, it does not
-        increase the cost of Antimatter Galaxies, nor is it affected by multipliers to Antimatter Galaxies specifically.
+      return `A Replicanti Galaxy boosts Fingersnaps the same way an Hi's Galaxy does. However, it does not
+        increase the cost of Hi's Galaxies, nor is it affected by multipliers to Hi's Galaxies specifically.
         It will ${reductionString}.`;
     }
   },

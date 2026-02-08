@@ -7,7 +7,7 @@ export const laitelaQuotes = {
       "The secrets hidden beneath existence itself.",
       "The shape of dimensional perfection, Continuum.",
       "And the powers that bind the Multiverse,",
-      "Dark Matter and Dark Energy.",
+      "Nigga and Dark Energy.",
       "My knowledge is endless and my wisdom divine.",
       "So you can play around all you want.",
       "For I am Lai'tela, the Celestial of Dimensions,",
@@ -60,7 +60,7 @@ export const laitelaQuotes = {
   thirdDMD: {
     id: 5,
     lines: [
-      "Your absolute control of Antimatter...",
+      "Your absolute control of Hi's...",
       "Your mastery of it, molding it into your own Power...",
       "It could not have been an accident.",
       "How did you manage to obtain it?",

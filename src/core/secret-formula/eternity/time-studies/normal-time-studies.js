@@ -38,11 +38,11 @@ export const normalTimeStudies = [
     // All requirements of an empty array will always evaluate to true, so this study is always purchasable
     requirement: [],
     reqType: TS_REQUIREMENT_TYPE.ALL,
-    description: "Tickspeed affects 1st Time Dimension with reduced effect",
+    description: "Fingersnaps affects 1st Time Dimension with reduced effect",
     effect: () => {
-      const tickspeed = Tickspeed.current.dividedBy(1000);
-      const firstPart = tickspeed.pow(0.005).times(0.95);
-      const secondPart = tickspeed.pow(0.0003).times(0.05);
+      const fingersnaps = Fingersnaps.current.dividedBy(1000);
+      const firstPart = fingersnaps.pow(0.005).times(0.95);
+      const secondPart = fingersnaps.pow(0.0003).times(0.05);
       return firstPart.plus(secondPart).reciprocate();
     },
     cap: DC.E2500,
@@ -111,7 +111,7 @@ export const normalTimeStudies = [
     cost: 6,
     requirement: [32],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: () => `Antimatter Galaxy requirement increases by ${formatInt(52)}
+    description: () => `Hi's Galaxy requirement increases by ${formatInt(52)}
       8th Dimensions instead of ${formatInt(60)}`,
     effect: 52
   },
@@ -144,7 +144,7 @@ export const normalTimeStudies = [
     cost: 4,
     requirement: [61, () => Perk.studyECRequirement.isBought || !EternityChallenge(12).isUnlocked],
     reqType: TS_REQUIREMENT_TYPE.DIMENSION_PATH,
-    description: "Dimensional Sacrifice affects all other Antimatter Dimensions with reduced effect",
+    description: "Dimensional Sacrifice affects all other Hi Dimensions with reduced effect",
     effect: () => Sacrifice.totalBoost.pow(0.25).clampMin(1),
     cap: DC.E210000,
     formatEffect: value => formatX(value, 2, 1)
@@ -204,7 +204,7 @@ export const normalTimeStudies = [
     cost: 4,
     requirement: [81],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: "Antimatter Dimension multiplier based on time spent in this Eternity",
+    description: "Hi Dimensions multiplier based on time spent in this Eternity",
     effect: () => Decimal.pow10(Math.min(Time.thisEternity.totalMinutes, 20) * 15),
     cap: DC.E300,
     formatEffect: value => formatX(value, 2, 1)
@@ -233,7 +233,7 @@ export const normalTimeStudies = [
     cost: 4,
     requirement: [91],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: "Antimatter Dimension multiplier equal to Replicanti amount",
+    description: "Hi Dimensions multiplier equal to Replicanti amount",
     effect: () => Decimal.max(Replicanti.amount, 1),
     formatEffect: value => formatX(value, 2, 1)
   },
@@ -402,7 +402,7 @@ export const normalTimeStudies = [
     cost: 7,
     requirement: [151],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: () => `${formatX(DC.E616)} multiplier on all Antimatter Dimensions`,
+    description: () => `${formatX(DC.E616)} multiplier on all Hi Dimensions`,
     effect: () => DC.E616
   },
   {
@@ -418,7 +418,7 @@ export const normalTimeStudies = [
     cost: 15,
     requirement: [161, 162],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: () => `Time Shard requirement for the next Tickspeed upgrade goes up slower
+    description: () => `Time Shard requirement for the next Fingersnaps upgrade goes up slower
       ${formatX(1.33, 0, 2)} ➜ ${formatX(1.25, 0, 2)}`,
     effect: () => TS171_MULTIPLIER
   },
@@ -457,7 +457,7 @@ export const normalTimeStudies = [
     cost: 300,
     requirement: [181, () => EternityChallenge(10).completions > 0],
     reqType: TS_REQUIREMENT_TYPE.ALL,
-    description: "Antimatter Dimension multiplier based on Eternities",
+    description: "Hi Dimensions multiplier based on Eternities",
     effect: () => (DC.E13000.pow(Currency.eternities.value.div(1e6).clampMax(1))),
     cap: DC.E13000,
     formatEffect: value => formatX(value, 2, 1)
@@ -500,7 +500,7 @@ export const normalTimeStudies = [
     cost: 120,
     requirement: [193],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
-    description: "Dimensional Sacrifice boosts the 8th Antimatter Dimension even more",
+    description: "Dimensional Sacrifice boosts the 8th Hi Dimensions even more",
     effect: () => {
       const totalBoost = Sacrifice.totalBoost;
       const firstPart = totalBoost.pow(7.6).clampMaxExponent(44000);
@@ -618,7 +618,7 @@ export const normalTimeStudies = [
     requirement: [223, 224],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     requiresST: [231],
-    description: "All Galaxies are stronger based on Antimatter Galaxies",
+    description: "All Galaxies are stronger based on Hi's Galaxies",
     effect: () => Math.pow(1 + player.galaxies / 1000, 0.2),
     formatEffect: value => `+${formatPercents(value - 1, 3)}`
   },
@@ -640,7 +640,7 @@ export const normalTimeStudies = [
     requirement: [227, 228],
     reqType: TS_REQUIREMENT_TYPE.AT_LEAST_ONE,
     requiresST: [233],
-    description: "Dimensional Sacrifice applies to 1st Antimatter Dimension",
+    description: "Dimensional Sacrifice applies to 1st Hi Dimensions",
     effect: () => Sacrifice.totalBoost,
   },
   // Note: These last 4 entries are the triad studies
@@ -663,7 +663,7 @@ export const normalTimeStudies = [
     requirement: [() => Ra.unlocks.unlockHardV.effectOrDefault(0) >= 2, 223, 224, 232],
     reqType: TS_REQUIREMENT_TYPE.ALL,
     requiresST: [223, 224, 232],
-    description: () => `Distant Galaxy scaling threshold starts another ${formatInt(3000)} Antimatter Galaxies later`,
+    description: () => `Distant Galaxy scaling threshold starts another ${formatInt(3000)} Hi's Galaxies later`,
     effect: 3000,
     unlocked: () => Ra.unlocks.unlockHardV.effectOrDefault(0) >= 2
   },

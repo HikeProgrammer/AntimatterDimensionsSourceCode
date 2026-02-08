@@ -2,16 +2,22 @@ export class DimensionState {
   constructor(getData, tier) {
     this._tier = tier;
     this._getData = getData;
-    const DISPLAY_NAMES = [null, "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"];
+    const DISPLAY_NAMES = [null, "Coffee", "Coffee Machine", "Brewers",
+      "Nas's", "Roasteries", "Chains", "Corporations", "Nations"];
     this._displayName = DISPLAY_NAMES[tier];
-    const SHORT_DISPLAY_NAMES = [null, "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"];
+    const SNAPPY_SHORT_DISPLAY_NAMES = [null, "Cofs", "Machis", "Brews", "Nas", "Roasties", "Chains",
+      "Corps", "Nats"];
+    const SHORT_DISPLAY_NAMES = [null, "1st", "2nd", "3rd", "4th", "5th", "6th",
+      "7th", "8th"];
     this._shortDisplayName = SHORT_DISPLAY_NAMES[tier];
+    this._snappyShortDisplayName = SNAPPY_SHORT_DISPLAY_NAMES[tier];
   }
 
   get tier() { return this._tier; }
 
   get displayName() { return this._displayName; }
   get shortDisplayName() { return this._shortDisplayName; }
+  get snappyShortDisplayName() { return this._shortDisplayName; }
 
   get data() { return this._getData()[this.tier - 1]; }
 

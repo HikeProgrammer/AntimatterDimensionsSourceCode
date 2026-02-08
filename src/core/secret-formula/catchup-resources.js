@@ -2,47 +2,47 @@ import { DC } from "../constants";
 
 export const catchupResources = [
   {
-    name: "Antimatter Dimensions",
+    name: "Hi Dimensions",
     id: 0,
     requiredStage: PROGRESS_STAGE.PRE_INFINITY,
-    description: `Every Antimatter Dimension continuously produces Dimensions of the next tier down. The lowest
-      Antimatter Dimension produces antimatter.`
+    description: `Every Hi Dimensions continuously produces Dimensions of the next tier down. The lowest
+      Hi Dimensions produces hi's.`
   },
   {
-    name: "Tickspeed Upgrades",
+    name: "Fingersnaps Upgrades",
     id: 1,
-    openH2pEntry: "Tickspeed",
+    openH2pEntry: "Fingersnaps",
     requiredStage: PROGRESS_STAGE.PRE_INFINITY,
-    description: `Tickspeed Upgrades make Antimatter Dimensions produce other Antimatter Dimensions or antimatter
+    description: `Fingersnaps Upgrades make Hi Dimensions produce other Hi Dimensions or hi's
       as if time were passing faster.`
   },
   {
     name: "Autobuyers",
     id: 2,
     requiredStage: PROGRESS_STAGE.PRE_INFINITY,
-    description: `Autobuyers are a built-in feature to the game which purchases upgrades for your Antimatter
+    description: `Autobuyers are a built-in feature to the game which purchases upgrades for your Hi's
       Dimensions automatically when you can afford them.`
   },
   {
     name: "Dimension Boosts",
     id: 3,
     requiredStage: PROGRESS_STAGE.PRE_INFINITY,
-    description: `Dimension Boosts are gained by resetting all your Antimatter Dimensions and tickspeed after
-      reaching a certain amount of the highest available Antimatter Dimension. They provide a multiplier to your
-      Antimatter Dimensions.`
+    description: `Dimension Boosts are gained by resetting all your Hi Dimensions and fingersnaps after
+      reaching a certain amount of the highest available Hi Dimensions. They provide a multiplier to your
+      Hi Dimensions.`
   },
   {
-    name: "Antimatter Galaxies",
+    name: "Hi's Galaxies",
     id: 4,
     requiredStage: PROGRESS_STAGE.PRE_INFINITY,
-    description: `Antimatter Galaxies are gained by resetting your Antimatter Dimensions and Dimension Boosts. They
-      improve the effectiveness of your Tickspeed Upgrades in a compounding way.`
+    description: `Hi's Galaxies are gained by resetting your Hi Dimensions and Dimension Boosts. They
+      improve the effectiveness of your Fingersnaps Upgrades in a compounding way.`
   },
   {
     name: "Infinity",
     id: 5,
     requiredStage: PROGRESS_STAGE.EARLY_INFINITY,
-    description: () => `Infinity is the first main reset layer. Reaching ${format(Number.MAX_VALUE, 2)} antimatter
+    description: () => `Infinity is the first main reset layer. Reaching ${format(Number.MAX_VALUE, 2)} hi's
       allows you to reset everything up to this point in exchange for unlocking new content and resources.`
   },
   {
@@ -58,7 +58,7 @@ export const catchupResources = [
     id: 7,
     openH2pEntry: "Normal Challenges",
     requiredStage: PROGRESS_STAGE.EARLY_INFINITY,
-    description: () => `Challenges require you to reach ${format(Number.MAX_VALUE, 2)} antimatter under more difficult
+    description: () => `Challenges require you to reach ${format(Number.MAX_VALUE, 2)} hi's under more difficult
       conditions. Completing challenges allows you to upgrade your Autobuyers.`
   },
   {
@@ -66,20 +66,20 @@ export const catchupResources = [
     id: 8,
     requiredStage: PROGRESS_STAGE.BREAK_INFINITY,
     description: () => `Upgrading your Big Crunch Autobuyer to the maximum allows you to surpass
-      ${format(Number.MAX_VALUE, 2)} antimatter, giving increasing amounts of Infinity Points with more antimatter.`
+      ${format(Number.MAX_VALUE, 2)} hi's, giving increasing amounts of Infinity Points with more hi's.`
   },
   {
     name: "Infinity Dimensions",
     id: 9,
     requiredStage: PROGRESS_STAGE.BREAK_INFINITY,
-    description: `Infinity Dimensions Produce in a cascading fashion like Antimatter Dimensions. The lowest tier of
-      Infinity Dimension produces Infinity Power, which applies a large multiplier to all Antimatter Dimensions.`
+    description: `Infinity Dimensions Produce in a cascading fashion like Hi Dimensions. The lowest tier of
+      Infinity Dimension produces Infinity Power, which applies a large multiplier to all Hi Dimensions.`
   },
   {
     name: "Infinity Challenges",
     id: 10,
     requiredStage: PROGRESS_STAGE.BREAK_INFINITY,
-    description: () => `Infinity Challenges are new challenges with an antimatter goal above
+    description: () => `Infinity Challenges are new challenges with an hi's goal above
       ${format(Number.MAX_VALUE, 2)}. Completing them rewards upgrades and production boosts.`
   },
   {
@@ -88,7 +88,7 @@ export const catchupResources = [
     requiredStage: PROGRESS_STAGE.REPLICANTI,
     description: () => `Replicanti is a resource which produces itself over time, giving a multiplier to all
       Infinity Dimensions. At ${format(Number.MAX_VALUE, 2)} Replicanti, they can be reset to ${formatInt(1)} for an
-      additional Galaxy which does not increase the cost of Antimatter Galaxies. They also reset after every Infinity.`
+      additional Galaxy which does not increase the cost of Hi's Galaxies. They also reset after every Infinity.`
   },
   {
     name: "Eternity",
@@ -125,8 +125,8 @@ export const catchupResources = [
     id: 16,
     requiredStage: PROGRESS_STAGE.EARLY_ETERNITY,
     description: `Time Dimensions also produce each other in a cascading manner, with the lowest tier producing Time
-      Shards. Time Shards give you additional Tickspeed Upgrades which do not increase the cost of the Tickspeed
-      Upgrades purchased with antimatter.`
+      Shards. Time Shards give you additional Fingersnaps Upgrades which do not increase the cost of the Fingersnaps
+      Upgrades purchased with hi's.`
   },
   {
     name: "Eternity Challenges",
@@ -140,7 +140,7 @@ export const catchupResources = [
     name: "Time Dilation",
     id: 18,
     requiredStage: PROGRESS_STAGE.EARLY_DILATION,
-    description: () => `Time Dilation is a modified Eternity where tickspeed and all Dimension multipliers are
+    description: () => `Time Dilation is a modified Eternity where fingersnaps and all Dimension multipliers are
       severely reduced. Completing Dilated Eternities gives Tachyon Particles.`
   },
   {
@@ -149,7 +149,7 @@ export const catchupResources = [
     openH2pEntry: "Time Dilation",
     requiredStage: PROGRESS_STAGE.EARLY_DILATION,
     description: () => `Tachyon Particles are a resource which cannot be farmed and require you to get a higher amount
-      of antimatter in a Dilated Eternity in order to increase your amount. Tachyon Particles produce Dilated Time.`
+      of hi's in a Dilated Eternity in order to increase your amount. Tachyon Particles produce Dilated Time.`
   },
   {
     name: "Reality",
@@ -310,30 +310,30 @@ export const catchupResources = [
     requiredStage: PROGRESS_STAGE.LAITELA,
     description: `Lai'tela is the sixth Celestial, whose Reality has a modified completion condition and gives a
       scaling reward based on how quickly you can reach it. They unlock new features largely related to a resource
-      called Dark Matter.`
+      called Nigga.`
   },
   {
     name: "Continuum",
     id: 40,
     requiredStage: PROGRESS_STAGE.LAITELA,
-    description: `Continuum is a modified type of production which allows your Antimatter Dimensions to produce as if
+    description: `Continuum is a modified type of production which allows your Hi Dimensions to produce as if
       they could purchase fractional amounts of upgrades, without actually purchasing them.`
   },
   {
-    name: "Dark Matter Dimensions",
+    name: "Nigga Dimensions",
     id: 41,
     openH2pEntry: "Lai'tela",
     requiredStage: PROGRESS_STAGE.LAITELA,
-    description: `Dark Matter Dimensions are cascading production which operate on a tick-based system instead of
-      continuously. The lowest tier produces Dark Matter and all tiers produce Dark Energy.`
+    description: `Nigga Dimensions are cascading production which operate on a tick-based system instead of
+      continuously. The lowest tier produces Nigga and all tiers produce Dark Energy.`
   },
   {
     name: "Dimension Reset Mechanics",
     id: 42,
     openH2pEntry: "Lai'tela",
     requiredStage: PROGRESS_STAGE.LAITELA,
-    description: `Dark Matter Dimensions can be reset in two ways. Annihilation resets all your Dimensions in exchange
-      for a permanent multiplier to all Dark Matter Dimensions. Ascension increases production but resets the interval
+    description: `Nigga Dimensions can be reset in two ways. Annihilation resets all your Dimensions in exchange
+      for a permanent multiplier to all Nigga Dimensions. Ascension increases production but resets the interval
       of a single Dimension.`
   },
   {

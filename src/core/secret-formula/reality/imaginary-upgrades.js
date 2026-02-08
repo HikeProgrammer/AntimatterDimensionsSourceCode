@@ -107,7 +107,7 @@ export const imaginaryUpgrades = [
     hasFailed: () => false,
     checkRequirement: () => player.celestials.effarig.relicShards >= 1e90,
     checkEvent: GAME_EVENT.REALITY_RESET_AFTER,
-    description: "Time Dimension power based on total antimatter",
+    description: "Time Dimension power based on total hi's",
     effect: () => 1 + Math.log10(player.records.totalAntimatter.log10()) / 100,
     formatEffect: value => `${formatPow(value, 0, 4)}`,
     isDisabledInDoomed: true
@@ -148,9 +148,9 @@ export const imaginaryUpgrades = [
     id: 14,
     cost: 3.5e8,
     formatCost: x => format(x, 1),
-    requirement: () => `Reach a tickspeed of ${format("1e75000000000")} / sec within Eternity Challenge 5`,
+    requirement: () => `Reach a fingersnaps of ${format("1e75000000000")} / sec within Eternity Challenge 5`,
     hasFailed: () => false,
-    checkRequirement: () => EternityChallenge(5).isRunning && Tickspeed.perSecond.exponent >= 7.5e10,
+    checkRequirement: () => EternityChallenge(5).isRunning && Fingersnaps.perSecond.exponent >= 7.5e10,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     description: () => `Raise all Dimension per-purchase multipliers to ${formatPow(1.5, 0, 1)}`,
     effect: 1.5,
@@ -160,7 +160,7 @@ export const imaginaryUpgrades = [
     name: "Fabrication of Ideals",
     id: 15,
     cost: 1e9,
-    requirement: () => `Reach ${format("1e1500000000000")} antimatter without
+    requirement: () => `Reach ${format("1e1500000000000")} hi's without
       ever having any 1st Infinity Dimensions`,
     hasFailed: () => player.requirementChecks.reality.maxID1.gt(0),
     checkRequirement: () => player.requirementChecks.reality.maxID1.eq(0) && player.antimatter.exponent >= 1.5e12,
@@ -172,7 +172,7 @@ export const imaginaryUpgrades = [
     // - Purchasing any TD with any amount of EC7 completions (edge case: acceptable within EC1 or EC10)
     // - Entering EC7 with any amount of purchased TD
     description: () => `${
-      Pelle.isDoomed ? "Unlock" : "Convert Antimatter Dimensions to Continuum and unlock"
+      Pelle.isDoomed ? "Unlock" : "Convert Hi Dimensions to Continuum and unlock"
     } Lai'tela, Celestial of Dimensions`,
   },
   {
@@ -184,7 +184,7 @@ export const imaginaryUpgrades = [
     hasFailed: () => false,
     checkRequirement: () => Laitela.maxAllowedDimension <= 6,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    description: "Unlock the 2nd Dark Matter Dimension",
+    description: "Unlock the 2nd Nigga Dimension",
   },
   {
     name: "Chiral Oscillation",
@@ -195,7 +195,7 @@ export const imaginaryUpgrades = [
     checkRequirement: () => Singularity.singularitiesGained >= 20 &&
       Currency.darkEnergy.gte(Singularity.cap * SingularityMilestone.autoCondense.effectOrDefault(Infinity)),
     checkEvent: GAME_EVENT.SINGULARITY_RESET_BEFORE,
-    description: "Unlock the 3rd Dark Matter Dimension",
+    description: "Unlock the 3rd Nigga Dimension",
   },
   {
     name: "Dimensional Symmetry",
@@ -207,22 +207,22 @@ export const imaginaryUpgrades = [
     checkRequirement: () => Replicanti.galaxies.total + player.galaxies +
       player.dilation.totalTachyonGalaxies >= 80000,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    description: "Unlock the 4th Dark Matter Dimension",
+    description: "Unlock the 4th Nigga Dimension",
   },
   {
     name: "Deterministic Radiation",
     id: 19,
     cost: 2.8e10,
     formatCost: x => format(x, 1),
-    requirement: () => `Reach ${formatInt(3.85e6)} Tickspeed Continuum without ever having more than
+    requirement: () => `Reach ${formatInt(3.85e6)} Fingersnaps Continuum without ever having more than
       ${formatInt(8)} Time Studies in this Reality`,
     hasFailed: () => player.requirementChecks.reality.maxStudies > 8,
     checkRequirement: () => player.requirementChecks.reality.maxStudies <= 8 &&
-      Tickspeed.continuumValue >= 3.85e6,
+      Fingersnaps.continuumValue >= 3.85e6,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     canLock: true,
     lockEvent: () => `purchase more than ${formatInt(8)} Time Studies`,
-    description: "Unlock Dark Matter Annihilation"
+    description: "Unlock Nigga Annihilation"
   },
   {
     name: "Vacuum Acceleration",
@@ -241,7 +241,7 @@ export const imaginaryUpgrades = [
     name: "Existential Elimination",
     id: 21,
     cost: 1e13,
-    requirement: () => `Reach ${format("1e7400000000000")} antimatter with Continuum disabled for the entire Reality`,
+    requirement: () => `Reach ${format("1e7400000000000")} hi's with Continuum disabled for the entire Reality`,
     hasFailed: () => !player.requirementChecks.reality.noContinuum,
     checkRequirement: () => player.requirementChecks.reality.noContinuum &&
       Currency.antimatter.value.log10() >= 7.4e12,
@@ -258,7 +258,7 @@ export const imaginaryUpgrades = [
     id: 22,
     cost: 1.5e14,
     formatCost: x => format(x, 1),
-    requirement: () => `Reach ${format("1e150000000000")} antimatter in Effarig's Reality with
+    requirement: () => `Reach ${format("1e150000000000")} hi's in Effarig's Reality with
       at least ${formatInt(4)} Cursed Glyphs equipped`,
     // Note: 4 cursed glyphs is -12 glyph count, but equipping a positive glyph in the last slot is allowed
     hasFailed: () => !Effarig.isRunning || player.requirementChecks.reality.maxGlyphs > -10,
@@ -291,7 +291,7 @@ export const imaginaryUpgrades = [
     // We unfortunately don't have the UI space to be more descriptive on this button without causing text overflow,
     // so hopefully the additional modals (from the upgrade lock) will mostly communicate the idea that this is under
     // the same conditions as hard V's Post-destination
-    requirement: () => `Have ${formatInt(13000)} Antimatter Galaxies in Ra's Reality
+    requirement: () => `Have ${formatInt(13000)} Hi's Galaxies in Ra's Reality
       with a fully inverted Black Hole`,
     hasFailed: () => !Ra.isRunning || player.requirementChecks.reality.slowestBH > 1e-300,
     checkRequirement: () => Ra.isRunning && player.requirementChecks.reality.slowestBH <= 1e-300 &&
@@ -318,6 +318,6 @@ export const imaginaryUpgrades = [
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     canLock: true,
     lockEvent: "equip another non-Companion Glyph",
-    description: "Unlock Pelle, Celestial of Antimatter",
+    description: "Unlock Pelle, Celestial of Hi's",
   },
 ];

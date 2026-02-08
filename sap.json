@@ -1,0 +1,13 @@
+{
+  "name": "Hi dimensions",
+  "id": "hidimensions",
+  "main": "./server.js",
+  "suggestionImage": "https://miro.medium.com/v2/format:webp/0*afdK3Xdjk24ZnEQV.gif",
+  "version": "0.1.0",
+  "description": "Simple test application",
+  "icon": "https://miro.medium.com/v2/format:webp/0*afdK3Xdjk24ZnEQV.gif",
+  "type": ["SummerApp"],
+  "customProtocols": [],
+  "tags": ["offline", "game"],
+  "quickkeys": ["nas"]
+}

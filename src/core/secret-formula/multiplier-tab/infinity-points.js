@@ -29,7 +29,7 @@ export const IP = {
     icon: MultiplierTabIcons.CONVERT_FROM("AM"),
   },
   antimatter: {
-    name: "Infinity Points from Antimatter",
+    name: "Infinity Points from Hi's",
     displayOverride: () => `${format(player.records.thisInfinity.maxAM, 2, 2)} AM`,
     // Just needs to match the value in base and be larger than 1
     multValue: DC.D5,

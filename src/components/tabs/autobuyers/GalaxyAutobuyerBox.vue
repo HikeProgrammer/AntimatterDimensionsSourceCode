@@ -50,7 +50,7 @@ export default {
   <AutobuyerBox
     :autobuyer="autobuyer"
     :is-modal="isModal"
-    name="Automatic Antimatter Galaxies"
+    name="Automatic Hi's Galaxies"
     :show-interval="!isBuyMaxUnlocked"
   >
     <template
@@ -81,7 +81,7 @@ export default {
           type="checkbox"
           class="o-clickable"
         >
-        Limit Antimatter Galaxies to:
+        Limit Hi's Galaxies to:
       </label>
       <AutobuyerInput
         :autobuyer="autobuyer"

@@ -86,7 +86,7 @@ export const automator = {
                 The exported Time Study tree format is supported here, which is simply a list of Time Study IDs
                 separated by commas. This command also supports a more flexible formatting, additionally allowing
                 ranges of studies (for example, <u>11-62</u>) and the following aliases:<br>
-                <blockquote><b>antimatter, infinity, time, active, passive, idle, light, dark</b></blockquote>
+                <blockquote><b>hi's, infinity, time, active, passive, idle, light, dark</b></blockquote>
                 A variable name may be used in place of the entire Time Study list as well (see the definition panel),
                 although in that case the shorthand ranges and aliases are not allowed.`
             },
@@ -519,7 +519,7 @@ export const automator = {
           : "";
         return `This is a list of "currencies" or numbers that you can use within the Automator.<br>
           Note that when used, most currencies will need to be in scientific notation.<br>
-          <b>am</b> - Current Antimatter amount  <br>
+          <b>am</b> - Current Hi's amount  <br>
           <b>ip</b> - Current Infinity Point amount  <br>
           <b>ep</b> - Current Eternity Point amount  <br>
           <b>rm</b> - Current Reality Machine amount  <br>

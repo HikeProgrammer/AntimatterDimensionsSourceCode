@@ -6,7 +6,7 @@ export const galaxies = {
   // Note: none of the galaxy types use the global multiplier that applies to all of them within multValue, which
   // very slightly reduces performance impact and is okay because it's applied consistently
   antimatter: {
-    name: "Antimatter Galaxies",
+    name: "Hi's Galaxies",
     displayOverride: () => {
       const num = player.galaxies + GalaxyGenerator.galaxies;
       const mult = MultiplierTabHelper.globalGalaxyMult();

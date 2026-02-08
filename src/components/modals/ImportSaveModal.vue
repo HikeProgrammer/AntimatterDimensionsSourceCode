@@ -165,7 +165,7 @@ export default {
         <div v-if="fileName">
           File name: {{ fileName }}
         </div>
-        <div>Antimatter: {{ formatPostBreak(antimatter, 2, 1) }}</div>
+        <div>Hi's: {{ formatPostBreak(antimatter, 2, 1) }}</div>
         <div v-if="progress.isInfinityUnlocked">
           Infinities: {{ formatPostBreak(infinities, 2) }}
         </div>

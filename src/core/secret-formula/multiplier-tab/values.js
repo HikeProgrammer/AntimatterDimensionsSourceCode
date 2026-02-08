@@ -11,7 +11,7 @@ import { ID } from "./infinity-dimensions";
 import { IP } from "./infinity-points";
 import { replicanti } from "./replicanti";
 import { TP } from "./tachyon-particles";
-import { tickspeed, tickspeedUpgrades } from "./tickspeed";
+import { fingersnaps, fingersnapsUpgrades } from "./fingersnaps";
 import { TD } from "./time-dimensions";
 
 export const multiplierTabValues = {
@@ -24,8 +24,8 @@ export const multiplierTabValues = {
   EP,
   TP,
   DT,
-  tickspeed,
-  tickspeedUpgrades,
+  fingersnaps,
+  fingersnapsUpgrades,
   galaxies,
   infinities,
   eternities,

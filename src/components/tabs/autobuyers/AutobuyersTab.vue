@@ -8,7 +8,7 @@ import GalaxyAutobuyerBox from "./GalaxyAutobuyerBox";
 import OpenModalHotkeysButton from "@/components/OpenModalHotkeysButton";
 import RealityAutobuyerBox from "./RealityAutobuyerBox";
 import SimpleAutobuyersMultiBox from "./SimpleAutobuyersMultiBox";
-import TickspeedAutobuyerBox from "./TickspeedAutobuyerBox";
+import FingersnapsAutobuyerBox from "./FingersnapsAutobuyerBox";
 
 export default {
   name: "AutobuyersTab",
@@ -20,7 +20,7 @@ export default {
     BigCrunchAutobuyerBox,
     GalaxyAutobuyerBox,
     DimensionBoostAutobuyerBox,
-    TickspeedAutobuyerBox,
+    FingersnapsAutobuyerBox,
     DimensionAutobuyerBox,
     SimpleAutobuyersMultiBox
   },
@@ -80,7 +80,7 @@ export default {
     </div>
     <b>Autobuyers with no displayed bulk have unlimited bulk by default.</b>
     <b>
-      Antimatter Dimension Autobuyers can have their bulk upgraded once interval is below {{ formatInt(100) }} ms.
+      Hi Dimensions Autobuyers can have their bulk upgraded once interval is below {{ formatInt(100) }} ms.
     </b>
     <b v-if="hasInstant">Autobuyers with "Instant" interval will trigger every game tick ({{ gameTickLength }}).</b>
     <RealityAutobuyerBox class="c-reality-pos" />
@@ -88,7 +88,7 @@ export default {
     <BigCrunchAutobuyerBox class="c-infinity-pos" />
     <GalaxyAutobuyerBox />
     <DimensionBoostAutobuyerBox />
-    <TickspeedAutobuyerBox v-if="!hasContinuum" />
+    <FingersnapsAutobuyerBox v-if="!hasContinuum" />
     <template v-if="displayADAutobuyersIndividually">
       <DimensionAutobuyerBox
         v-for="tier in 8"

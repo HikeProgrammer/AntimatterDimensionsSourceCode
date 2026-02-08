@@ -113,7 +113,7 @@ export default {
     <template v-if="!canCrunch">
       Reach {{ format(infinityGoal, 2, 2) }}
       <br>
-      antimatter
+      hi's
     </template>
 
     <!-- Can Crunch in challenge -->

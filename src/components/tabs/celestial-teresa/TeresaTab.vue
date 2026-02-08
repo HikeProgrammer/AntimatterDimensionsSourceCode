@@ -165,7 +165,7 @@ export default {
           {{ runDescription }}
           <br><br>
           <div>
-            This Reality can be repeated for a stronger reward based on the antimatter gained within it.
+            This Reality can be repeated for a stronger reward based on the hi's gained within it.
             <br><br>
             <span v-if="showRunReward">
               Your record antimatter in Teresa's Reality is {{ format(bestAM, 2) }},

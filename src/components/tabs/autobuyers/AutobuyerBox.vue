@@ -1,7 +1,7 @@
 <script>
 import AutobuyerIntervalLabel from "./AutobuyerIntervalLabel";
 
-// This component is used for autobuyer entries which take up an entire row and may (AD/tickspeed) or may not
+// This component is used for autobuyer entries which take up an entire row and may (AD/fingersnaps) or may not
 // (prestige) have an associated slow version unlockable pre-infinity
 export default {
   name: "AutobuyerBox",
@@ -188,7 +188,7 @@ export default {
   >
     {{ name }}
     <br>
-    Requirement: {{ format(antimatterCost) }} Total Antimatter {{ showEternity }}
+    Requirement: {{ format(antimatterCost) }} Total Hi's {{ showEternity }}
   </div>
 </template>
 

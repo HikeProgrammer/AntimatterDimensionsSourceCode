@@ -174,7 +174,7 @@ export const TD = {
       let allMult = DC.D1.timesEffectsOf(
         EternityChallenge(1).reward,
         EternityChallenge(10).reward,
-      ).times(EternityChallenge(7).isRunning ? Tickspeed.perSecond : DC.D1);
+      ).times(EternityChallenge(7).isRunning ? Fingersnaps.perSecond : DC.D1);
       if (EternityChallenge(9).isRunning) {
         allMult = allMult.times(
           Decimal.pow(Math.clampMin(Currency.infinityPower.value.pow(InfinityDimensions.powerConversionRate / 7)
@@ -185,18 +185,18 @@ export const TD = {
     isActive: () => EternityChallenge(1).completions > 0,
     icon: MultiplierTabIcons.CHALLENGE("eternity")
   },
-  tickspeed: {
-    name: () => "Tickspeed (EC7)",
+  fingersnaps: {
+    name: () => "Fingersnaps (EC7)",
     displayOverride: () => {
-      const tickRate = Tickspeed.perSecond;
+      const tickRate = Fingersnaps.perSecond;
       const activeDims = MultiplierTabHelper.activeDimCount("TD");
       const dimString = MultiplierTabHelper.pluralizeDimensions(activeDims);
       return `${format(tickRate, 2, 2)}/sec on ${formatInt(activeDims)} ${dimString}
         ➜ ${formatX(tickRate.pow(activeDims), 2, 2)}`;
     },
-    multValue: () => Tickspeed.perSecond.pow(MultiplierTabHelper.activeDimCount("TD")),
+    multValue: () => Fingersnaps.perSecond.pow(MultiplierTabHelper.activeDimCount("TD")),
     isActive: () => EternityChallenge(7).isRunning,
-    icon: MultiplierTabIcons.TICKSPEED,
+    icon: MultiplierTabIcons.FINGERSNAPS,
   },
   dilationUpgrade: {
     name: "Dilation Upgrade - Replicanti Multiplier",

@@ -11,11 +11,11 @@ export const infinityUpgrades = {
   totalTimeMult: {
     id: "timeMult",
     cost: 1,
-    description: "Antimatter Dimensions gain a multiplier based on time played",
+    description: "Hi Dimensions gain a multiplier based on time played",
     effect: () => Math.pow(Time.totalTimePlayed.totalMinutes / 2, 0.15),
     formatEffect: value => formatX(value, 2, 2),
     charged: {
-      description: "Antimatter Dimensions gain a power effect based on time played and Teresa level",
+      description: "Hi Dimensions gain a power effect based on time played and Teresa level",
       effect: () => 1 +
         Math.log10(Math.log10(Time.totalTimePlayed.totalMilliseconds)) *
         Math.pow(Ra.pets.teresa.level, 0.5) / 150,
@@ -26,11 +26,11 @@ export const infinityUpgrades = {
     id: "18Mult",
     cost: 1,
     checkRequirement: () => InfinityUpgrade.totalTimeMult.isBought,
-    description: "1st and 8th Antimatter Dimensions gain a multiplier based on Infinities",
+    description: "1st and 8th Hi Dimensions gain a multiplier based on Infinities",
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "1st and 8th Antimatter Dimensions gain a power effect based on Infinities and Teresa level",
+      description: "1st and 8th Hi Dimensions gain a power effect based on Infinities and Teresa level",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -39,11 +39,11 @@ export const infinityUpgrades = {
     id: "27Mult",
     cost: 1,
     checkRequirement: () => InfinityUpgrade.buy10Mult.isBought,
-    description: "2nd and 7th Antimatter Dimensions gain a multiplier based on Infinities",
+    description: "2nd and 7th Hi Dimensions gain a multiplier based on Infinities",
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "2nd and 7th Antimatter Dimensions gain a power effect based on Infinities and Teresa level",
+      description: "2nd and 7th Hi Dimensions gain a power effect based on Infinities and Teresa level",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -52,11 +52,11 @@ export const infinityUpgrades = {
     id: "36Mult",
     cost: 1,
     checkRequirement: () => InfinityUpgrade.dim18mult.isBought,
-    description: "3rd and 6th Antimatter Dimensions gain a multiplier based on Infinities",
+    description: "3rd and 6th Hi Dimensions gain a multiplier based on Infinities",
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "3rd and 6th Antimatter Dimensions gain a power effect based on Infinities and Teresa level",
+      description: "3rd and 6th Hi Dimensions gain a power effect based on Infinities and Teresa level",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -65,11 +65,11 @@ export const infinityUpgrades = {
     id: "45Mult",
     cost: 1,
     checkRequirement: () => InfinityUpgrade.dim27mult.isBought,
-    description: "4th and 5th Antimatter Dimensions gain a multiplier based on Infinities",
+    description: "4th and 5th Hi Dimensions gain a multiplier based on Infinities",
     effect: () => dimInfinityMult(),
     formatEffect: value => formatX(value, 1, 1),
     charged: {
-      description: "4th and 5th Antimatter Dimensions gain a power effect based on Infinities and Teresa level",
+      description: "4th and 5th Hi Dimensions gain a power effect based on Infinities and Teresa level",
       effect: () => chargedDimInfinityMult(),
       formatEffect: value => formatPow(value, 4, 4)
     }
@@ -79,7 +79,7 @@ export const infinityUpgrades = {
     cost: 1,
     checkRequirement: () => InfinityUpgrade.dim36mult.isBought,
     description: () =>
-      `Decrease the number of Dimensions needed for Dimension Boosts and Antimatter Galaxies by ${formatInt(9)}`,
+      `Decrease the number of Dimensions needed for Dimension Boosts and Hi's Galaxies by ${formatInt(9)}`,
     effect: 9,
     charged: {
       description: () => "Decrease Dimension Boost requirement based on Teresa level",
@@ -90,11 +90,11 @@ export const infinityUpgrades = {
   buy10Mult: {
     id: "dimMult",
     cost: 1,
-    description: () => `Increase the multiplier for buying ${formatInt(10)} Antimatter Dimensions`,
+    description: () => `Increase the multiplier for buying ${formatInt(10)} Hi Dimensions`,
     effect: () => 1.1,
     formatEffect: () => `${formatX(2, 0, 1)} ➜ ${formatX(2.2, 0, 1)}`,
     charged: {
-      description: () => `The multiplier for buying ${formatInt(10)} Antimatter Dimensions gains ` +
+      description: () => `The multiplier for buying ${formatInt(10)} Hi Dimensions gains ` +
         "a power effect based on Teresa level",
       effect: () => 1 + Ra.pets.teresa.level / 200,
       formatEffect: value => formatPow(value, 3, 3)
@@ -115,12 +115,12 @@ export const infinityUpgrades = {
   thisInfinityTimeMult: {
     id: "timeMult2",
     cost: 3,
-    description: "Antimatter Dimensions gain a multiplier based on time spent in current Infinity",
+    description: "Hi Dimensions gain a multiplier based on time spent in current Infinity",
     effect: () => Decimal.max(Math.pow(Time.thisInfinity.totalMinutes / 4, 0.25), 1),
     formatEffect: value => formatX(value, 2, 2),
     charged: {
       description:
-        "Antimatter Dimensions gain a power effect based on time spent in current Infinity and Teresa level",
+        "Hi Dimensions gain a power effect based on time spent in current Infinity and Teresa level",
       effect: () => 1 +
         Math.log10(Math.log10(Time.thisInfinity.totalMilliseconds + 100)) *
         Math.sqrt(Ra.pets.teresa.level) / 150,
@@ -131,11 +131,11 @@ export const infinityUpgrades = {
     id: "unspentBonus",
     cost: 5,
     checkRequirement: () => InfinityUpgrade.thisInfinityTimeMult.isBought,
-    description: "Multiplier to 1st Antimatter Dimension based on unspent Infinity Points",
+    description: "Multiplier to 1st Hi Dimensions based on unspent Infinity Points",
     effect: () => Currency.infinityPoints.value.dividedBy(2).pow(1.5).plus(1),
     formatEffect: value => formatX(value, 2, 2),
     charged: {
-      description: "Multiplier to 1st Antimatter Dimension based on unspent Infinity Points, powered by Teresa level",
+      description: "Multiplier to 1st Hi Dimensions based on unspent Infinity Points, powered by Teresa level",
       effect: () => Currency.infinityPoints.value.dividedBy(2).pow(Math.sqrt(Ra.pets.teresa.level) * 1.5).plus(1),
       formatEffect: value => formatX(value, 2, 2)
     }
@@ -179,29 +179,29 @@ export const infinityUpgrades = {
     id: "skipReset1",
     cost: 20,
     description: () =>
-      `Start every reset with ${formatInt(1)} Dimension Boost, automatically unlocking the 5th Antimatter Dimension`,
+      `Start every reset with ${formatInt(1)} Dimension Boost, automatically unlocking the 5th Hi Dimensions`,
   },
   skipReset2: {
     id: "skipReset2",
     cost: 40,
     checkRequirement: () => InfinityUpgrade.skipReset1.isBought,
     description: () =>
-      `Start every reset with ${formatInt(2)} Dimension Boosts, automatically unlocking the 6th Antimatter Dimension`,
+      `Start every reset with ${formatInt(2)} Dimension Boosts, automatically unlocking the 6th Hi Dimensions`,
   },
   skipReset3: {
     id: "skipReset3",
     cost: 80,
     checkRequirement: () => InfinityUpgrade.skipReset2.isBought,
     description: () =>
-      `Start every reset with ${formatInt(3)} Dimension Boosts, automatically unlocking the 7th Antimatter Dimension`,
+      `Start every reset with ${formatInt(3)} Dimension Boosts, automatically unlocking the 7th Hi Dimensions`,
   },
   skipResetGalaxy: {
     id: "skipResetGalaxy",
     cost: 300,
     checkRequirement: () => InfinityUpgrade.skipReset3.isBought,
     description: () =>
-      `Start every reset with ${formatInt(4)} Dimension Boosts, automatically unlocking the 8th Antimatter Dimension;
-      and an Antimatter Galaxy`,
+      `Start every reset with ${formatInt(4)} Dimension Boosts, automatically unlocking the 8th Hi Dimensions;
+      and an Hi's Galaxy`,
   },
   ipOffline: {
     id: "ipOffline",

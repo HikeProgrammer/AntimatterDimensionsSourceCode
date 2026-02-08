@@ -17,7 +17,7 @@ import { ReplicantiGalaxyAutobuyerState } from "./replicanti-galaxy-autobuyer";
 import { ReplicantiUpgradeAutobuyerState } from "./replicanti-upgrade-autobuyer";
 import { SacrificeAutobuyerState } from "./sacrifice-autobuyer";
 import { SingularityAutobuyerState } from "./singularity-autobuyer";
-import { TickspeedAutobuyerState } from "./tickspeed-autobuyer";
+import { FingersnapsAutobuyerState } from "./fingersnaps-autobuyer";
 import { TimeDimensionAutobuyerState } from "./time-dimension-autobuyer";
 import { TimeTheoremAutobuyerState } from "./time-theorem-autobuyer";
 
@@ -42,7 +42,7 @@ export const Autobuyer = {
   replicantiUpgrade: ReplicantiUpgradeAutobuyerState.createAccessor(),
   sacrifice: new SacrificeAutobuyerState(),
   singularity: new SingularityAutobuyerState(),
-  tickspeed: new TickspeedAutobuyerState(),
+  fingersnaps: new FingersnapsAutobuyerState(),
   timeDimension: TimeDimensionAutobuyerState.createAccessor(),
   timeTheorem: new TimeTheoremAutobuyerState()
 };
@@ -73,7 +73,7 @@ export const Autobuyers = (function() {
   ];
 
   const singleComplex = [
-    Autobuyer.tickspeed,
+    Autobuyer.fingersnaps,
     Autobuyer.galaxy,
     Autobuyer.dimboost,
   ].concat(single);
@@ -101,7 +101,7 @@ export const Autobuyers = (function() {
     all: all.flat(),
     display: [multiple, single],
     upgradeable: antimatterDimensions.concat(
-      Autobuyer.tickspeed,
+      Autobuyer.fingersnaps,
       Autobuyer.dimboost,
       Autobuyer.galaxy,
       Autobuyer.bigCrunch,

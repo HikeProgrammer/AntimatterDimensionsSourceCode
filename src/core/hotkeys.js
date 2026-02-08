@@ -33,16 +33,16 @@ export const shortcuts = [
     function: () => keyboardToggleAutobuyers(),
     visible: true
   }, {
-    name: "Buy one Tickspeed",
+    name: "Buy one Fingersnaps",
     keys: ["shift", "t"],
     type: "bindRepeatableHotkey",
-    function: () => buyTickSpeed(),
+    function: () => buyFingerSnaps(),
     visible: true
   }, {
-    name: "Buy max Tickspeed",
+    name: "Buy max Fingersnaps",
     keys: ["t"],
     type: "bindRepeatableHotkey",
-    function: () => buyMaxTickSpeed(),
+    function: () => buyMaxFingerSnaps(),
     visible: true
   }, {
     name: "Max all",
@@ -69,13 +69,13 @@ export const shortcuts = [
     function: () => manualRequestDimensionBoost(false),
     visible: false
   }, {
-    name: "Antimatter Galaxy",
+    name: "Hi's Galaxy",
     keys: ["g"],
     type: "bindRepeatableHotkey",
     function: () => manualRequestGalaxyReset(true),
     visible: true
   }, {
-    name: "Single Antimatter Galaxy",
+    name: "Single Hi's Galaxy",
     keys: ["shift", "g"],
     type: "bindRepeatableHotkey",
     function: () => manualRequestGalaxyReset(false),
@@ -359,8 +359,8 @@ GameKeyboard.bind("alt+shift", () => setShiftKey(true), "keydown");
 GameKeyboard.bind("alt+shift", () => setShiftKey(false), "keyup");
 
 
-GameKeyboard.bindHotkey("alt+t", () => toggleAutobuyer(Autobuyer.tickspeed));
-GameKeyboard.bindHotkey("shift+alt+t", () => toggleBuySingles(Autobuyer.tickspeed));
+GameKeyboard.bindHotkey("alt+t", () => toggleAutobuyer(Autobuyer.fingersnaps));
+GameKeyboard.bindHotkey("shift+alt+t", () => toggleBuySingles(Autobuyer.fingersnaps));
 GameKeyboard.bindHotkey("alt+s", () => toggleAutobuyer(Autobuyer.sacrifice));
 GameKeyboard.bindHotkey("alt+d", () => toggleAutobuyer(Autobuyer.dimboost));
 GameKeyboard.bindHotkey("alt+g", () => toggleAutobuyer(Autobuyer.galaxy));
@@ -392,11 +392,11 @@ GameKeyboard.bind(
 
 // Toggle autobuyers
 function toggleAutobuyer(buyer) {
-  // Autobuyer.tickspeed.isUnlocked is false without NC9, but we still want the simpler one to be togglable via hotkey
-  const isSimpleTickspeed = buyer === Autobuyer.tickspeed && buyer.isBought;
+  // Autobuyer.fingersnaps.isUnlocked is false without NC9, but we still want the simpler one to be togglable via hotkey
+  const isSimpleFingersnaps = buyer === Autobuyer.fingersnaps && buyer.isBought;
   if (buyer.disabledByContinuum) {
     GameUI.notify.info("Continuum is enabled, you cannot alter this autobuyer");
-  } else if (buyer.isUnlocked || isSimpleTickspeed) {
+  } else if (buyer.isUnlocked || isSimpleFingersnaps) {
     buyer.toggle();
     GameUI.notify.info(`${buyer.name} Autobuyer toggled ${(buyer.isActive) ? "on" : "off"}`);
   }
@@ -408,7 +408,7 @@ function toggleBuySingles(buyer) {
     GameUI.notify.info("Continuum is enabled, you cannot alter this autobuyer");
   } else if (buyer.isUnlocked && buyer.toggleMode !== null) {
     buyer.toggleMode();
-    const bulkName = (buyer.name === "Tickspeed" || buyer.hasUnlimitedBulk) ? "max" : "10";
+    const bulkName = (buyer.name === "Fingersnaps" || buyer.hasUnlimitedBulk) ? "max" : "10";
     GameUI.notify.info(`${buyer.name} Autobuyer set to buy ${(buyer.mode === 1) ? "singles" : bulkName}`);
   }
   return false;

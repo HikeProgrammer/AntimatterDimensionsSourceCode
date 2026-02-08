@@ -4,11 +4,11 @@ import { GameDatabase } from "../secret-formula/game-database";
 import { Quotes } from "./quotes";
 
 export const ENSLAVED_UNLOCKS = {
-  FREE_TICKSPEED_SOFTCAP: {
+  FREE_FINGERSNAPS_SOFTCAP: {
     id: 0,
     price: TimeSpan.fromYears(1e35).totalMilliseconds,
     secondaryRequirement: () => true,
-    description: () => `Increase the softcap to Tickspeed upgrades from Time Dimensions by ${formatInt(1e5)}`,
+    description: () => `Increase the softcap to Fingersnaps upgrades from Time Dimensions by ${formatInt(1e5)}`,
   },
   RUN: {
     id: 1,

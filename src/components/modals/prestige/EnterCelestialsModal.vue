@@ -49,7 +49,7 @@ export default {
           return this.teresaBestAM.eq(1)
             ? `You have not unlocked the reward for Teresa's Reality yet. Unlocking the reward requires
               purchasing the Reality study and completing the Reality for the first time.`
-            : `Your highest Teresa completion was for ${format(this.teresaBestAM, 2, 2)} antimatter,
+            : `Your highest Teresa completion was for ${format(this.teresaBestAM, 2, 2)} hi's,
               gaining you a ${formatX(this.teresaRunMult, 2)} multiplier to Glyph Sacrifice power.`;
         case 1: return this.effarigDone
           ? "Effarig is completed!"

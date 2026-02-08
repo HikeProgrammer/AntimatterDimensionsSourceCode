@@ -106,7 +106,7 @@ window.player = {
       isActive: true,
       lastTick: 0
     },
-    tickspeed: {
+    fingersnaps: {
       isUnlocked: false,
       cost: 1,
       interval: 500,
@@ -221,7 +221,7 @@ window.player = {
   chall2Pow: 1,
   chall3Pow: DC.D0_01,
   matter: DC.D1,
-  chall9TickspeedCostBumps: 0,
+  chall9FingersnapsCostBumps: 0,
   chall8TotalSacrifice: DC.D1,
   ic2Count: 0,
   partInfinityPoint: 0,
@@ -263,7 +263,7 @@ window.player = {
     },
     permanent: {
       emojiGalaxies: 0,
-      singleTickspeed: 0,
+      singleFingersnaps: 0,
       perkTreeDragging: 0
     }
   },
@@ -958,8 +958,8 @@ export const Player = {
     return GameCache.averageRealTimePerEternity.value;
   },
 
-  get tickSpeedMultDecrease() {
-    return GameCache.tickSpeedMultDecrease.value;
+  get fingerSnapsMultDecrease() {
+    return GameCache.fingerSnapsMultDecrease.value;
   },
 
   get dimensionMultDecrease() {

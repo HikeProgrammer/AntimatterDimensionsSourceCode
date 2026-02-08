@@ -131,8 +131,8 @@ export default {
           Alt is a modifier key that, when pressed in conjunction with any key that has a corresponding autobuyer,
           will toggle said autobuyer.
           <br>
-          When pressing both Alt and Shift, you can toggle buying singles or buying max for the Antimatter Dimension
-          and Tickspeed Autobuyers instead.
+          When pressing both Alt and Shift, you can toggle buying singles or buying max for the Hi Dimensions
+          and Fingersnaps Autobuyers instead.
         </span>
         <br>
         <div class="l-modal-hotkeys-row">

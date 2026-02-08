@@ -11,8 +11,8 @@ export default {
   data() {
     return {
       totalUpgrades: 0,
-      multPerTickspeed: 0,
-      tickspeedSoftcap: 0,
+      multPerFingersnaps: 0,
+      fingersnapsSoftcap: 0,
       timeShards: new Decimal(0),
       upgradeThreshold: new Decimal(0),
       shardsPerSecond: new Decimal(0),
@@ -28,10 +28,10 @@ export default {
     update() {
       this.showLockedDimCostNote = !TimeDimension(8).isUnlocked && player.realities >= 1;
       this.totalUpgrades = player.totalTickGained;
-      this.multPerTickspeed = FreeTickspeed.multToNext;
-      this.tickspeedSoftcap = FreeTickspeed.softcap;
+      this.multPerFingersnaps = FreeFingersnaps.multToNext;
+      this.fingersnapsSoftcap = FreeFingersnaps.softcap;
       this.timeShards.copyFrom(Currency.timeShards);
-      this.upgradeThreshold.copyFrom(FreeTickspeed.fromShards(Currency.timeShards.value).nextShards);
+      this.upgradeThreshold.copyFrom(FreeFingersnaps.fromShards(Currency.timeShards.value).nextShards);
       this.shardsPerSecond.copyFrom(TimeDimension(1).productionPerRealSecond);
       this.incomeType = EternityChallenge(7).isRunning ? "Eighth Infinity Dimensions" : "Time Shards";
       this.areAutobuyersUnlocked = Autobuyer.timeDimension(1).isUnlocked;
@@ -67,19 +67,19 @@ export default {
     <div>
       <p>
         You have gained
-        <span class="c-time-dim-description__accent">{{ formatInt(totalUpgrades) }}</span> Tickspeed upgrades from
+        <span class="c-time-dim-description__accent">{{ formatInt(totalUpgrades) }}</span> Fingersnaps upgrades from
         <span class="c-time-dim-description__accent">{{ format(timeShards, 2, 1) }}</span> Time Shards.
       </p>
       <p>
-        Next Tickspeed upgrade at
+        Next Fingersnaps upgrade at
         <span class="c-time-dim-description__accent">{{ format(upgradeThreshold, 2, 1) }}</span>, increasing by
-        <span class="c-time-dim-description__accent">{{ formatX(multPerTickspeed, 2, 2) }}</span> per
-        Tickspeed upgrade gained.
+        <span class="c-time-dim-description__accent">{{ formatX(multPerFingersnaps, 2, 2) }}</span> per
+        Fingersnaps upgrade gained.
       </p>
     </div>
     <div>
       The amount each additional upgrade requires will start
-      increasing above {{ formatInt(tickspeedSoftcap) }} Tickspeed upgrades.
+      increasing above {{ formatInt(fingersnapsSoftcap) }} Fingersnaps upgrades.
     </div>
     <div>
       You are getting {{ format(shardsPerSecond, 2, 0) }} {{ incomeType }} per second.

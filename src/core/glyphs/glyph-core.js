@@ -8,7 +8,7 @@ export const orderedEffectList = ["powerpow", "infinitypow", "replicationpow", "
   "timespeed",
   "effarigrm", "effarigglyph", "effarigblackhole", "effarigachievement",
   "effarigforgotten", "effarigdimensions", "effarigantimatter",
-  "cursedgalaxies", "cursedtickspeed", "curseddimensions", "cursedEP",
+  "cursedgalaxies", "cursedfingersnaps", "curseddimensions", "cursedEP",
   "realityglyphlevel", "realitygalaxies", "realityrow1pow", "realityDTglyph",
   "companiondescription", "companionEP"];
 

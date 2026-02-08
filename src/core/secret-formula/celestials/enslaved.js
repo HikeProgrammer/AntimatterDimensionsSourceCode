@@ -27,8 +27,8 @@ export const enslaved = {
     },
     c10: {
       id: 4,
-      hint: "Is there a way to get Antimatter Galaxies without 8th Antimatter Dimensions?",
-      condition: "Used Challenge 10 to get more than one Antimatter Galaxy with 6th Antimatter Dimensions",
+      hint: "Is there a way to get Hi's Galaxies without 8th Hi Dimensions?",
+      condition: "Used Challenge 10 to get more than one Hi's Galaxy with 6th Hi Dimensions",
     },
     secretStudy: {
       id: 5,

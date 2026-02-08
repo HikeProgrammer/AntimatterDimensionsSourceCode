@@ -56,7 +56,7 @@ export default {
       return [
         DilationUpgrade.dtGainPelle,
         DilationUpgrade.galaxyMultiplier,
-        DilationUpgrade.tickspeedPower
+        DilationUpgrade.fingersnapsPower
       ];
     },
     pelleUpgrades() {

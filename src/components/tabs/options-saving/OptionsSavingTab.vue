@@ -247,7 +247,7 @@ export default {
         </OptionsButton>
         <OptionsButton
           v-else
-          v-tooltip="'This will connect your Google Account to your Antimatter Dimensions savefiles'"
+          v-tooltip="'This will connect your Google Account to your Hi Dimensions savefiles'"
           :class="{ 'o-pelle-disabled-pointer': creditsClosed }"
           onclick="GameOptions.login()"
         >

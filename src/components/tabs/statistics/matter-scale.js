@@ -4,12 +4,12 @@ export const MatterScale = {
   proton: new Decimal("2.82e-45"),
 
   estimate(matter) {
-    if (!matter) return ["There is no antimatter yet."];
+    if (!matter) return ["There is no hi's yet."];
     if (matter.gt(DC.E100000)) {
       return [
         `If you wrote ${formatInt(3)} numbers a second, it would take you`,
         TimeSpan.fromSeconds(matter.log10() / 3).toString(),
-        "to write down your antimatter amount."
+        "to write down your hi's amount."
       ];
     }
     const planck = new Decimal("4.22419e-105");
@@ -17,11 +17,11 @@ export const MatterScale = {
     if (planckedMatter.gt(this.proton)) {
       const scale = this.macroScale(planckedMatter);
       const amount = format(planckedMatter.dividedBy(scale.amount), 2, 1);
-      return [`If every antimatter were a planck volume, you would have
+      return [`If every hi were a planck volume, you would have
         enough to ${scale.verb} ${amount} ${scale.name}`];
     }
     const scale = this.microScale(matter);
-    return [`If every antimatter were ${format(this.proton.div(scale.amount).div(matter), 2, 1)} ${scale.name},
+    return [`If every hi were ${format(this.proton.div(scale.amount).div(matter), 2, 1)} ${scale.name},
       you would have enough to make a proton.`];
   },
 
@@ -33,7 +33,7 @@ export const MatterScale = {
         return scale;
       }
     }
-    throw "Cannot determine smallest antimatter scale";
+    throw "Cannot determine smallest hi's scale";
   },
 
   macroScale(matter) {

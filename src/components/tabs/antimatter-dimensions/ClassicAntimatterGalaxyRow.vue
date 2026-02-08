@@ -42,8 +42,8 @@ export default {
       if (!Achievement(111).isUnlocked) reset.push("Dimensions");
       if (!Achievement(143).isUnlocked) reset.push("Dimension Boosts");
       return reset.length === 0
-        ? `Increase the power of Tickspeed upgrades`
-        : `Reset your ${makeEnumeration(reset)} to increase the power of Tickspeed upgrades`;
+        ? `Increase the power of Fingersnaps upgrades`
+        : `Reset your ${makeEnumeration(reset)} to increase the power of Fingersnaps upgrades`;
     },
     sumText() {
       const parts = [Math.max(this.galaxies.normal, 0)];
@@ -57,9 +57,9 @@ export default {
     },
     typeName() {
       switch (this.type) {
-        case GALAXY_TYPE.NORMAL: return "Antimatter Galaxies";
-        case GALAXY_TYPE.DISTANT: return "Distant Antimatter Galaxies";
-        case GALAXY_TYPE.REMOTE: return "Remote Antimatter Galaxies";
+        case GALAXY_TYPE.NORMAL: return "Hi's Galaxies";
+        case GALAXY_TYPE.DISTANT: return "Distant Hi's Galaxies";
+        case GALAXY_TYPE.REMOTE: return "Remote Hi's Galaxies";
       }
       return undefined;
     },

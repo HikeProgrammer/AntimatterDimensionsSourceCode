@@ -20,7 +20,7 @@ const rebuyable = config => {
 export const pelleUpgrades = {
   antimatterDimensionMult: rebuyable({
     id: "antimatterDimensionMult",
-    description: "Gain a multiplier to Antimatter Dimensions",
+    description: "Gain a multiplier to Hi Dimensions",
     cost: [10, 1e3, 41, 100],
     effect: x => Pelle.antimatterDimensionMult(x),
     formatEffect: x => formatX(x, 2, 2),
@@ -60,7 +60,7 @@ export const pelleUpgrades = {
   }),
   antimatterDimAutobuyers1: {
     id: 0,
-    description: "Get permanent Autobuyers for Antimatter Dimensions 1-4",
+    description: "Get permanent Autobuyers for Hi Dimensions 1-4",
     cost: 1e5,
     formatCost,
   },
@@ -78,19 +78,19 @@ export const pelleUpgrades = {
   },
   antimatterDimAutobuyers2: {
     id: 3,
-    description: "Get permanent Autobuyers for Antimatter Dimensions 5-8",
+    description: "Get permanent Autobuyers for Hi Dimensions 5-8",
     cost: 2.5e7,
     formatCost,
   },
   galaxyAutobuyer: {
     id: 4,
-    description: "Get a permanent Autobuyer for Antimatter Galaxies",
+    description: "Get a permanent Autobuyer for Hi's Galaxies",
     cost: 1e8,
     formatCost,
   },
-  tickspeedAutobuyer: {
+  fingersnapsAutobuyer: {
     id: 5,
-    description: "Get a permanent Autobuyer for Tickspeed upgrades",
+    description: "Get a permanent Autobuyer for Fingersnaps upgrades",
     cost: 1e9,
     formatCost,
   },

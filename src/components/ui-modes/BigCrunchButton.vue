@@ -30,7 +30,7 @@ export default {
         v-if="!smallCrunch"
         class="l-spacing"
       >
-        The world has collapsed due to excess antimatter.
+        The world has collapsed due to excess of hi's.
       </h3>
       <button
         :class="{
@@ -58,7 +58,7 @@ export default {
         v-if="!smallCrunch"
         class="o-emptiness"
       >
-        The world has collapsed due to excess of antimatter.
+        The world has collapsed due to excess of hi's.
       </div>
     </div>
   </span>

@@ -3,7 +3,7 @@ import AutobuyerBox from "./AutobuyerBox";
 import AutobuyerIntervalButton from "./AutobuyerIntervalButton";
 
 export default {
-  name: "TickspeedAutobuyerBox",
+  name: "FingersnapsAutobuyerBox",
   components: {
     AutobuyerBox,
     AutobuyerIntervalButton
@@ -15,13 +15,13 @@ export default {
     };
   },
   computed: {
-    autobuyer: () => Autobuyer.tickspeed,
+    autobuyer: () => Autobuyer.fingersnaps,
     modeDisplay() {
       switch (this.mode) {
         case AUTOBUYER_MODE.BUY_SINGLE: return "Buys singles";
         case AUTOBUYER_MODE.BUY_MAX: return "Buys max";
       }
-      throw "Unknown tickspeed autobuyer mode";
+      throw "Unknown fingersnaps autobuyer mode";
     }
   },
   methods: {
@@ -40,7 +40,7 @@ export default {
 <template>
   <AutobuyerBox
     :autobuyer="autobuyer"
-    name="Tickspeed Autobuyer"
+    name="Fingersnaps Autobuyer"
     show-interval
   >
     <template #intervalSlot>

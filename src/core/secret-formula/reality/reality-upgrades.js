@@ -86,13 +86,13 @@ export const realityUpgrades = [
     name: "Innumerably Construct",
     id: 7,
     cost: 15,
-    requirement: "Complete your first Infinity with at most 1 Antimatter Galaxy",
+    requirement: "Complete your first Infinity with at most 1 Hi's Galaxy",
     hasFailed: () => !(player.galaxies <= 1 && player.requirementChecks.reality.noInfinities),
     checkRequirement: () => player.galaxies <= 1 && player.requirementChecks.reality.noInfinities,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     canLock: true,
-    lockEvent: "gain another Antimatter Galaxy",
-    description: "Infinity gain is boosted from Antimatter Galaxy count",
+    lockEvent: "gain another Hi's Galaxy",
+    description: "Infinity gain is boosted from Hi's Galaxy count",
     effect: () => 1 + player.galaxies / 30,
     formatEffect: value => formatX(value, 2, 2)
   },
@@ -309,7 +309,7 @@ export const realityUpgrades = [
     checkRequirement: () =>
       Replicanti.galaxies.total + player.galaxies + player.dilation.totalTachyonGalaxies >= 2800,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    description: () => `Remote Antimatter Galaxy scaling is moved to ${formatInt(1e5)} galaxies`,
+    description: () => `Remote Hi's Galaxy scaling is moved to ${formatInt(1e5)} galaxies`,
     effect: 1e5
   },
   {

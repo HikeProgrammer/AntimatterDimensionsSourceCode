@@ -37,7 +37,7 @@ export default {
   computed: {
     isDoomed: () => Pelle.isDoomed,
     name() {
-      return `${AntimatterDimension(this.tier).shortDisplayName} Antimatter Dimension`;
+      return `${AntimatterDimension(this.tier).displayName} Dimensions`;
     },
     costDisplay() {
       return this.buyUntil10 ? format(this.until10Cost) : format(this.singleCost);
@@ -49,12 +49,12 @@ export default {
       return this.isShown || this.isUnlocked || this.amount.gt(0);
     },
     boughtTooltip() {
-      if (this.isCapped) return `Nameless prevents the purchase of more than ${format(1)} 8th Antimatter Dimension`;
-      if (this.isContinuumActive) return "Continuum produces all your Antimatter Dimensions";
+      if (this.isCapped) return `Nameless prevents the purchase of more than ${format(1)} 8th Hi Dimensions`;
+      if (this.isContinuumActive) return "Continuum produces all your Hi Dimensions";
       return `Purchased ${quantifyInt("time", this.bought)}`;
     },
     costUnit() {
-      return `${AntimatterDimension(this.tier - 2).shortDisplayName} AD`;
+      return `${AntimatterDimension(this.tier - 2).snappyShortDisplayName} CD`;
     },
     buttonPrefix() {
       if (!this.isUnlocked) return "Locked";
@@ -66,7 +66,7 @@ export default {
       if (this.isCapped) return "";
       if (this.isContinuumActive) return this.continuumString;
       const prefix = this.showCostTitle(this.buyUntil10 ? this.until10Cost : this.singleCost) ? "Cost: " : "";
-      const suffix = this.isCostsAD ? this.costUnit : "AM";
+      const suffix = this.isCostsAD ? this.costUnit : "Hi's";
       return `${prefix}${this.costDisplay} ${suffix}`;
     },
     hasLongText() {

@@ -205,7 +205,7 @@ export const GameStorage = {
     if (save === undefined || save === null) return "Save decoding failed (invalid format)";
     // Right now all we do is check for the existence of an antimatter prop, but if we wanted to do further save
     // verification then here's where we'd do it
-    if (save.money === undefined && save.antimatter === undefined) return "Save does not have antimatter property";
+    if (save.money === undefined && save.antimatter === undefined) return "Save does not have hi's property";
 
     // Recursively check for any NaN props and add any we find to an array
     const invalidProps = [];

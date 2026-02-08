@@ -5,7 +5,7 @@ export const shopPurchases = {
   dimPurchases: {
     key: "dimPurchases",
     cost: 30,
-    description: "Double all your Antimatter Dimension multipliers. Forever.",
+    description: "Double all your Hi Dimensions multipliers. Forever.",
     multiplier: purchases => Math.pow(2, purchases),
     formatEffect: x => `×${x > 1000 ? Notation.scientific.formatDecimal(new Decimal(x), 2) : x.toFixed(0)}`,
   },
@@ -13,7 +13,7 @@ export const shopPurchases = {
     key: "allDimPurchases",
     cost: 60,
     description: () => {
-      const dims = ["Antimatter"];
+      const dims = ["Hi's"];
       if (InfinityDimension(1).isUnlocked || PlayerProgress.eternityUnlocked()) dims.push("Infinity");
       if (PlayerProgress.eternityUnlocked()) dims.push("Time");
       return `Double ALL Dimension multipliers (${makeEnumeration(dims)}; multiplicative until 32x). Forever.`;

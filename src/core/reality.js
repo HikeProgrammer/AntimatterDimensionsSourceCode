@@ -329,9 +329,9 @@ function giveRealityRewards(realityProps) {
     const newMultiplier = Teresa.rewardMultiplier(player.antimatter);
     const isHigher = newMultiplier > current;
     const modalText = `You have completed Teresa's Reality! ${isHigher
-      ? `Since you gained more Antimatter, you increased your
+      ? `Since you gained more Hi's, you increased your
       Glyph Sacrifice multiplier from ${format(current, 2, 2)} to ${format(newMultiplier, 2, 2)}`
-      : `You did not gain more Antimatter during this run, so the Glyph Sacrifice multiplier
+      : `You did not gain more Hi's during this run, so the Glyph Sacrifice multiplier
       from Teresa did not increase`}.`;
     Modal.message.show(modalText, {}, 2);
     if (Currency.antimatter.gt(player.celestials.teresa.bestRunAM)) {
@@ -720,7 +720,7 @@ export function finishProcessReality(realityProps) {
   player.records.thisReality.bestRSmin = 0;
   player.records.thisReality.bestRSminVal = 0;
   resetTimeDimensions();
-  resetTickspeed();
+  resetFingersnaps();
   AchievementTimers.marathon2.reset();
   Currency.infinityPoints.reset();
 

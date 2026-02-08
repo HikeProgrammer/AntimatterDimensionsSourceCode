@@ -43,7 +43,7 @@ export default {
       Reality will be reset, but some things will be restored to what they were when it was equipped:
       <br>
       <div class="c-text-wrapper">
-        <br>- Antimatter, Infinity Points, and Eternity Points
+        <br>- Hi's, Infinity Points, and Eternity Points
         <br>- Dilation Upgrades, Tachyon Particles, and Dilated Time
         <br>- Time Theorems and Eternity Challenge completions
         <br>- Time Dimension and Reality unlocks
@@ -52,7 +52,7 @@ export default {
       </div>
       <br>
       Note that if you invalidate special requirements for certain things (such as the achievement for completing
-      a Reality without producing antimatter), they will remain invalid even after undoing. In those cases, you will
+      a Reality without producing hi's), they will remain invalid even after undoing. In those cases, you will
       need to complete the conditions in a single Reality without using undo.
     </div>
   </ModalWrapperChoice>

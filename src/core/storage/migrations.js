@@ -120,14 +120,14 @@ export const migrations = {
       migrations.adjustAchievementVars(player);
       migrations.uniformDimensions(player);
       migrations.removeEternityChallGoal(player);
-      migrations.removeTickspeed(player);
+      migrations.removeFingersnaps(player);
       migrations.removePostC3Reward(player);
       migrations.renameMoney(player);
       migrations.moveAutobuyers(player);
       migrations.convertEternityCountToDecimal(player);
       migrations.renameDimboosts(player);
       migrations.migrateConfirmations(player);
-      migrations.removeOtherTickspeedProps(player);
+      migrations.removeOtherFingersnapsProps(player);
       migrations.renameNewsOption(player);
       migrations.removeDimensionCosts(player);
       migrations.changeC8Handling(player);
@@ -463,12 +463,12 @@ export const migrations = {
         }
       }
     }
-    const tickspeedAutobuyer = player.autobuyers[8];
-    if (tickspeedAutobuyer % 1 !== 0) {
-      if (tickspeedAutobuyer.target < 10) {
-        tickspeedAutobuyer.target = AUTOBUYER_MODE.BUY_SINGLE;
+    const fingersnapsAutobuyer = player.autobuyers[8];
+    if (fingersnapsAutobuyer % 1 !== 0) {
+      if (fingersnapsAutobuyer.target < 10) {
+        fingersnapsAutobuyer.target = AUTOBUYER_MODE.BUY_SINGLE;
       } else {
-        tickspeedAutobuyer.target = AUTOBUYER_MODE.BUY_MAX;
+        fingersnapsAutobuyer.target = AUTOBUYER_MODE.BUY_MAX;
       }
     }
   },
@@ -492,14 +492,14 @@ export const migrations = {
   },
 
   adjustMultCosts(player) {
-    if (player.tickSpeedMultDecreaseCost !== undefined) {
-      player.infinityRebuyables[0] = Math.round(Math.log(player.tickSpeedMultDecreaseCost / 3e6) / Math.log(5));
+    if (player.fingerSnapsMultDecreaseCost !== undefined) {
+      player.infinityRebuyables[0] = Math.round(Math.log(player.fingerSnapsMultDecreaseCost / 3e6) / Math.log(5));
     }
     if (player.dimensionMultDecreaseCost !== undefined) {
       player.infinityRebuyables[1] = Math.round(Math.log(player.dimensionMultDecreaseCost / 1e8) / Math.log(5e3));
     }
-    delete player.tickSpeedMultDecrease;
-    delete player.tickSpeedMultDecreaseCost;
+    delete player.fingerSnapsMultDecrease;
+    delete player.fingerSnapsMultDecreaseCost;
     delete player.dimensionMultDecrease;
     delete player.dimensionMultDecreaseCost;
   },
@@ -611,7 +611,7 @@ export const migrations = {
   },
 
   adjustWhy(player) {
-    player.requirementChecks.permanent.singleTickspeed = player.why ?? 0;
+    player.requirementChecks.permanent.singleFingersnaps = player.why ?? 0;
     delete player.why;
   },
 
@@ -701,15 +701,15 @@ export const migrations = {
     delete player.eternityChallGoal;
   },
 
-  removeTickspeed(player) {
-    delete player.tickspeed;
-    player.tickSpeedCost = new Decimal(1000);
-    player.tickspeedMultiplier = new Decimal(10);
+  removeFingersnaps(player) {
+    delete player.fingersnaps;
+    player.fingerSnapsCost = new Decimal(1000);
+    player.fingersnapsMultiplier = new Decimal(10);
   },
 
-  removeOtherTickspeedProps(player) {
-    delete player.tickSpeedCost;
-    delete player.tickspeedMultiplier;
+  removeOtherFingersnapsProps(player) {
+    delete player.fingerSnapsCost;
+    delete player.fingersnapsMultiplier;
   },
 
   renameNewsOption(player) {
@@ -724,10 +724,10 @@ export const migrations = {
     }
   },
 
-  renameTickspeedPurchaseBumps(player) {
-    if (player.chall9TickspeedPurchaseBumps !== undefined) {
-      player.chall9TickspeedCostBumps = player.chall9TickspeedPurchaseBumps;
-      delete player.chall9TickspeedPurchaseBumps;
+  renameFingersnapsPurchaseBumps(player) {
+    if (player.chall9FingersnapsPurchaseBumps !== undefined) {
+      player.chall9FingersnapsCostBumps = player.chall9FingersnapsPurchaseBumps;
+      delete player.chall9FingersnapsPurchaseBumps;
     }
   },
 
@@ -820,7 +820,7 @@ export const migrations = {
 
     if (player.autobuyers[8] % 1 !== 0) {
       const old = player.autobuyers[8];
-      const autobuyer = player.auto.tickspeed;
+      const autobuyer = player.auto.fingersnaps;
       autobuyer.cost = old.cost;
       autobuyer.interval = old.interval;
       autobuyer.mode = old.target;
@@ -1152,7 +1152,7 @@ export const migrations = {
     for (let i = 0; i < 8; i++) {
       delete dims[i].priority;
     }
-    delete player.auto.tickspeed.priority;
+    delete player.auto.fingersnaps.priority;
   },
 
   deleteFloatingTextOption(player) {

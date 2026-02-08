@@ -359,7 +359,7 @@ export const devMigrations = {
       // a no-op because otherwise save conversion will have an off-by-one error and generally break entirely.
     },
     player => {
-      migrations.removeTickspeed(player);
+      migrations.removeFingersnaps(player);
       migrations.removePostC3Reward(player);
     },
     player => {
@@ -456,7 +456,7 @@ export const devMigrations = {
       delete player.celestials.teresa.dtBulk;
     },
     migrations.migrateConfirmations,
-    migrations.removeOtherTickspeedProps,
+    migrations.removeOtherFingersnapsProps,
     player => {
       // These were accidentally added back in due to a bad merge conflict resolution
       delete player.resets;
@@ -464,7 +464,7 @@ export const devMigrations = {
     },
     migrations.renameNewsOption,
     migrations.removeDimensionCosts,
-    migrations.renameTickspeedPurchaseBumps,
+    migrations.renameFingersnapsPurchaseBumps,
     player => {
       const safeArrayToBits = x => ((x === undefined) ? 0 : arrayToBits(x));
       player.celestials.teresa.unlockBits = safeArrayToBits(player.celestials.teresa.unlocks);
@@ -1109,7 +1109,7 @@ export const devMigrations = {
         },
         permanent: {
           cancerGalaxies: player.secretUnlocks.spreadingCancer,
-          singleTickspeed: player.secretUnlocks.why,
+          singleFingersnaps: player.secretUnlocks.why,
           perkTreeDragging: player.secretUnlocks.dragging,
         }
       };

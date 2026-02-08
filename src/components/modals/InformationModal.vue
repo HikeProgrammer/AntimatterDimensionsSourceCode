@@ -20,7 +20,7 @@ export default {
       </div>
     </div>
     <div class="c-info-body">
-      Antimatter Dimensions is an Idle Incremental game created by Finnish developer Hevipelle. Originating as a solo
+      Hi Dimensions is an Idle Incremental game created by Finnish developer Hevipelle. Originating as a solo
       project in 2016, it was expanded upon by a large team of developers and testers from then on.
       <br>
       <br>
@@ -39,17 +39,17 @@ export default {
         link="https://www.reddit.com/r/AntimatterDimensions/"
       />
       <InformationModalButton
-        name="Antimatter Dimensions Discord Server"
+        name="Hi Dimensions Discord Server"
         icon="fa-brands fa-discord"
         link="https://discord.gg/ST9NaXa"
       />
       <InformationModalButton
-        name="Antimatter Dimensions on Google Play"
+        name="Hi Dimensions on Google Play"
         icon="fa-brands fa-google-play"
         link="https://play.google.com/store/apps/details?id=kajfosz.antimatterdimensions"
       />
       <InformationModalButton
-        name="Antimatter Dimensions on Steam"
+        name="Hi Dimensions on Steam"
         icon="fa-brands fa-steam"
         link="https://store.steampowered.com/app/1399720/Antimatter_Dimensions/"
       />

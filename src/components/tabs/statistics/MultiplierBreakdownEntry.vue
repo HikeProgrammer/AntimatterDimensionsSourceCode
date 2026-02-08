@@ -88,10 +88,10 @@ export default {
     },
     // While infinity power is a power-based effect, we want to disallow showing that as an equivalent multiplier
     // since that it doesn't make a whole lot of sense to do that. We also want to hide this for entries related
-    // to tickspeed/galaxies because we already mostly hack those with fake values and should thus not allow those
+    // to fingersnaps/galaxies because we already mostly hack those with fake values and should thus not allow those
     // to be changed either.
     allowPowerToggle() {
-      const forbiddenEntries = ["AD_infinityPower", "galaxies", "tickspeed"];
+      const forbiddenEntries = ["AD_infinityPower", "galaxies", "fingersnaps"];
       // Uses startsWith instead of String equality since it has to match both the top-level entry and any
       // related children entries further down the tree.
       return !forbiddenEntries.some(key => this.resource.key.startsWith(key));
@@ -444,7 +444,7 @@ export default {
         class="c-no-effect"
       >
         <div>
-          "Base AD Production" is the amount of Antimatter that you would be producing with your current AD upgrades
+          "Base Hi Production" is the amount of Hi's that you would be producing with your current Hi upgrades
           as if you had waited a fixed amount of time ({{ formatInt(10) }}-{{ formatInt(40) }} seconds depending on
           your AD count) after a Sacrifice. This may misrepresent your actual production if your ADs have been
           producing for a while, but the relative mismatch will become smaller as you progress further in the game
@@ -452,7 +452,7 @@ export default {
         </div>
         <div v-if="inNC12">
           The breakdown in this tab within Normal Challenge 12 may be inaccurate for some entries, and might count
-          extra multipliers which apply to all Antimatter Dimensions rather than just the ones which are displayed.
+          extra multipliers which apply to all Hi Dimensions rather than just the ones which are displayed.
         </div>
       </div>
     </div>

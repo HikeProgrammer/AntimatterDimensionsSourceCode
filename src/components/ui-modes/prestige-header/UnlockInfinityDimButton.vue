@@ -19,9 +19,9 @@ export default {
       const amDisplay = format(this.amRequirement);
       const ipDisplay = format(this.ipRequirement);
       if (this.hasIPUnlock) {
-        return `Reach ${ipDisplay} Infinity Points and ${amDisplay} antimatter to unlock ${dimensionText}`;
+        return `Reach ${ipDisplay} Infinity Points and ${amDisplay} hi's to unlock ${dimensionText}`;
       }
-      return `Reach ${amDisplay} antimatter to unlock ${dimensionText}`;
+      return `Reach ${amDisplay} hi's to unlock ${dimensionText}`;
     },
     buttonClassObject() {
       return {

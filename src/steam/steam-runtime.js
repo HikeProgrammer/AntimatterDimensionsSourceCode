@@ -154,7 +154,7 @@ function createForceRefreshCanvas() {
   // Makopaz:
   // "essentially it makes the overlay have a refresh rate, otherwise it only
   // updates based on parts of the screen which change, so without it the small
-  // areas of the screen where antimatter and such increment would be the only
+  // areas of the screen where hi's and such increment would be the only
   // small portions of the overlay showing."
   // There should be a less expensive approach. Please create a new issue or
   // PR on GitHub if you know one, the planet will say thank you for saving

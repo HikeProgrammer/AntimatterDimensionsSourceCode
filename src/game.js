@@ -47,7 +47,7 @@ export function playerInfinityUpgradesOnReset() {
   if (PelleUpgrade.keepInfinityUpgrades.canBeApplied) {
     player.infinityUpgrades = new Set([...player.infinityUpgrades].filter(u => infinityUpgrades.has(u)));
     player.infinityRebuyables = [0, 0, 0];
-    GameCache.tickSpeedMultDecrease.invalidate();
+    GameCache.fingerSnapsMultDecrease.invalidate();
     GameCache.dimensionMultDecrease.invalidate();
     return;
   }
@@ -68,7 +68,7 @@ export function playerInfinityUpgradesOnReset() {
     player.infinityRebuyables = [0, 0, 0];
   }
 
-  GameCache.tickSpeedMultDecrease.invalidate();
+  GameCache.fingerSnapsMultDecrease.invalidate();
   GameCache.dimensionMultDecrease.invalidate();
 }
 
@@ -566,7 +566,7 @@ export function gameLoop(passDiff, options = {}) {
   InfinityDimensions.tick(diff);
   AntimatterDimensions.tick(diff);
 
-  const gain = Math.clampMin(FreeTickspeed.fromShards(Currency.timeShards.value).newAmount - player.totalTickGained, 0);
+  const gain = Math.clampMin(FreeFingersnaps.fromShards(Currency.timeShards.value).newAmount - player.totalTickGained, 0);
   player.totalTickGained += gain;
 
   updatePrestigeRates();
@@ -751,7 +751,7 @@ function laitelaRealityTick(realDiff) {
       }
     }
     if (Laitela.realityReward > oldInfo.realityReward) {
-      completionText += `<br><br>Dark Matter Multiplier: ${formatX(oldInfo.realityReward, 2, 2)}
+      completionText += `<br><br>Nigga Multiplier: ${formatX(oldInfo.realityReward, 2, 2)}
       ➜ ${formatX(Laitela.realityReward, 2, 2)}`;
       if (oldInfo.fastestCompletion === 3600 || oldInfo.fastestCompletion === 300 && oldInfo.difficultyTier > 0) {
         if (Time.thisRealityRealTime.totalSeconds < 30) {
@@ -1084,7 +1084,7 @@ export function browserCheck() {
 
 export function init() {
   // eslint-disable-next-line no-console
-  console.log("🌌 Antimatter Dimensions: Reality Update 🌌");
+  console.log("🌌 Hi Dimensions: Reality Update 🌌");
   if (DEV) {
     // eslint-disable-next-line no-console
     console.log("👨‍💻 Development Mode 👩‍💻");

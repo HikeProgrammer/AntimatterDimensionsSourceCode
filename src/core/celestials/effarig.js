@@ -100,8 +100,8 @@ export const Effarig = {
   get multDilation() {
     return 0.25 + 0.25 * this.nerfFactor(Currency.infinityPower.value);
   },
-  get tickspeed() {
-    const base = 3 + Tickspeed.baseValue.reciprocal().log10();
+  get fingersnaps() {
+    const base = 3 + Fingersnaps.baseValue.reciprocal().log10();
     return Decimal.pow10(Math.pow(base, this.tickDilation)).reciprocal();
   },
   multiplier(mult) {

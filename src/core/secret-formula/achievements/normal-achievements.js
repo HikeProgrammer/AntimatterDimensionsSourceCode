@@ -4,31 +4,31 @@ export const normalAchievements = [
   {
     id: 11,
     name: "You gotta start somewhere",
-    description: "Buy a 1st Antimatter Dimension.",
+    description: "Buy a coffee.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
     id: 12,
-    name: "100 antimatter is a lot",
-    description: "Buy a 2nd Antimatter Dimension.",
+    name: "100 hi's is a lot",
+    description: "Buy a machine.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
     id: 13,
     name: "Half life 3 CONFIRMED",
-    description: "Buy a 3rd Antimatter Dimension.",
+    description: "Buy a brewer.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
     id: 14,
     name: "L4D: Left 4 Dimensions",
-    description: "Buy a 4th Antimatter Dimension.",
+    description: "Buy Nas.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
     id: 15,
-    name: "5 Dimension Antimatter Punch",
-    description: "Buy a 5th Antimatter Dimension.",
+    name: "5 Dimension Hi's Punch",
+    description: "Buy a roastery.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
@@ -36,15 +36,15 @@ export const normalAchievements = [
     name: "We couldn't afford 9",
     get description() {
       return Enslaved.isRunning
-        ? "Buy a 6th Antimatter Dimension (they never amount to anything)"
-        : "Buy a 6th Antimatter Dimension.";
+        ? "Buy a chain (they never amount to anything)"
+        : "Buy a chain.";
     },
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
     id: 17,
     name: "Not a luck related achievement",
-    description: "Buy a 7th Antimatter Dimension.",
+    description: "Buy a corporation.",
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
   {
@@ -52,8 +52,8 @@ export const normalAchievements = [
     name: "90 degrees to infinity",
     get description() {
       return Enslaved.isRunning
-        ? "Buy an 8th Antimatter Dimension (don't get used to it)"
-        : "Buy an 8th Antimatter Dimension.";
+        ? "Buy a nation (don't get used to it)"
+        : "Buy a nation.";
     },
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
   },
@@ -63,7 +63,7 @@ export const normalAchievements = [
     description: "Go Infinite.",
     checkRequirement: () => true,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `Start with ${formatInt(100)} antimatter.`; },
+    get reward() { return `Start with ${formatInt(100)} hi's.`; },
     effect: 100
   },
   {
@@ -76,15 +76,15 @@ export const normalAchievements = [
   {
     id: 23,
     name: "The 9th Dimension is a lie",
-    get description() { return `Have exactly ${formatInt(99)} 8th Antimatter Dimensions.`; },
+    get description() { return `Have exactly ${formatInt(99)} nations.`; },
     checkRequirement: () => AntimatterDimension(8).amount.eq(99),
-    get reward() { return `8th Antimatter Dimensions are ${formatPercents(0.1)} stronger.`; },
+    get reward() { return `nations are ${formatPercents(0.1)} stronger.`; },
     effect: 1.1
   },
   {
     id: 24,
-    name: "Antimatter Apocalypse",
-    get description() { return `Get over ${format(DC.E80)} antimatter.`; },
+    name: "Hi's Apocalypse",
+    get description() { return `Get over ${format(DC.E80)} hi's.`; },
     checkRequirement: () => Currency.antimatter.exponent >= 80,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
@@ -98,14 +98,14 @@ export const normalAchievements = [
   {
     id: 26,
     name: "You got past The Big Wall",
-    description: "Buy an Antimatter Galaxy.",
+    description: "Buy a Hi's Galaxy.",
     checkRequirement: () => true,
     checkEvent: GAME_EVENT.GALAXY_RESET_BEFORE
   },
   {
     id: 27,
     name: "Double Galaxy",
-    get description() { return `Buy ${formatInt(2)} Antimatter Galaxies.`; },
+    get description() { return `Buy ${formatInt(2)} Hi's Galaxies.`; },
     checkRequirement: () => player.galaxies >= 2,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER
   },
@@ -113,20 +113,20 @@ export const normalAchievements = [
     id: 28,
     name: "There's no point in doing that...",
     get description() {
-      return `Buy a single 1st Antimatter Dimension when you have over ${format(DC.E150)} of them.`;
+      return `Buy a single coffee when you have over ${format(DC.E150)} of them.`;
     },
     checkRequirement: () => AntimatterDimension(1).amount.exponent >= 150,
     checkEvent: GAME_EVENT.ACHIEVEMENT_EVENT_OTHER,
-    get reward() { return `1st Antimatter Dimensions are ${formatPercents(0.1)} stronger.`; },
+    get reward() { return `Hi Dimensions are ${formatPercents(0.1)} stronger.`; },
     effect: 1.1
   },
   {
     id: 31,
     name: "I forgot to nerf that",
-    get description() { return `Get any Antimatter Dimension multiplier over ${formatX(DC.E31)}.`; },
+    get description() { return `Get any Hi Dimensions multiplier over ${formatX(DC.E31)}.`; },
     checkRequirement: () => AntimatterDimensions.all.some(x => x.multiplier.exponent >= 31),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    get reward() { return `1st Antimatter Dimensions are ${formatPercents(0.05)} stronger.`; },
+    get reward() { return `1st Hi Dimensions are ${formatPercents(0.05)} stronger.`; },
     effect: 1.05
   },
   {
@@ -152,7 +152,7 @@ export const normalAchievements = [
   {
     id: 34,
     name: "You didn't need it anyway",
-    description: "Infinity without having any 8th Antimatter Dimensions.",
+    description: "Infinity without having any nation.",
     checkRequirement: () => AntimatterDimension(8).totalAmount.eq(0),
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() { return `Dimensions 1-7 are ${formatPercents(0.02)} stronger.`; },
@@ -173,7 +173,7 @@ export const normalAchievements = [
     id: 36,
     name: "Claustrophobic",
     get description() {
-      return `Infinity with just ${formatInt(1)} Antimatter Galaxy. (Your Antimatter Galaxies are reset on Infinity.)`;
+      return `Infinity with just ${formatInt(1)} Hi's Galaxy. (Your Hi's Galaxies are reset on Infinity.)`;
     },
     checkRequirement: () => player.galaxies === 1,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
@@ -186,15 +186,15 @@ export const normalAchievements = [
     get description() { return `Infinity in under ${formatInt(2)} hours.`; },
     checkRequirement: () => Time.thisInfinityRealTime.totalHours <= 2,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `Start with ${formatInt(5000)} antimatter.`; },
+    get reward() { return `Start with ${formatInt(5000)} hi's.`; },
     effect: 5000
   },
   {
     id: 38,
     name: "I don't believe in Gods",
     get description() {
-      return `Buy an Antimatter Galaxy without Dimensional Sacrificing.
-        (Your Antimatter Galaxies are reset on Infinity.)`;
+      return `Buy an Hi's Galaxy without Dimensional Sacrificing.
+        (Your Hi's Galaxies are reset on Infinity.)`;
     },
     checkRequirement: () => player.requirementChecks.infinity.noSacrifice,
     checkEvent: GAME_EVENT.GALAXY_RESET_BEFORE
@@ -217,7 +217,7 @@ export const normalAchievements = [
     id: 42,
     name: "Super Sanic",
     get description() {
-      return `Have antimatter per second exceed your current antimatter above ${format(DC.E63)}.`;
+      return `Have hi's per second exceed your current hi's above ${format(DC.E63)}.`;
     },
     checkRequirement: () =>
       Currency.antimatter.exponent >= 63 &&
@@ -228,7 +228,7 @@ export const normalAchievements = [
     id: 43,
     name: "How the antitables have turned..",
     description:
-      "Get the 8th Antimatter Dimension multiplier to be highest, 7th Antimatter Dimension multiplier " +
+      "Get the nation dimension multiplier to be highest, corporations multiplier " +
       " second highest, etc.",
     checkRequirement: () => {
       const multipliers = Array.range(1, 8).map(tier => AntimatterDimension(tier).multiplier);
@@ -239,7 +239,7 @@ export const normalAchievements = [
     },
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     get reward() {
-      return `Each Antimatter Dimension gains a boost proportional to tier
+      return `Each Hi Dimensions gains a boost proportional to tier
       (8th gets ${formatPercents(0.08)}, 7th gets ${formatPercents(0.07)}, etc.)`;
     }
   },
@@ -247,7 +247,7 @@ export const normalAchievements = [
     id: 44,
     name: "Over in 30 Seconds",
     get description() {
-      return `Have antimatter per second exceed your current antimatter
+      return `Have hi's per second exceed your current hi's
       for ${formatInt(30)} consecutive seconds.`;
     },
     checkRequirement: () => AchievementTimers.marathon1
@@ -258,15 +258,15 @@ export const normalAchievements = [
     id: 45,
     name: "Faster than a potato",
     get description() { return `Get more than ${format(DC.E29)} ticks per second.`; },
-    checkRequirement: () => Tickspeed.current.exponent <= -26,
+    checkRequirement: () => Fingersnaps.current.exponent <= -26,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    get reward() { return `Multiply starting tickspeed by ${formatX(1.02, 0, 2)}.`; },
+    get reward() { return `Multiply starting fingersnaps by ${formatX(1.02, 0, 2)}.`; },
     effect: 0.98
   },
   {
     id: 46,
     name: "Multidimensional",
-    get description() { return `Reach ${format(DC.E12)} of all Antimatter Dimensions except the 8th.`; },
+    get description() { return `Reach ${format(DC.E12)} of all Hi Dimensions except the 8th.`; },
     checkRequirement: () => AntimatterDimension(7).amount.exponent >= 12,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
@@ -296,8 +296,8 @@ export const normalAchievements = [
   {
     id: 52,
     name: "Age of Automation",
-    description: "Max the interval for Antimatter Dimension and Tickspeed upgrade autobuyers.",
-    checkRequirement: () => Autobuyer.antimatterDimension.zeroIndexed.concat(Autobuyer.tickspeed)
+    description: "Max the interval for Hi Dimensions and Fingersnaps upgrade autobuyers.",
+    checkRequirement: () => Autobuyer.antimatterDimension.zeroIndexed.concat(Autobuyer.fingersnaps)
       .every(a => a.isUnlocked && a.hasMaxedInterval),
     checkEvent: [GAME_EVENT.REALITY_RESET_AFTER, GAME_EVENT.REALITY_UPGRADE_TEN_BOUGHT]
   },
@@ -305,7 +305,7 @@ export const normalAchievements = [
     id: 53,
     name: "Definitely not worth it",
     description: "Max the intervals for all normal autobuyers.",
-    // The upgradeable autobuyers are dimensions, tickspeed, dimension boost,
+    // The upgradeable autobuyers are dimensions, fingersnaps, dimension boost,
     // galaxy, and big crunch (the ones you get from normal challenges).
     // We don't count autobuyers which can be upgraded via e.g. perks as upgradeable.
     checkRequirement: () => Autobuyers.upgradeable
@@ -318,7 +318,7 @@ export const normalAchievements = [
     get description() { return `Infinity in ${formatInt(10)} minutes or less.`; },
     checkRequirement: () => Time.thisInfinityRealTime.totalMinutes <= 10,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `Start with ${format(5e5)} antimatter.`; },
+    get reward() { return `Start with ${format(5e5)} hi's.`; },
     effect: 5e5
   },
   {
@@ -327,19 +327,19 @@ export const normalAchievements = [
     get description() { return `Infinity in ${formatInt(1)} minute or less.`; },
     checkRequirement: () => Time.thisInfinityRealTime.totalMinutes <= 1,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `Start with ${format(5e10)} antimatter.`; },
+    get reward() { return `Start with ${format(5e10)} hi's.`; },
     effect: 5e10
   },
   {
     id: 56,
     name: "Many Deaths",
     get description() {
-      return `Complete the 2nd Antimatter Dimension Autobuyer Challenge in ${formatInt(3)} minutes or less.`;
+      return `Complete the Machines Dimension Autobuyer Challenge in ${formatInt(3)} minutes or less.`;
     },
     checkRequirement: () => NormalChallenge(2).isOnlyActiveChallenge && Time.thisInfinityRealTime.totalMinutes <= 3,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() {
-      return `All Antimatter Dimensions are stronger in the first ${formatInt(3)} minutes of Infinities.`;
+      return `All Hi Dimensions are stronger in the first ${formatInt(3)} minutes of Infinities.`;
     },
     effect: () => Math.max(6 / (Time.thisInfinity.totalMinutes + 3), 1),
     effectCondition: () => Time.thisInfinity.totalMinutes < 3,
@@ -349,7 +349,7 @@ export const normalAchievements = [
     id: 57,
     name: "Gift from the Gods",
     get description() {
-      return `Complete the 8th Antimatter Dimension Autobuyer Challenge in ${formatInt(3)} minutes or less.`;
+      return `Complete the nation dimensions Autobuyer Challenge in ${formatInt(3)} minutes or less.`;
     },
     checkRequirement: () => NormalChallenge(8).isOnlyActiveChallenge && Time.thisInfinityRealTime.totalMinutes <= 3,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
@@ -363,11 +363,11 @@ export const normalAchievements = [
   {
     id: 58,
     name: "This is fine.",
-    get description() { return `Complete the Tickspeed Autobuyer Challenge in ${formatInt(3)} minutes or less.`; },
+    get description() { return `Complete the Fingersnaps Autobuyer Challenge in ${formatInt(3)} minutes or less.`; },
     checkRequirement: () => NormalChallenge(9).isOnlyActiveChallenge && Time.thisInfinityRealTime.totalMinutes <= 3,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() {
-      return `Increase the multiplier for buying ${formatInt(10)} Antimatter Dimensions by +${formatPercents(0.01)}.`;
+      return `Increase the multiplier for buying ${formatInt(10)} Hi Dimensions by +${formatPercents(0.01)}.`;
     },
     effect: 1.01
   },
@@ -375,7 +375,7 @@ export const normalAchievements = [
     id: 61,
     name: "Bulked Up",
     get description() {
-      return `Get all of your Antimatter Dimension Autobuyer bulk amounts to
+      return `Get all of your Hi Dimensions Autobuyer bulk amounts to
         ${formatInt(Autobuyer.antimatterDimension.bulkCap)}.`;
     },
     checkRequirement: () => Autobuyer.antimatterDimension.zeroIndexed.every(x => x.hasMaxedBulk),
@@ -400,10 +400,10 @@ export const normalAchievements = [
   {
     id: 64,
     name: "Zero Deaths",
-    description: "Get to Infinity without Dimension Boosts or Antimatter Galaxies while in a Normal Challenge.",
+    description: "Get to Infinity without Dimension Boosts or Hi's Galaxies while in a Normal Challenge.",
     checkRequirement: () => player.galaxies === 0 && DimBoost.purchasedBoosts === 0 && NormalChallenge.isRunning,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `Antimatter Dimensions 1-4 are ${formatPercents(0.25)} stronger.`; },
+    get reward() { return `Hi Dimensions 1-4 are ${formatPercents(0.25)} stronger.`; },
     effect: 1.25
   },
   {
@@ -413,7 +413,7 @@ export const normalAchievements = [
     checkRequirement: () => Time.challengeSum.totalMinutes < 3,
     checkEvent: [GAME_EVENT.BIG_CRUNCH_AFTER, GAME_EVENT.REALITY_RESET_AFTER],
     get reward() {
-      return `All Antimatter Dimensions are stronger in the first ${formatInt(3)} minutes of Infinities,
+      return `All Hi Dimensions are stronger in the first ${formatInt(3)} minutes of Infinities,
       but only in Challenges.`;
     },
     effect: () => (Player.isInAnyChallenge ? Math.max(4 / (Time.thisInfinity.totalMinutes + 1), 1) : 1),
@@ -424,9 +424,9 @@ export const normalAchievements = [
     id: 66,
     name: "Faster than a squared potato",
     get description() { return `Get more than ${format(DC.E58)} ticks per second.`; },
-    checkRequirement: () => Tickspeed.current.exponent <= -55,
+    checkRequirement: () => Fingersnaps.current.exponent <= -55,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    get reward() { return `Multiply starting tickspeed by ${formatX(1.02, 0, 2)}.`; },
+    get reward() { return `Multiply starting fingersnaps by ${formatX(1.02, 0, 2)}.`; },
     effect: 0.98
   },
   {
@@ -440,46 +440,46 @@ export const normalAchievements = [
     id: 68,
     name: "You did this again just for the achievement right?",
     get description() {
-      return `Complete the 3rd Antimatter Dimension Autobuyer Challenge in ${formatInt(10)} seconds or less.`;
+      return `Complete the Brewers Dimensions Autobuyer Challenge in ${formatInt(10)} seconds or less.`;
     },
     checkRequirement: () => NormalChallenge(3).isOnlyActiveChallenge && Time.thisInfinityRealTime.totalSeconds <= 10,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `1st Antimatter Dimensions are ${formatPercents(0.5)} stronger.`; },
+    get reward() { return `1st Hi Dimensions are ${formatPercents(0.5)} stronger.`; },
     effect: 1.5
   },
   {
     id: 71,
     name: "ERROR 909: Dimension not found",
     description:
-      `Get to Infinity with only a single 1st Antimatter Dimension without Dimension Boosts
-      or Antimatter Galaxies, while in the 2nd Antimatter Dimension Autobuyer Challenge.`,
+      `Get to Infinity with only a single coffee without Dimension Boosts
+      or Hi's Galaxies, while in the Machines Dimension Autobuyer Challenge.`,
     checkRequirement: () =>
       NormalChallenge(2).isOnlyActiveChallenge &&
       AntimatterDimension(1).amount.eq(1) &&
       DimBoost.purchasedBoosts === 0 &&
       player.galaxies === 0,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
-    get reward() { return `1st Antimatter Dimensions are ${formatInt(3)} times stronger.`; },
+    get reward() { return `1st Hi Dimensions are ${formatInt(3)} times stronger.`; },
     effect: 3
   },
   {
     id: 72,
     name: "Can't hold all these infinities",
     get description() {
-      return `Get all Antimatter Dimension multipliers over ${formatX(Decimal.NUMBER_MAX_VALUE, 1)}.`;
+      return `Get all Hi Dimensions multipliers over ${formatX(Decimal.NUMBER_MAX_VALUE, 1)}.`;
     },
     checkRequirement: () => AntimatterDimensions.all.every(x => x.multiplier.gte(Decimal.NUMBER_MAX_VALUE)),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    get reward() { return `All Antimatter Dimensions are ${formatPercents(0.1)} stronger.`; },
+    get reward() { return `All Hi Dimensions are ${formatPercents(0.1)} stronger.`; },
     effect: 1.1
   },
   {
     id: 73,
     name: "THIS ACHIEVEMENT DOESN'T EXIST",
-    get description() { return `Get ${formatPostBreak(DC.D9_9999E9999, 4)} antimatter.`; },
+    get description() { return `Get ${formatPostBreak(DC.D9_9999E9999, 4)} hi's.`; },
     checkRequirement: () => Currency.antimatter.gte(DC.D9_9999E9999),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    reward: "Antimatter Dimensions gain a multiplier based on current antimatter.",
+    reward: "Hi Dimensions gain a multiplier based on current hi's.",
     effect: () => Currency.antimatter.value.pow(0.00002).plus(1),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
@@ -489,7 +489,7 @@ export const normalAchievements = [
     get description() { return `Get the sum of all best Normal Challenge times under ${formatInt(5)} seconds.`; },
     checkRequirement: () => Time.challengeSum.totalSeconds < 5,
     checkEvent: [GAME_EVENT.BIG_CRUNCH_AFTER, GAME_EVENT.REALITY_RESET_AFTER],
-    get reward() { return `All Antimatter Dimensions are ${formatPercents(0.4)} stronger, but only in challenges.`; },
+    get reward() { return `All Hi Dimensions are ${formatPercents(0.4)} stronger, but only in challenges.`; },
     effect: 1.4,
     effectCondition: () => Player.isInAnyChallenge
   },
@@ -508,7 +508,7 @@ export const normalAchievements = [
     get description() { return `Play for ${formatInt(8)} days.`; },
     checkRequirement: () => Time.totalTimePlayed.totalDays >= 8,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    reward: "Extremely small multiplier to Antimatter Dimensions based on time played.",
+    reward: "Extremely small multiplier to Hi Dimensions based on time played.",
     effect: () => Math.max(Math.pow(Time.totalTimePlayed.totalDays / 2, 0.05), 1),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
@@ -526,7 +526,7 @@ export const normalAchievements = [
     checkRequirement: () => Time.thisInfinityRealTime.totalMilliseconds <= 250,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() {
-      return `Start with ${format(5e25)} antimatter.`;
+      return `Start with ${format(5e25)} hi's.`;
     },
     effect: 5e25
   },
@@ -547,20 +547,20 @@ export const normalAchievements = [
   {
     id: 83,
     name: "YOU CAN GET 50 GALAXIES?!?!",
-    get description() { return `Get ${formatInt(50)} Antimatter Galaxies.`; },
+    get description() { return `Get ${formatInt(50)} Hi's Galaxies.`; },
     checkRequirement: () => player.galaxies >= 50,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER,
-    get reward() { return `Tickspeed is just over ${formatPercents(0.05)} faster per Antimatter Galaxy.`; },
+    get reward() { return `Fingersnaps is just over ${formatPercents(0.05)} faster per Hi's Galaxy.`; },
     effect: () => DC.D0_95.pow(player.galaxies),
     formatEffect: value => `${formatX(value.recip(), 2, 2)}`
   },
   {
     id: 84,
     name: "I got a few to spare",
-    get description() { return `Reach ${formatPostBreak("1e35000")} antimatter.`; },
+    get description() { return `Reach ${formatPostBreak("1e35000")} hi's.`; },
     checkRequirement: () => Currency.antimatter.exponent >= 35000,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    reward: "Antimatter Dimensions are stronger the more unspent antimatter you have.",
+    reward: "Hi Dimensions are stronger the more unspent hi's you have.",
     effect: () => Currency.antimatter.value.pow(0.00002).plus(1),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
@@ -576,8 +576,8 @@ export const normalAchievements = [
   {
     id: 86,
     name: "Do you even bend time bro?",
-    get description() { return `Reach ${formatX(1000)} faster per Tickspeed upgrade.`; },
-    checkRequirement: () => Tickspeed.multiplier.recip().gte(1000),
+    get description() { return `Reach ${formatX(1000)} faster per Fingersnaps upgrade.`; },
+    checkRequirement: () => Fingersnaps.multiplier.recip().gte(1000),
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     get reward() { return `All Galaxies are ${formatPercents(0.01)} stronger.`; },
     effect: 1.01
@@ -619,7 +619,7 @@ export const normalAchievements = [
     checkRequirement: () => gainedInfinityPoints().exponent >= 200 && Time.thisInfinityRealTime.totalSeconds <= 2,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() {
-      return `All Antimatter Dimensions are significantly stronger in the
+      return `All Hi Dimensions are significantly stronger in the
       first ${formatInt(5)} seconds of Infinities.`;
     },
     effect: () => Math.max((5 - Time.thisInfinity.totalSeconds) * 60, 1),
@@ -635,7 +635,7 @@ export const normalAchievements = [
     checkRequirement: () => gainedInfinityPoints().exponent >= 250 && Time.thisInfinityRealTime.totalSeconds <= 20,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() {
-      return `All Antimatter Dimensions are significantly stronger in the
+      return `All Hi Dimensions are significantly stronger in the
       first ${formatInt(60)} seconds of Infinities.`;
     },
     effect: () => Math.max((1 - Time.thisInfinity.totalMinutes) * 100, 1),
@@ -694,7 +694,7 @@ export const normalAchievements = [
   {
     id: 101,
     name: "8 nobody got time for that",
-    description: "Eternity without buying Antimatter Dimensions 1-7.",
+    description: "Eternity without buying Hi Dimensions 1-7.",
     checkRequirement: () => player.requirementChecks.eternity.onlyAD8,
     checkEvent: GAME_EVENT.ETERNITY_RESET_BEFORE
   },
@@ -728,11 +728,11 @@ export const normalAchievements = [
   {
     id: 105,
     name: "Infinite Time",
-    get description() { return `Have ${formatInt(308)} Tickspeed upgrades from Time Dimensions.`; },
+    get description() { return `Have ${formatInt(308)} Fingersnaps upgrades from Time Dimensions.`; },
     checkRequirement: () => player.totalTickGained >= 308,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
-    reward: "Time Dimensions gain a multiplier based on tickspeed.",
-    effect: () => Tickspeed.perSecond.pow(0.000005),
+    reward: "Time Dimensions gain a multiplier based on fingersnaps.",
+    effect: () => Fingersnaps.perSecond.pow(0.000005),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
   {
@@ -772,7 +772,7 @@ export const normalAchievements = [
       return true;
     },
     checkEvent: GAME_EVENT.BIG_CRUNCH_AFTER,
-    reward: "Your antimatter doesn't reset on Dimension Boosts or Antimatter Galaxies."
+    reward: "Your hi's doesn't reset on Dimension Boosts or Hi's Galaxies."
   },
   {
     id: 112,
@@ -829,7 +829,7 @@ export const normalAchievements = [
     checkRequirement: ([bulk]) => bulk >= 750,
     checkEvent: GAME_EVENT.DIMBOOST_AFTER,
     get reward() {
-      return `The multiplier from Dimension Boosts to Antimatter Dimensions is ${formatPercents(0.01)} higher.`;
+      return `The multiplier from Dimension Boosts to Hi Dimensions is ${formatPercents(0.01)} higher.`;
     },
     effect: 1.01
   },
@@ -839,7 +839,7 @@ export const normalAchievements = [
     get description() { return `Get a total Dimensional Sacrifice multiplier of ${formatPostBreak(DC.E9000)}.`; },
     checkRequirement: () => Sacrifice.totalBoost.exponent >= 9000,
     checkEvent: GAME_EVENT.SACRIFICE_RESET_AFTER,
-    reward: `Dimensional Sacrifice doesn't reset your Antimatter Dimensions
+    reward: `Dimensional Sacrifice doesn't reset your Hi Dimensions
       and the Autobuyer activates every tick if turned on.`,
   },
   {
@@ -852,7 +852,7 @@ export const normalAchievements = [
   {
     id: 122,
     name: "You're already dead.",
-    description: "Eternity without buying Antimatter Dimensions 2-8.",
+    description: "Eternity without buying Hi Dimensions 2-8.",
     checkRequirement: () => player.requirementChecks.eternity.onlyAD1,
     checkEvent: GAME_EVENT.ETERNITY_RESET_BEFORE
   },
@@ -883,7 +883,7 @@ export const normalAchievements = [
     name: "Like feasting on a behind",
     get description() {
       return `Reach ${format(DC.E90)} Infinity Points without having any Infinities
-      or any 1st Antimatter Dimensions in your current Eternity.`;
+      or any 1st Hi Dimensions in your current Eternity.`;
     },
     checkRequirement: () => Currency.infinityPoints.exponent >= 90 &&
       player.requirementChecks.eternity.noAD1 && Currency.infinities.eq(0),
@@ -899,7 +899,7 @@ export const normalAchievements = [
   {
     id: 126,
     name: "Popular music",
-    get description() { return `Have ${formatInt(180)} times more Replicanti Galaxies than Antimatter Galaxies.`; },
+    get description() { return `Have ${formatInt(180)} times more Replicanti Galaxies than Hi's Galaxies.`; },
     checkRequirement: () => Replicanti.galaxies.total >= 180 * player.galaxies && player.galaxies > 0,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     get reward() {
@@ -944,12 +944,12 @@ export const normalAchievements = [
     id: 132,
     name: "Unique snowflakes",
     get description() {
-      return `Have ${formatInt(569)} Antimatter Galaxies without gaining any
+      return `Have ${formatInt(569)} Hi's Galaxies without gaining any
         Replicanti Galaxies in your current Eternity.`;
     },
     checkRequirement: () => player.galaxies >= 569 && player.requirementChecks.eternity.noRG,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER,
-    reward: "Gain a multiplier to Tachyon Particle and Dilated Time gain based on Antimatter Galaxies.",
+    reward: "Gain a multiplier to Tachyon Particle and Dilated Time gain based on Hi's Galaxies.",
     effect: () => 1.22 * Math.max(Math.pow(player.galaxies, 0.04), 1),
     formatEffect: value => `${formatX(value, 2, 2)}`
   },
@@ -981,7 +981,7 @@ export const normalAchievements = [
     id: 135,
     name: "Faster than a potato^286078",
     get description() { return `Get more than ${formatPostBreak("1e8296262")} ticks per second.`; },
-    checkRequirement: () => Tickspeed.current.exponent <= -8296262,
+    checkRequirement: () => Fingersnaps.current.exponent <= -8296262,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
   {
@@ -994,7 +994,7 @@ export const normalAchievements = [
     id: 137,
     name: "Now you're thinking with dilation!",
     get description() {
-      return `Get ${formatPostBreak("1e260000")} antimatter
+      return `Get ${formatPostBreak("1e260000")} hi's
       in ${formatInt(1)} minute or less while Dilated.`;
     },
     checkRequirement: () =>
@@ -1026,7 +1026,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.REALITY_RESET_BEFORE,
     get reward() {
       return `${formatX(4)} Infinity Point gain, and increase the multiplier for buying ${formatInt(10)}
-      Antimatter Dimensions by +${format(0.1, 0, 1)}.`;
+      Hi Dimensions by +${format(0.1, 0, 1)}.`;
     },
     effects: {
       ipGain: 4,
@@ -1109,8 +1109,8 @@ export const normalAchievements = [
     id: 151,
     name: "You really didn't need it anyway",
     get description() {
-      return `Get ${formatInt(800)} Antimatter Galaxies without
-      buying 8th Antimatter Dimensions in your current Infinity.`;
+      return `Get ${formatInt(800)} Hi's Galaxies without
+      buying nations in your current Infinity.`;
     },
     checkRequirement: () => player.galaxies >= 800 && player.requirementChecks.infinity.noAD8,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER,
@@ -1126,7 +1126,7 @@ export const normalAchievements = [
   {
     id: 153,
     name: "More like \"reallydoesn'tmatter\"",
-    description: "Reality without producing antimatter.",
+    description: "Reality without producing hi's.",
     checkRequirement: () => player.requirementChecks.reality.noAM,
     checkEvent: GAME_EVENT.REALITY_RESET_BEFORE,
   },
@@ -1179,7 +1179,7 @@ export const normalAchievements = [
   {
     id: 161,
     name: "that's where you're wrong kiddo",
-    get description() { return `Get ${formatPostBreak(DC.E1E8)} antimatter while Dilated.`; },
+    get description() { return `Get ${formatPostBreak(DC.E1E8)} hi's while Dilated.`; },
     checkRequirement: () => Currency.antimatter.exponent >= 100000000 && player.dilation.active,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
@@ -1297,7 +1297,7 @@ export const normalAchievements = [
   {
     id: 176,
     name: "Mom counted to 3",
-    description: "Annihilate your Dark Matter Dimensions.",
+    description: "Annihilate your Nigga Dimensions.",
   },
   {
     id: 177,
@@ -1309,7 +1309,7 @@ export const normalAchievements = [
   {
     id: 178,
     name: "Destroyer of Worlds",
-    get description() { return `Get ${formatInt(100000)} Antimatter Galaxies.`; },
+    get description() { return `Get ${formatInt(100000)} Hi's Galaxies.`; },
     checkRequirement: () => player.galaxies >= 100000,
     checkEvent: GAME_EVENT.GALAXY_RESET_AFTER,
     get reward() { return `All Galaxies are ${formatPercents(0.01)} stronger.`; },
@@ -1318,7 +1318,7 @@ export const normalAchievements = [
   {
     id: 181,
     displayId: 666,
-    name: "Antimatter Dimensions Eternal",
+    name: "Hi Dimensions Eternal",
     description: "Doom your Reality.",
     checkRequirement: () => Pelle.isDoomed,
     checkEvent: GAME_EVENT.REALITY_RESET_AFTER,
@@ -1326,7 +1326,7 @@ export const normalAchievements = [
   {
     id: 182,
     name: "One more time",
-    description: "Permanently gain back all Antimatter Dimension autobuyers.",
+    description: "Permanently gain back all Hi Dimensions autobuyers.",
     checkRequirement: () => PelleUpgrade.antimatterDimAutobuyers1.canBeApplied &&
       PelleUpgrade.antimatterDimAutobuyers2.canBeApplied,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
@@ -1339,7 +1339,7 @@ export const normalAchievements = [
     checkEvent: GAME_EVENT.INFINITY_CHALLENGE_COMPLETED,
     // Weirdly specific reward? Yes, its V's ST bonus because we forgot to disable it
     // when balancing Pelle and only realised too late.
-    get reward() { return `All Antimatter Dimensions are raised to ${formatPow(1.0812403840463596, 0, 3)}`; },
+    get reward() { return `All Hi Dimensions are raised to ${formatPow(1.0812403840463596, 0, 3)}`; },
     effect: 1.0812403840463596
   },
   {

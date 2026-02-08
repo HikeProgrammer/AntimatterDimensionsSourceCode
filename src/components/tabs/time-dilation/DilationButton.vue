@@ -74,7 +74,7 @@ export default {
     <span v-else>
       {{ disableText }}
       <br>
-      Reach {{ format(requiredForGain, 2, 1) }} antimatter to gain more Tachyon Particles.
+      Reach {{ format(requiredForGain, 2, 1) }} hi's to gain more Tachyon Particles.
     </span>
   </button>
 </template>

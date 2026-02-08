@@ -4,7 +4,7 @@ export const confirmationTypes = [
     option: "dimensionBoost",
     isUnlocked: () => PlayerProgress.infinityUnlocked() || player.galaxies > 0 || player.dimensionBoosts > 0,
   }, {
-    name: "Antimatter Galaxy",
+    name: "Hi's Galaxy",
     option: "antimatterGalaxy",
     isUnlocked: () => PlayerProgress.infinityUnlocked() || player.galaxies > 0,
   }, {

@@ -30,14 +30,14 @@ export const breakInfinityUpgrades = {
   totalAMMult: {
     id: "totalMult",
     cost: 1e4,
-    description: "Antimatter Dimensions gain a multiplier based on total antimatter produced",
+    description: "Hi Dimensions gain a multiplier based on total hi's produced",
     effect: () => Math.pow(player.records.totalAntimatter.exponent + 1, 0.5),
     formatEffect: value => formatX(value, 2, 2)
   },
   currentAMMult: {
     id: "currentMult",
     cost: 5e4,
-    description: "Antimatter Dimensions gain a multiplier based on current antimatter",
+    description: "Hi Dimensions gain a multiplier based on current hi's",
     effect: () => Math.pow(Currency.antimatter.exponent + 1, 0.5),
     formatEffect: value => formatX(value, 2, 2)
   },
@@ -50,21 +50,21 @@ export const breakInfinityUpgrades = {
   infinitiedMult: {
     id: "infinitiedMult",
     cost: 1e5,
-    description: "Antimatter Dimensions gain a multiplier based on Infinities",
+    description: "Hi Dimensions gain a multiplier based on Infinities",
     effect: () => 1 + Currency.infinitiesTotal.value.pLog10() * 10,
     formatEffect: value => formatX(value, 2, 2)
   },
   achievementMult: {
     id: "achievementMult",
     cost: 1e6,
-    description: "Antimatter Dimensions gain a multiplier based on Achievements completed",
+    description: "Hi Dimensions gain a multiplier based on Achievements completed",
     effect: () => Math.max(Math.pow((Achievements.effectiveCount - 30), 3) / 40, 1),
     formatEffect: value => formatX(value, 2, 2)
   },
   slowestChallengeMult: {
     id: "challengeMult",
     cost: 1e7,
-    description: "Antimatter Dimensions gain a multiplier based on how fast your slowest challenge run is",
+    description: "Hi Dimensions gain a multiplier based on how fast your slowest challenge run is",
     effect: () => Decimal.clampMin(50 / Time.worstChallenge.totalMinutes, 1),
     formatEffect: value => formatX(value, 2, 2),
     hasCap: true,
@@ -100,25 +100,25 @@ export const breakInfinityUpgrades = {
     cost: 1e15,
     description: "Autobuyers unlocked or improved by Normal Challenges work twice as fast"
   },
-  tickspeedCostMult: rebuyable({
+  fingersnapsCostMult: rebuyable({
     id: 0,
     initialCost: 1e6,
     costIncrease: 5,
     maxUpgrades: 8,
-    description: "Reduce post-infinity Tickspeed Upgrade cost multiplier scaling",
+    description: "Reduce post-infinity Fingersnapsps Upgrade cost multiplier scaling",
     afterEC: () => (EternityChallenge(11).completions > 0
-      ? `After EC11: ${formatX(Player.tickSpeedMultDecrease, 2, 2)}`
+      ? `After EC11: ${formatX(Player.fingerSnapsMultDecrease, 2, 2)}`
       : ""
     ),
     noLabel: true,
-    onPurchased: () => GameCache.tickSpeedMultDecrease.invalidate()
+    onPurchased: () => GameCache.fingerSnapsMultDecrease.invalidate()
   }),
   dimCostMult: rebuyable({
     id: 1,
     initialCost: 1e7,
     costIncrease: 5e3,
     maxUpgrades: 7,
-    description: "Reduce post-infinity Antimatter Dimension cost multiplier scaling",
+    description: "Reduce post-infinity Hi Dimensions cost multiplier scaling",
     afterEC: () => (EternityChallenge(6).completions > 0
       ? `After EC6: ${formatX(Player.dimensionMultDecrease, 2, 2)}`
       : ""

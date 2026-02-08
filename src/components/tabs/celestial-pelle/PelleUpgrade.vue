@@ -171,7 +171,7 @@ export default {
   position: relative;
   justify-content: center;
   align-items: center;
-  font-family: Typewriter;
+  font-family: monospace;
   font-size: 0.95rem;
   font-weight: bold;
   color: var(--color-text);

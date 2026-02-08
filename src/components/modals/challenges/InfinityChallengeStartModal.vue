@@ -24,7 +24,7 @@ export default {
         Challenge-specific restrictions and modifiers active.
         To complete the Challenge${this.challengeIsCompleted ? "" : " and gain its reward"},
         you must reach the Challenge goal of
-        ${format(InfinityChallenge(this.id).goal)} Antimatter.
+        ${format(InfinityChallenge(this.id).goal)} Hi's.
         You do not start with any Dimension Boosts or Galaxies, regardless of upgrades.`;
     },
     entranceLabel() {

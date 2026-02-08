@@ -42,7 +42,7 @@ export default {
       const boostList = [];
 
       const dimMultList = [];
-      dimMultList.push("Antimatter");
+      dimMultList.push("Hi's");
       if (this.achMultToIDS) dimMultList.push("Infinity");
       if (this.achMultToTDS) dimMultList.push("Time");
       boostList.push(`${makeEnumeration(dimMultList)} Dimensions: ${achievementPower}`);

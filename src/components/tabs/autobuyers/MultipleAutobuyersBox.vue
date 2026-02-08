@@ -50,7 +50,7 @@ export default {
       return this.name === Autobuyer.antimatterDimension.groupName;
     },
     showAutobuyers() {
-      // Only display the Antimatter Dimension Autobuyers if the bulk is the same and there are any of them unlocked
+      // Only display the Hi Dimensions Autobuyers if the bulk is the same and there are any of them unlocked
       if (this.isADBox) return this.anyUnlocked && this.displayLabelAsGroup;
       return this.anyUnlocked;
     },
@@ -111,7 +111,7 @@ export default {
     v-else-if="isADBox && continuumActive"
     class="c-autobuyer-box-row"
   >
-    Continuum replaces your Antimatter Dimension and Tickspeed Autobuyers, as your production multipliers
+    Continuum replaces your Hi Dimensions and Fingersnaps Autobuyers, as your production multipliers
     <br>
     now automatically and continuously scale based on how many purchases you would have had otherwise.
   </span>

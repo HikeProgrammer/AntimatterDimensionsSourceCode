@@ -26,8 +26,8 @@ export const speedrunMilestones = [
   {
     id: 4,
     key: "completeC9",
-    name: "Tickspeed Challenge",
-    description: "Complete the Tickspeed Autobuyer Challenge",
+    name: "Fingersnaps Challenge",
+    description: "Complete the Fingersnaps Autobuyer Challenge",
     checkRequirement: () => NormalChallenge(9).isCompleted,
     checkEvent: GAME_EVENT.BIG_CRUNCH_AFTER,
   },

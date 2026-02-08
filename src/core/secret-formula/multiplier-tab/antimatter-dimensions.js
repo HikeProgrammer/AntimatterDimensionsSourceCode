@@ -8,12 +8,12 @@ import { MultiplierTabIcons } from "./icons";
 export const AD = {
   total: {
     name: dim => {
-      if (dim) return `AD ${dim} Multiplier`;
+      if (dim) return `Hi ${dim} Multiplier`;
       if (NormalChallenge(12).isRunning) {
-        if (MultiplierTabHelper.actualNC12Production().eq(0)) return "Base AD Production from All Dimensions";
-        return `Base AD Production from ${MultiplierTabHelper.isNC12ProducingEven() ? "Even" : "Odd"} Dimensions`;
+        if (MultiplierTabHelper.actualNC12Production().eq(0)) return "Base Hi Production from All Dimensions";
+        return `Base Hi Production from ${MultiplierTabHelper.isNC12ProducingEven() ? "Even" : "Odd"} Dimensions`;
       }
-      return "Base AD Production";
+      return "Base Hi Production";
     },
     displayOverride: dim => {
       if (dim) {
@@ -79,7 +79,7 @@ export const AD = {
     name: () => `Amount of highest Dimension`,
     displayOverride: () => {
       const dim = EternityChallenge(7).isRunning ? 7 : MultiplierTabHelper.activeDimCount("AD");
-      return `AD ${dim}, ${format(AntimatterDimension(dim).totalAmount, 2)}`;
+      return `CD ${dim}, ${format(AntimatterDimension(dim).totalAmount, 2)}`;
     },
     multValue: () => {
       const dim = EternityChallenge(7).isRunning ? 7 : MultiplierTabHelper.activeDimCount("AD");

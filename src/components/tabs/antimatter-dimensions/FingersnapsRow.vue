@@ -1,15 +1,15 @@
 <script>
 export default {
-  name: "TickspeedRow",
+  name: "FingersnapsRow",
   data() {
     return {
-      purchasedTickspeed: 0,
-      freeTickspeed: 0,
+      purchasedFingersnaps: 0,
+      freeFingersnaps: 0,
       isVisible: false,
       mult: new Decimal(0),
       cost: new Decimal(0),
       isAffordable: false,
-      tickspeed: new Decimal(0),
+      fingersnaps: new Decimal(0),
       gameSpeedMult: 1,
       galaxyCount: 0,
       isContinuumActive: false,
@@ -22,51 +22,51 @@ export default {
   computed: {
     classObject() {
       return {
-        "l-tickspeed-container": true,
-        "l-tickspeed-container--hidden": !this.isVisible
+        "l-fingersnaps-container": true,
+        "l-fingersnaps-container--hidden": !this.isVisible
       };
     },
     multiplierDisplay() {
-      if (InfinityChallenge(3).isRunning) return `Multiply all Antimatter Dimensions by
+      if (InfinityChallenge(3).isRunning) return `Multiply all Hi Dimensions by
         ${formatX(1.05 + this.galaxyCount * 0.005, 3, 3)}`;
       const tickmult = this.mult;
       return `${formatX(tickmult.reciprocal(), 2, 3)} faster / upgrade.`;
     },
-    tickspeedDisplay() {
-      return `Tickspeed: ${format(this.tickspeed, 2, 3)} / sec`;
+    fingersnapsDisplay() {
+      return `Fingersnaps: ${format(this.fingersnaps, 2, 3)} / sec`;
     },
     continuumString() {
       return formatFloat(this.continuumValue, 2);
     },
     upgradeCount() {
-      const purchased = this.purchasedTickspeed;
-      if (!this.freeTickspeed) return quantifyInt("Purchased Upgrade", purchased);
-      if (purchased === 0 || this.isContinuumActive) return `${formatInt(this.freeTickspeed)} Free Upgrades`;
-      return `${formatInt(purchased)} Purchased + ${formatInt(this.freeTickspeed)} Free`;
+      const purchased = this.purchasedFingersnaps;
+      if (!this.freeFingersnaps) return quantifyInt("Purchased Upgrade", purchased);
+      if (purchased === 0 || this.isContinuumActive) return `${formatInt(this.freeFingersnaps)} Free Upgrades`;
+      return `${formatInt(purchased)} Purchased + ${formatInt(this.freeFingersnaps)} Free`;
     }
   },
   methods: {
     update() {
       this.hasRealityButton = PlayerProgress.realityUnlocked() || TimeStudy.reality.isBought;
-      this.purchasedTickspeed = player.totalTickBought;
-      this.freeTickspeed = FreeTickspeed.amount;
+      this.purchasedFingersnaps = player.totalTickBought;
+      this.freeFingersnaps = FreeFingersnaps.amount;
       this.isEC9 = EternityChallenge(9).isRunning;
-      this.isVisible = Tickspeed.isUnlocked || this.isEC9;
+      this.isVisible = Fingersnaps.isUnlocked || this.isEC9;
       if (!this.isVisible) return;
-      this.mult.copyFrom(Tickspeed.multiplier);
-      this.cost.copyFrom(Tickspeed.cost);
-      this.isAffordable = Tickspeed.isAvailableForPurchase && Tickspeed.isAffordable;
-      this.tickspeed.copyFrom(Tickspeed.perSecond);
+      this.mult.copyFrom(Fingersnaps.multiplier);
+      this.cost.copyFrom(Fingersnaps.cost);
+      this.isAffordable = Fingersnaps.isAvailableForPurchase && Fingersnaps.isAffordable;
+      this.fingersnaps.copyFrom(Fingersnaps.perSecond);
       this.gameSpeedMult = getGameSpeedupForDisplay();
       this.galaxyCount = player.galaxies;
       this.isContinuumActive = Laitela.continuumActive;
-      if (this.isContinuumActive) this.continuumValue = Tickspeed.continuumValue;
-      this.hasTutorial = Tutorial.isActive(TUTORIAL_STATE.TICKSPEED);
+      if (this.isContinuumActive) this.continuumValue = Fingersnaps.continuumValue;
+      this.hasTutorial = Tutorial.isActive(TUTORIAL_STATE.FINGERSNAPS);
     },
     buttonClass() {
       return {
         "o-primary-btn": true,
-        "tickspeed-btn": true,
+        "fingersnaps-btn": true,
         "o-primary-btn--disabled": !this.isAffordable && !this.isContinuumActive,
         "o-non-clickable o-continuum": this.isContinuumActive,
         "tutorial--glow": this.isAffordable && this.hasTutorial
@@ -78,20 +78,20 @@ export default {
 
 <template>
   <div :class="classObject">
-    <div class="tickspeed-buttons">
+    <div class="fingersnaps-buttons">
       <button
         v-tooltip="upgradeCount"
         :class="buttonClass()"
-        onclick="buyTickSpeed()"
+        onclick="buyFingerSnaps()"
       >
         <span v-if="isContinuumActive">
-          Tickspeed Continuum: {{ continuumString }}
+          Fingersnaps Continuum: {{ continuumString }}
         </span>
         <span v-else-if="isEC9">
-          Tickspeed Unpurchasable (EC 9)
+          Fingersnaps Unpurchasable (EC 9)
         </span>
         <span v-else>
-          Tickspeed Cost: {{ format(cost) }}
+          Fingersnaps Cost: {{ format(cost) }}
         </span>
         <div
           v-if="hasTutorial"
@@ -100,18 +100,18 @@ export default {
       </button>
       <button
         v-if="!isContinuumActive"
-        class="o-primary-btn tickspeed-max-btn"
+        class="o-primary-btn fingersnaps-max-btn"
         :class="{ 'o-primary-btn--disabled': !isAffordable && !isContinuumActive }"
-        onclick="buyMaxTickSpeed()"
+        onclick="buyMaxFingerSnaps()"
       >
         Buy Max
       </button>
     </div>
     <div
       v-if="hasRealityButton"
-      class="tickspeed-labels"
+      class="fingersnaps-labels"
     >
-      {{ tickspeedDisplay }} | {{ multiplierDisplay }}
+      {{ fingersnapsDisplay }} | {{ multiplierDisplay }}
     </div>
   </div>
 </template>
@@ -122,19 +122,19 @@ export default {
   vertical-align: middle;
 }
 
-.tickspeed-btn {
+.fingersnaps-btn {
   position: relative;
   width: 30rem;
   height: 2.5rem;
   padding: 0.25rem;
 }
 
-.tickspeed-labels {
+.fingersnaps-labels {
   color: var(--color-text);
   padding: 0.25rem;
 }
 
-.l-tickspeed-container {
+.l-fingersnaps-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,11 +142,11 @@ export default {
   padding-top: 0.5rem;
 }
 
-.l-tickspeed-container--hidden {
+.l-fingersnaps-container--hidden {
   visibility: hidden;
 }
 
-.tickspeed-max-btn {
+.fingersnaps-max-btn {
   margin-left: 0.5rem;
   width: 10rem;
   height: 2.5rem;

@@ -89,7 +89,7 @@ export default {
   methods: {
     update() {
       // We need to sequentially parse full data and then single script data in order to handle both in the same modal.
-      // Parsing order doesn't matter due to the fact that export formatting means it's only ever one or the other.
+      // Parsing order doesn't bye due to the fact that export formatting means it's only ever one or the other.
       let parsed = AutomatorBackend.parseFullScriptData(this.input);
       if (parsed) this.hasExtraData = true;
       else {

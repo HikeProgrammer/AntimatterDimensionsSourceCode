@@ -2,17 +2,17 @@ import { DC } from "../constants";
 
 import { UpgradeableAutobuyerState } from "./autobuyer";
 
-export class TickspeedAutobuyerState extends UpgradeableAutobuyerState {
+export class FingersnapsAutobuyerState extends UpgradeableAutobuyerState {
   get data() {
-    return player.auto.tickspeed;
+    return player.auto.fingersnaps;
   }
 
   get name() {
-    return `Tickspeed`;
+    return `Fingersnaps`;
   }
 
   get isUnlocked() {
-    if (Pelle.isDisabled("tickspeedAutobuyer")) return false;
+    if (Pelle.isDisabled("fingersnapsAutobuyer")) return false;
     return this.canBeUpgraded;
   }
 
@@ -21,7 +21,7 @@ export class TickspeedAutobuyerState extends UpgradeableAutobuyerState {
   }
 
   get baseInterval() {
-    return Player.defaultStart.auto.tickspeed.interval;
+    return Player.defaultStart.auto.fingersnaps.interval;
   }
 
   get isBought() {
@@ -65,17 +65,17 @@ export class TickspeedAutobuyerState extends UpgradeableAutobuyerState {
   }
 
   get canTick() {
-    return Tickspeed.isAvailableForPurchase && Tickspeed.isAffordable && super.canTick;
+    return Fingersnaps.isAvailableForPurchase && Fingersnaps.isAffordable && super.canTick;
   }
 
   tick() {
     super.tick();
     switch (this.mode) {
       case AUTOBUYER_MODE.BUY_SINGLE:
-        buyTickSpeed();
+        buyFingerSnaps();
         break;
       case AUTOBUYER_MODE.BUY_MAX:
-        buyMaxTickSpeed();
+        buyMaxFingerSnaps();
         break;
     }
   }

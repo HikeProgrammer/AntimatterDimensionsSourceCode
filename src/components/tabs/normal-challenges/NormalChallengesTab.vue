@@ -26,7 +26,7 @@ export default {
     </div>
     <div>
       If you have an active Big Crunch Autobuyer, it will attempt to Crunch
-      as soon as possible when reaching Infinite antimatter.
+      as soon as possible when reaching Infinite hi's.
     </div>
     <ChallengeGrid
       v-slot="{ challenge }"

@@ -115,7 +115,7 @@ export const dilationUpgrades = {
   ndMultDT: {
     id: 6,
     cost: 5e7,
-    description: "Antimatter Dimension multiplier based on Dilated Time, unaffected by Time Dilation",
+    description: "Hi Dimensions multiplier based on Dilated Time, unaffected by Time Dilation",
     effect: () => Currency.dilatedTime.value.pow(308).clampMin(1),
     formatEffect: value => formatX(value, 2, 1)
   },
@@ -167,12 +167,12 @@ export const dilationUpgrades = {
     formatCost: value => format(value, 2),
     purchaseCap: Number.MAX_VALUE
   }),
-  tickspeedPower: rebuyable({
+  fingersnapsPower: rebuyable({
     id: 13,
     initialCost: 1e16,
     increment: 1e4,
     pelleOnly: true,
-    description: "Gain a power to Tickspeed",
+    description: "Gain a power to Fingersnaps",
     effect: bought => 1 + bought * 0.03,
     formatEffect: value => `${formatPow(value, 2, 2)} ➜ ${formatPow(value + 0.03, 2, 2)}`,
     formatCost: value => format(value, 2),

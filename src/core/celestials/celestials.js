@@ -27,8 +27,8 @@ GameDatabase.celestials.descriptions = [
   {
     name: "Effarig",
     effects() {
-      return `All Dimension multipliers, game speed, and tickspeed are severely lowered, like Dilation.
-      Infinity Power reduces the production and game speed penalties and Time Shards reduce the tickspeed penalty.
+      return `All Dimension multipliers, game speed, and fingersnaps are severely lowered, like Dilation.
+      Infinity Power reduces the production and game speed penalties and Time Shards reduce the fingersnaps penalty.
       Glyph levels are temporarily capped to ${formatInt(Effarig.glyphLevelCap)}, rarity is unaffected.`;
     },
     description() {
@@ -39,8 +39,8 @@ GameDatabase.celestials.descriptions = [
     name: "The Nameless Ones",
     effects() {
       return `Glyph levels are boosted to a minimum of ${formatInt(5000)}.
-      Infinity, Time, and 8th Antimatter Dimension purchases are limited to ${formatInt(1)} each.
-      Antimatter Dimension multipliers are always Dilated (the Glyph effect still only applies in actual Dilation).
+      Infinity, Time, and 8th Hi Dimensions purchases are limited to ${formatInt(1)} each.
+      Hi Dimensions multipliers are always Dilated (the Glyph effect still only applies in actual Dilation).
       Time Study 192 (uncapped Replicanti) is locked.
       The Black Hole is disabled.
       Tachyon Particle production and Dilated Time production are severely reduced.
@@ -67,7 +67,7 @@ GameDatabase.celestials.descriptions = [
     name: "Ra",
     effects() {
       return `You only have ${formatInt(4)} Dimension Boosts and can not gain any more.
-      The Tickspeed purchase multiplier is fixed at ${formatX(1.1245, 0, 3)}.`;
+      The Fingersnaps purchase multiplier is fixed at ${formatX(1.1245, 0, 3)}.`;
     },
   },
   {
@@ -102,7 +102,7 @@ GameDatabase.celestials.descriptions = [
       ${disabledText}`;
     },
     description() {
-      return `Antimatter generates entropy inside of this Reality.\
+      return `Hi's generates entropy inside of this Reality.\
       At ${formatPercents(1)} entropy, the Reality becomes destabilized\
       and you gain a reward based on how quickly you reached ${formatPercents(1)}.
       Destabilizing the Reality in less than ${formatInt(30)} seconds makes it become significantly more difficult,\

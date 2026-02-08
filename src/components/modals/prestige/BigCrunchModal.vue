@@ -21,7 +21,7 @@ export default {
     },
     message() {
       const info = this.isFirstInfinity ? this.firstInfinityInfo : ``;
-      return `Upon Infinity, all Dimensions, Dimension Boosts, and Antimatter Galaxies are reset. ${info}`;
+      return `Upon Infinity, all Dimensions, Dimension Boosts, and Hi's Galaxies are reset. ${info}`;
     },
     firstInfinityInfo() {
       return `In return, you gain an Infinity Point (IP). This allows you to buy multiple upgrades that you can
@@ -33,7 +33,7 @@ export default {
     },
     startingResources() {
       const gainedResources = [];
-      if (this.startingAM.gte(10)) gainedResources.push(`${quantify("Antimatter", this.startingAM, 2, 1)}`);
+      if (this.startingAM.gte(10)) gainedResources.push(`${quantify("Hi's", this.startingAM, 2, 1)}`);
       if (this.startingBoosts > 0) gainedResources.push(`${quantify("Dimension Boost", this.startingBoosts)}`);
       if (this.willStartWithGalaxy) gainedResources.push(`${quantify("Galaxy", 1)}`);
 

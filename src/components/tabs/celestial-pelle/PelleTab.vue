@@ -94,7 +94,7 @@ export default {
       class="pelle-unlock-requirements"
     >
       You must have {{ formatInt(totalRows) }} rows of Achievements
-      and all of your Glyph Alchemy Resources capped to unlock Pelle, Celestial of Antimatter.
+      and all of your Glyph Alchemy Resources capped to unlock Pelle, Celestial of Hi's.
       <br>
       <br>
       {{ formatInt(completedRows) }} / {{ formatInt(totalRows) }} Achievement rows completed
@@ -119,7 +119,7 @@ export default {
 }
 
 .o-pelle-button {
-  font-family: Typewriter;
+  font-family: monospace;
   color: var(--color-text);
   background: var(--color-text-inverted);
   border: 0.1rem solid var(--color-pelle--base);
@@ -158,7 +158,7 @@ export default {
 .pelle-doom-button {
   width: 20rem;
   align-self: center;
-  font-family: Typewriter;
+  font-family: monospace;
   font-size: 3rem;
   color: var(--color-pelle--base);
   background: black;

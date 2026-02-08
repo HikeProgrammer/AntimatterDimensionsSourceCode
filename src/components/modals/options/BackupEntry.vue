@@ -39,7 +39,7 @@ export default {
         "Reality Machines",
         "Eternity Points",
         "Infinity Points",
-        "Antimatter"];
+        "Hi's"];
 
       for (let index = 0; index < resources.length; index++) {
         const val = new Decimal(resources[index]);

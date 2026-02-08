@@ -92,7 +92,7 @@ export const pelleRifts = {
         formatEffect: x => `Max RG count +${formatInt(x)}`
       },
     ],
-    galaxyGeneratorText: "There's not enough antimatter to form new Galaxies, you need to reverse the $value"
+    galaxyGeneratorText: "There's not enough hi's to form new Galaxies, you need to reverse the $value"
   },
   chaos: {
     id: 3,

@@ -73,7 +73,7 @@ export default {
     />
     <div v-if="realityReward > 1">
       <b>
-        All Dark Matter multipliers are {{ formatX(realityReward, 2, 2) }} higher.
+        All Niggas multipliers are {{ formatX(realityReward, 2, 2) }} higher.
       </b>
       <span v-if="maxDimTier > 0">
         <br><br>

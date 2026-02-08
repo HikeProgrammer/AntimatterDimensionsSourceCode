@@ -227,7 +227,7 @@ window.RECENT_PRESTIGE_RESOURCE = {
   PRESTIGE_COUNT: 3,
 };
 
-// Free tickspeed multiplier with TS171. Shared here because formatting glyph effects depends on it
+// Free fingersnaps multiplier with TS171. Shared here because formatting glyph effects depends on it
 window.TS171_MULTIPLIER = 1.25;
 
 // Used as drag and drop data type

@@ -178,7 +178,7 @@ export default {
         General
       </div>
       <div class="c-stats-tab-general">
-        <div>You have made a total of {{ format(totalAntimatter, 2, 1) }} antimatter.</div>
+        <div>You have made a total of {{ format(totalAntimatter, 2, 1) }} hi's.</div>
         <div>You have played for {{ realTimePlayed }}. (real time)</div>
         <div v-if="reality.isUnlocked">
           Your existence has spanned {{ reality.totalTimePlayed }} of time. (game time)

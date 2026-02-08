@@ -29,7 +29,7 @@ export default {
       v-if="!isModal"
       class="c-credits-header"
     >
-      Antimatter Dimensions
+      Hi Dimensions
     </h1>
 
     <div

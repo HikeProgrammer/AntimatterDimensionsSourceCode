@@ -32,7 +32,7 @@ export default {
           BreakInfinityUpgrade.autobuyerSpeed
         ],
         [
-          BreakInfinityUpgrade.tickspeedCostMult,
+          BreakInfinityUpgrade.fingersnapsCostMult,
           BreakInfinityUpgrade.dimCostMult,
           BreakInfinityUpgrade.ipGen
         ]

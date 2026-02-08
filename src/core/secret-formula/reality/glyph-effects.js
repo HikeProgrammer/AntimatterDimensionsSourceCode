@@ -170,9 +170,9 @@ export const glyphEffects = {
     bitmaskIndex: 7,
     isGenerated: true,
     glyphTypes: ["dilation"],
-    singleDesc: "Antimatter Dimension power +{value} while Dilated",
-    totalDesc: "Antimatter Dimension multipliers ^{value} while Dilated",
-    genericDesc: "Antimatter Dimensions ^x while Dilated",
+    singleDesc: "Hi Dimensions power +{value} while Dilated",
+    totalDesc: "Hi Dimensions multipliers ^{value} while Dilated",
+    genericDesc: "Hi Dimensions ^x while Dilated",
     shortDesc: "Dilated AD power +{value}",
     effect: (level, strength) => 1.1 + Math.pow(level, 0.7) * Math.pow(strength, 0.7) / 25,
     formatEffect: x => format(x, 2, 2),
@@ -353,14 +353,14 @@ export const glyphEffects = {
     isGenerated: true,
     glyphTypes: ["power"],
     singleDesc: () => (GlyphAlteration.isAdded("power")
-      ? "Antimatter Dimension power +{value}\n[and Antimatter Galaxy cost ×]{value2}"
-      : "Antimatter Dimension power +{value}"),
+      ? "Hi Dimensions power +{value}\n[and Hi's Galaxy cost ×]{value2}"
+      : "Hi Dimensions power +{value}"),
     totalDesc: () => (GlyphAlteration.isAdded("power")
-      ? "Antimatter Dimension multipliers ^{value} and Antimatter Galaxy cost ×{value2}"
-      : "Antimatter Dimension multipliers ^{value}"),
+      ? "Hi Dimensions multipliers ^{value} and Hi's Galaxy cost ×{value2}"
+      : "Hi Dimensions multipliers ^{value}"),
     genericDesc: () => (GlyphAlteration.isAdded("power")
-      ? "Antimatter Dimensions multipliers ^x and Antimatter Galaxy cost multiplier"
-      : "Antimatter Dimension multipliers ^x"),
+      ? "Hi Dimensions multipliers ^x and Hi's Galaxy cost multiplier"
+      : "Hi Dimensions multipliers ^x"),
     shortDesc: () => (GlyphAlteration.isAdded("power")
       ? "AD power +{value} and AG cost ×{value2}"
       : "AD power +{value}"),
@@ -379,7 +379,7 @@ export const glyphEffects = {
     bitmaskIndex: 17,
     isGenerated: true,
     glyphTypes: ["power"],
-    singleDesc: "Antimatter Dimension multipliers ×{value}",
+    singleDesc: "Hi Dimensions multipliers ×{value}",
     shortDesc: "AD ×{value}",
     effect: (level, strength) => (GlyphAlteration.isEmpowered("power")
       ? DC.D11111.pow(level * 220)
@@ -411,7 +411,7 @@ export const glyphEffects = {
     bitmaskIndex: 19,
     isGenerated: true,
     glyphTypes: ["power"],
-    singleDesc: () => `Increase the bonus from buying ${formatInt(10)} Antimatter Dimensions by {value}`,
+    singleDesc: () => `Increase the bonus from buying ${formatInt(10)} Hi Dimensions by {value}`,
     totalDesc: () => `Multiplier from "Buy ${formatInt(10)}" ×{value}`,
     genericDesc: () => `"Buy ${formatInt(10)}" bonus increase`,
     shortDesc: () => `AD "Buy ${formatInt(10)}" mult. ×{value}`,
@@ -523,8 +523,8 @@ export const glyphEffects = {
     bitmaskIndex: 26,
     isGenerated: true,
     glyphTypes: ["effarig"],
-    singleDesc: () => `Antimatter production:\n${formatInt(10)}^x ➜ ${formatInt(10)}^(x^{value})`,
-    genericDesc: "Antimatter production exponent power",
+    singleDesc: () => `Hi's production:\n${formatInt(10)}^x ➜ ${formatInt(10)}^(x^{value})`,
+    genericDesc: "Hi's production exponent power",
     shortDesc: "AM production exponent ^{value}",
     effect: (level, strength) => 1 + Math.pow(level, 0.25) * Math.pow(strength, 0.4) / 5000,
     formatEffect: x => format(x, 4, 4),
@@ -571,14 +571,14 @@ export const glyphEffects = {
     formatEffect: x => format(x, 3, 3),
     combine: GlyphCombiner.multiply,
   },
-  cursedtickspeed: {
-    id: "cursedtickspeed",
+  cursedfingersnaps: {
+    id: "cursedfingersnaps",
     bitmaskIndex: 2,
     isGenerated: false,
     glyphTypes: ["cursed"],
-    singleDesc: "The threshold for Tickspeed Upgrades from Time Dimensions is multiplied by ×{value}",
-    totalDesc: "The threshold for Tickspeed Upgrades from Time Dimensions is increased by ×{value}",
-    shortDesc: "TD Tickspeed threshold ×{value}",
+    singleDesc: "The threshold for Fingersnaps Upgrades from Time Dimensions is multiplied by ×{value}",
+    totalDesc: "The threshold for Fingersnaps Upgrades from Time Dimensions is increased by ×{value}",
+    shortDesc: "TD Fingersnaps threshold ×{value}",
     // Additive 3.82 per glyph
     effect: level => Math.clampMin(Math.log10(level), 1),
     formatEffect: x => format(x, 3, 3),

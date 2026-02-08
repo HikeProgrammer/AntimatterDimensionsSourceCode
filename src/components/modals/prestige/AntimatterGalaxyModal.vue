@@ -22,32 +22,32 @@ export default {
   },
   computed: {
     topLabel() {
-      if (this.bulk) return `You are about to purchase ${quantifyInt("Antimatter Galaxy", this.newGalaxies)}`;
-      return `You are about to purchase an Antimatter Galaxy`;
+      if (this.bulk) return `You are about to purchase ${quantifyInt("Hi's Galaxy", this.newGalaxies)}`;
+      return `You are about to purchase an Hi's Galaxy`;
     },
     message() {
       const resetResouces = [];
-      if (Pelle.isDoomed) resetResouces.push("Antimatter", "Antimatter Dimensions", "Tickspeed");
-      if (!this.perkANRBought) resetResouces.push("Antimatter Dimensions", "Tickspeed");
+      if (Pelle.isDoomed) resetResouces.push("Hi's", "Hi Dimensions", "Fingersnaps");
+      if (!this.perkANRBought) resetResouces.push("Hi Dimensions", "Fingersnaps");
       if (!this.keepDimBoost) resetResouces.push("Dimension Boosts");
-      if (!this.keepAntimatter && !this.perkANRBought) resetResouces.push("Antimatter");
+      if (!this.keepAntimatter && !this.perkANRBought) resetResouces.push("Hi's");
       const resetList = makeEnumeration(resetResouces);
-      let tickspeedFixed = "";
+      let fingersnapsFixed = "";
       if (InfinityChallenge(3).isRunning) {
-        tickspeedFixed = `Infinity Challenge ${InfinityChallenge(3).id}`;
+        fingersnapsFixed = `Infinity Challenge ${InfinityChallenge(3).id}`;
       } else if (Ra.isRunning) {
-        tickspeedFixed = `${Ra.displayName}'s Reality`;
+        fingersnapsFixed = `${Ra.displayName}'s Reality`;
       }
-      const tickspeedInfo = (tickspeedFixed === "")
-        ? "you will receive a small boost to Tickspeed Upgrades."
-        : `you will not receive a boost to Tickspeed Upgrades, because you are in ${tickspeedFixed}.`;
+      const fingersnapsInfo = (fingersnapsFixed === "")
+        ? "you will receive a small boost to Fingersnaps Upgrades."
+        : `you will not receive a boost to Fingersnaps Upgrades, because you are in ${fingersnapsFixed}.`;
       const message = (resetList === "")
-        ? `This will reset nothing, and ${tickspeedInfo}`
-        : `This will reset your ${resetList}. However, ${tickspeedInfo}`;
+        ? `This will reset nothing, and ${fingersnapsInfo}`
+        : `This will reset your ${resetList}. However, ${fingersnapsInfo}`;
 
       if (this.bulk) return `Are you sure you want to purchase
-      ${quantifyInt("Antimatter Galaxy", this.newGalaxies)}? ${message}`;
-      return `Are you sure you want to purchase an Antimatter Galaxy? ${message}`;
+      ${quantifyInt("Hi's Galaxy", this.newGalaxies)}? ${message}`;
+      return `Are you sure you want to purchase an Hi's Galaxy? ${message}`;
     }
   },
   created() {

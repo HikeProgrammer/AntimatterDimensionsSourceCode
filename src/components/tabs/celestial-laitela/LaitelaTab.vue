@@ -91,7 +91,7 @@ export default {
         class="o-primary-btn--subtab-option"
         @click="maxAll"
       >
-        Max all Dark Matter Dimensions
+        Max all Nigga Dimensions
       </PrimaryButton>
     </div>
     <div class="o-laitela-matter-amount">

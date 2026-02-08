@@ -5,7 +5,7 @@ import AntimatterDimensionsTabHeader from "./ClassicAntimatterDimensionsTabHeade
 import AntimatterGalaxyRow from "./ClassicAntimatterGalaxyRow";
 import DimensionBoostRow from "./ClassicDimensionBoostRow";
 import PrimaryButton from "@/components/PrimaryButton";
-import TickspeedRow from "./TickspeedRow";
+import FingersnapsRow from "./FingersnapsRow";
 
 export default {
   name: "ClassicAntimatterDimensionsTab",
@@ -16,7 +16,7 @@ export default {
     AntimatterGalaxyRow,
     DimensionBoostRow,
     AntimatterDimensionProgressBar,
-    TickspeedRow,
+    FingersnapsRow,
   },
   data() {
     return {
@@ -53,7 +53,7 @@ export default {
   <div class="l-old-ui-antimatter-dim-tab">
     <AntimatterDimensionsTabHeader />
     {{ multiplierText }}
-    <TickspeedRow />
+    <FingersnapsRow />
     <div class="l-dimensions-container">
       <AntimatterDimensionRow
         v-for="tier in 8"

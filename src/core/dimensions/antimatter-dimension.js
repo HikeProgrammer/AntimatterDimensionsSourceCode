@@ -2,7 +2,7 @@ import { DC } from "../constants";
 
 import { DimensionState } from "./dimension";
 
-// Multiplier applied to all Antimatter Dimensions, regardless of tier. This is cached using a Lazy
+// Multiplier applied to all Hi Dimensions, regardless of tier. This is cached using a Lazy
 // and invalidated every update.
 export function antimatterDimensionCommonMultiplier() {
   let multiplier = DC.D1;
@@ -53,7 +53,7 @@ export function antimatterDimensionCommonMultiplier() {
 }
 
 export function getDimensionFinalMultiplierUncached(tier) {
-  if (tier < 1 || tier > 8) throw new Error(`Invalid Antimatter Dimension tier ${tier}`);
+  if (tier < 1 || tier > 8) throw new Error(`Invalid Hi Dimensions tier ${tier}`);
   if (NormalChallenge(10).isRunning && tier > 6) return DC.D1;
   if (EternityChallenge(11).isRunning) {
     return Currency.infinityPower.value.pow(
@@ -278,9 +278,9 @@ export function maxAll() {
     buyMaxDimension(tier);
   }
 
-  // Do this here because tickspeed might not have been unlocked before
+  // Do this here because fingersnaps might not have been unlocked before
   // (and maxAll might have unlocked it by buying dimensions).
-  buyMaxTickSpeed();
+  buyMaxFingerSnaps();
 }
 
 export function buyMaxDimension(tier, bulk = Infinity) {
@@ -476,7 +476,7 @@ class AntimatterDimensionState extends DimensionState {
     // Continuum should be no different
     if (this.tier === 8 && Enslaved.isRunning) return 1;
     // It's safe to use dimension.currencyAmount because this is
-    // a dimension-only method (so don't just copy it over to tickspeed).
+    // a dimension-only method (so don't just copy it over to fingersnaps).
     // We need to use dimension.currencyAmount here because of different costs in NC6.
     return this.costScale.getContinuumValue(this.currencyAmount, 10) * Laitela.matterExtraPurchaseFactor;
   }
@@ -552,7 +552,7 @@ class AntimatterDimensionState extends DimensionState {
         dimension.costBumps++;
       }
     }
-    if (Tickspeed.cost.e === this.cost.e) player.chall9TickspeedCostBumps++;
+    if (Fingersnaps.cost.e === this.cost.e) player.chall9FingersnapsCostBumps++;
   }
 
   multiplyIC5Costs() {
@@ -585,7 +585,7 @@ class AntimatterDimensionState extends DimensionState {
       if (tier === 4) amount = amount.pow(1.4);
       if (tier === 6) amount = amount.pow(1.2);
     }
-    let production = amount.times(this.multiplier).times(Tickspeed.perSecond);
+    let production = amount.times(this.multiplier).times(Fingersnaps.perSecond);
     if (NormalChallenge(2).isRunning) {
       production = production.times(player.chall2Pow);
     }

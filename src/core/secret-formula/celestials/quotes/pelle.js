@@ -106,7 +106,7 @@ export const pelleQuotes = {
       "Myriad Dimensions, ghosts, and manipulation of the quantum.",
       "Condensing all ideals to endless points.",
       "Experimentation across the untold realms.",
-      "And harnessing the Annihilation of matter and antimatter.",
+      "And harnessing the Annihilation of byes and hi's.",
       "Here? You made yourself into an 8th-dimensional being.",
       { text: "And then parked yourself there so long a $1 formed around you.", 1: single }
     ],

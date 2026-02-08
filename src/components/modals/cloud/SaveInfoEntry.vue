@@ -35,7 +35,7 @@ export default {
     antimatter() {
       return this.compareLayeredValues(
         ["pelleAM", "totalAntimatter"],
-        ["Total Doomed Antimatter:", "Total Antimatter:"],
+        ["Total Doomed Hi's:", "Total Hi's:"],
         [format, format],
         ""
       );

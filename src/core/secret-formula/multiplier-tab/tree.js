@@ -48,7 +48,7 @@ function getProps(resource, tier) {
 // specification, all children props are dynamically added based on the arrays in the helper functions above
 export const multiplierTabTree = {
   AM_total: [
-    ["AD_total", "tickspeed_total", "AM_effarigAM"]
+    ["AD_total", "fingersnaps_total", "AM_effarigAM"]
   ],
   AD_total: [
     getProps("AD"),
@@ -80,13 +80,13 @@ export const multiplierTabTree = {
   DT_total: [
     getProps("DT")
   ],
-  tickspeed_total: [
-    ["tickspeed_base", "tickspeed_upgrades", "tickspeed_galaxies", "tickspeed_pelleTickspeedPow"]
+  fingersnaps_total: [
+    ["fingersnaps_base", "fingersnaps_upgrades", "fingersnaps_galaxies", "fingersnaps_pelleFingersnapsPow"]
   ],
-  tickspeed_upgrades: [
-    ["tickspeedUpgrades_purchased", "tickspeedUpgrades_free"]
+  fingersnaps_upgrades: [
+    ["fingersnapsUpgrades_purchased", "fingersnapsUpgrades_free"]
   ],
-  tickspeed_galaxies: [
+  fingersnaps_galaxies: [
     ["galaxies_antimatter", "galaxies_replicanti", "galaxies_tachyon", "galaxies_nerfPelle"]
   ],
   infinities_total: [
@@ -151,10 +151,10 @@ for (const dim of dimTypes) {
   multiplierTabTree[`${dim}_total`][1].push(`${dim}_highestDim`);
 }
 
-// EC7 also needs a special case for tickspeed, since it doesn't appear on the multipliers themselves
+// EC7 also needs a special case for fingersnaps, since it doesn't appear on the multipliers themselves
 for (const dim of ["ID", "TD"]) {
-  multiplierTabTree[`${dim}_total`][0].push(`${dim}_tickspeed`);
-  multiplierTabTree[`${dim}_total`][1].push(`${dim}_tickspeed`);
+  multiplierTabTree[`${dim}_total`][0].push(`${dim}_fingersnaps`);
+  multiplierTabTree[`${dim}_total`][1].push(`${dim}_fingersnaps`);
 }
 
 // Dynamically generate all values from existing values, but broken down by dimension

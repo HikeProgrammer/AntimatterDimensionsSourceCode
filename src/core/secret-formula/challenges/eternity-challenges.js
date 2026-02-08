@@ -34,12 +34,12 @@ export const eternityChallenges = [
   },
   {
     id: 3,
-    description: "Antimatter Dimensions 5-8 don't produce anything. Dimensional Sacrifice is disabled.",
+    description: "Hi Dimensions 5-8 don't produce anything. Dimensional Sacrifice is disabled.",
     goal: DC.E600,
     pelleGoal: DC.E925,
     goalIncrease: DC.E75,
     reward: {
-      description: () => `Increase the multiplier for buying ${formatInt(10)} Antimatter Dimensions`,
+      description: () => `Increase the multiplier for buying ${formatInt(10)} Hi Dimensions`,
       effect: completions => completions * 0.72,
       formatEffect: value => `+${format(value, 2, 2)}`
     }
@@ -65,7 +65,7 @@ export const eternityChallenges = [
   },
   {
     id: 5,
-    description: () => `Antimatter Galaxy cost increase scaling starts immediately (normally at ${formatInt(100)}
+    description: () => `Hi's Galaxy cost increase scaling starts immediately (normally at ${formatInt(100)}
       Galaxies). Dimension Boost costs scaling is massively increased.`,
     goal: DC.E750,
     pelleGoal: DC.E1400,
@@ -81,27 +81,27 @@ export const eternityChallenges = [
     // The asterisk, if present, will get replaced with strings generated from the scramble text
     description: () => {
       if (Enslaved.isRunning) return "you *. The cost of upgrading your max Replicanti Galaxies is massively reduced.";
-      return "you cannot gain Antimatter Galaxies normally. The cost of upgrading your max Replicanti" +
+      return "you cannot gain Hi's Galaxies normally. The cost of upgrading your max Replicanti" +
               " Galaxies is massively reduced.";
     },
     goal: DC.E850,
     pelleGoal: DC.E1500,
     goalIncrease: DC.E250,
     reward: {
-      description: "Further reduce Antimatter Dimension cost multiplier growth",
+      description: "Further reduce Hi Dimensions cost multiplier growth",
       effect: completions => completions * 0.2,
       formatEffect: value => {
         const total = Math.round(Player.dimensionMultDecrease + Effects.sum(EternityChallenge(6).reward)) - value;
         return `-${format(value, 2, 1)} (${formatX(total, 2, 1)} total)`;
       }
     },
-    scrambleText: ["cannot gain Antimatter Galaxies normally", "c㏰'퐚 gai鸭 Anti꟢at랜erﻪﶓa⁍axie㮾 䂇orma㦂l"],
+    scrambleText: ["cannot gain Hi's Galaxies normally", "c㏰'퐚 gai鸭 Anti꟢at랜erﻪﶓa⁍axie㮾 䂇orma㦂l"],
   },
   {
     id: 7,
     description:
       "1st Time Dimensions produce 8th Infinity Dimensions and 1st Infinity Dimensions produce " +
-      "7th Antimatter Dimensions. Tickspeed also directly applies to Infinity and Time Dimensions.",
+      "7th Hi Dimensions. Fingersnaps also directly applies to Infinity and Time Dimensions.",
     goal: DC.E2000,
     pelleGoal: DC.E2700,
     goalIncrease: DC.E530,
@@ -130,7 +130,7 @@ export const eternityChallenges = [
   },
   {
     id: 9,
-    description: () => `you cannot buy Tickspeed upgrades. Infinity Power instead multiplies
+    description: () => `you cannot buy Fingersnaps upgrades. Infinity Power instead multiplies
       Time Dimensions with greatly reduced effect. ${specialInfinityGlyphDisabledEffectText()}`,
     goal: DC.E1750,
     pelleGoal: DC.E2900,
@@ -146,7 +146,7 @@ export const eternityChallenges = [
     id: 10,
     description: () => {
       let description = `Time Dimensions and Infinity Dimensions are disabled. You gain an immense boost from
-        Infinities to Antimatter Dimensions (Infinities${formatPow(950)}). ${specialInfinityGlyphDisabledEffectText()}`;
+        Infinities to Hi Dimensions (Infinities${formatPow(950)}). ${specialInfinityGlyphDisabledEffectText()}`;
       EternityChallenge(10).applyEffect(v => description += ` Currently: ${formatX(v, 2, 1)}`);
       return description;
     },
@@ -172,16 +172,16 @@ export const eternityChallenges = [
   {
     id: 11,
     description: () => `all Dimension multipliers and powers are disabled except for the multipliers from
-      Infinity Power and Dimension Boosts (to Antimatter Dimensions). ${specialInfinityGlyphDisabledEffectText()}`,
+      Infinity Power and Dimension Boosts (to Hi Dimensions). ${specialInfinityGlyphDisabledEffectText()}`,
     goal: DC.E450,
     pelleGoal: DC.E11200,
     goalIncrease: DC.E200,
     pelleGoalIncrease: DC.E1400,
     reward: {
-      description: "Further reduce Tickspeed cost multiplier growth",
+      description: "Further reduce Fingersnaps cost multiplier growth",
       effect: completions => completions * 0.07,
       formatEffect: value => {
-        const total = Math.round(Player.tickSpeedMultDecrease + Effects.sum(EternityChallenge(11).reward)) - value;
+        const total = Math.round(Player.fingerSnapsMultDecrease + Effects.sum(EternityChallenge(11).reward)) - value;
         return `-${format(value, 2, 2)} (${formatX(total, 2, 2)} total)`;
       }
     }

@@ -29,7 +29,7 @@ export default {
     return {
       isVisible: false,
       effectValue: 0,
-      // Number.MAX_VALUE doesn't really matter here, but we need it because
+      // Number.MAX_VALUE doesn't really bye here, but we need it because
       // undefined values are not allowed for data properties
       cap: Number.MAX_VALUE,
       hasCap: false

@@ -87,7 +87,7 @@ export class DimBoost {
     if (DimBoost.purchasedBoosts >= this.maxBoosts) {
       if (Ra.isRunning) return "Locked (Ra's Reality)";
       if (InfinityChallenge(1).isRunning) return "Locked (Infinity Challenge 1)";
-      if (NormalChallenge(8).isRunning) return "Locked (8th Antimatter Dimension Autobuyer Challenge)";
+      if (NormalChallenge(8).isRunning) return "Locked (8th Hi Dimensions Autobuyer Challenge)";
     }
     return null;
   }
@@ -186,7 +186,7 @@ export function softReset(tempBulk, forcedADReset = false, forcedAMReset = false
   if (forcedADReset || !canKeepDimensions) {
     AntimatterDimensions.reset();
     player.sacrificed = DC.D0;
-    resetTickspeed();
+    resetFingersnaps();
   }
   skipResetsIfPossible(enteringAntimatterChallenge);
   const canKeepAntimatter = Pelle.isDoomed

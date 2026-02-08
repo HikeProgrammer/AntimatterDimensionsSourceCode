@@ -93,7 +93,7 @@ export const ra = {
     unlockDilationStartingTP: {
       id: 6,
       reward: `In non-Celestial Realities, gain Tachyon Particles as if you reached the square root of your total
-        antimatter in Dilation. Any multipliers to TP gain are applied retroactively, even outside Dilation`,
+        hi's in Dilation. Any multipliers to TP gain are applied retroactively, even outside Dilation`,
       effect: () => player.records.totalAntimatter.pow(0.5),
       pet: "teresa",
       level: 25,

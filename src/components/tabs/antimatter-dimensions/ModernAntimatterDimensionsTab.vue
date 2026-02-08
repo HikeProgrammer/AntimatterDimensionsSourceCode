@@ -4,7 +4,7 @@ import AntimatterDimensionRow from "@/components/tabs/antimatter-dimensions/Mode
 import AntimatterGalaxyRow from "@/components/tabs/antimatter-dimensions/ModernAntimatterGalaxyRow";
 import DimensionBoostRow from "@/components/tabs/antimatter-dimensions/ModernDimensionBoostRow";
 import PrimaryButton from "@/components/PrimaryButton";
-import TickspeedRow from "@/components/tabs/antimatter-dimensions/TickspeedRow";
+import FingersnapsRow from "@/components/tabs/antimatter-dimensions/FingersnapsRow";
 
 export default {
   name: "ModernAntimatterDimensionsTab",
@@ -14,7 +14,7 @@ export default {
     AntimatterDimensionRow,
     AntimatterGalaxyRow,
     DimensionBoostRow,
-    TickspeedRow
+    FingersnapsRow
   },
   data() {
     return {
@@ -38,7 +38,7 @@ export default {
       if (this.isFullyAutomated) {
         return "Sacrifice autobuyer is enabled and Achievement 118 is unlocked, so Sacrifice is now fully automated";
       }
-      return `Boosts 8th Antimatter Dimension by ${formatX(this.sacrificeBoost, 2, 2)}`;
+      return `Boosts 8th Hi Dimensions by ${formatX(this.sacrificeBoost, 2, 2)}`;
     },
   },
   methods: {
@@ -130,7 +130,7 @@ export default {
       </button>
     </div>
     <span>{{ multiplierText }}</span>
-    <TickspeedRow />
+    <FingersnapsRow />
     <div class="l-dimensions-container">
       <AntimatterDimensionRow
         v-for="tier in 8"

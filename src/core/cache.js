@@ -57,8 +57,8 @@ export const GameCache = {
     .map(run => run[1])
     .reduce(Number.sumReducer) / (1000 * player.records.recentEternities.length)),
 
-  tickSpeedMultDecrease: new Lazy(() => 10 - Effects.sum(
-    BreakInfinityUpgrade.tickspeedCostMult,
+  fingerSnapsMultDecrease: new Lazy(() => 10 - Effects.sum(
+    BreakInfinityUpgrade.fingersnapsCostMult,
     EternityChallenge(11).reward
   )),
 
@@ -83,7 +83,7 @@ export const GameCache = {
 
   // Cached because it needs to be checked upon any change to antimatter, but that's a hot path and we want to keep
   // unnecessary repetitive calculations and accessing to a minimum
-  cheapestAntimatterAutobuyer: new Lazy(() => Autobuyer.antimatterDimension.zeroIndexed.concat(Autobuyer.tickspeed)
+  cheapestAntimatterAutobuyer: new Lazy(() => Autobuyer.antimatterDimension.zeroIndexed.concat(Autobuyer.fingersnaps)
     .filter(ab => !(ab.isBought || ab.isUnlocked))
     .map(ab => ab.antimatterCost.toNumber())
     .min()

@@ -34,9 +34,9 @@ export const MultiplierTabHelper = {
     ) * Pelle.specialGlyphEffect.power;
   },
 
-  // Helper method for galaxies and tickspeed, broken up as contributions of tickspeed*log(perGalaxy) and galaxyCount to
-  // their product, which is proportional to log(tickspeed)
-  decomposeTickspeed() {
+  // Helper method for galaxies and fingersnaps, broken up as contributions of fingersnaps*log(perGalaxy) and galaxyCount to
+  // their product, which is proportional to log(fingersnaps)
+  decomposeFingersnaps() {
     let effectiveCount = effectiveBaseGalaxies();
     const effects = this.globalGalaxyMult();
 
@@ -57,7 +57,7 @@ export const MultiplierTabHelper = {
       const perGalaxy = 0.02 * effects;
       effectiveCount *= Pelle.specialGlyphEffect.power;
 
-      tickFrac = Tickspeed.totalUpgrades * logBase;
+      tickFrac = Fingersnaps.totalUpgrades * logBase;
       galFrac = -Math.log10(Math.max(0.01, 1 / baseMult - (effectiveCount * perGalaxy))) / logBase;
     } else {
       effectiveCount -= 2;
@@ -70,35 +70,35 @@ export const MultiplierTabHelper = {
       const logBase = Math.log10(baseMult);
       const logPerGalaxy = -DC.D0_965.log10();
 
-      tickFrac = Tickspeed.totalUpgrades * logBase;
+      tickFrac = Fingersnaps.totalUpgrades * logBase;
       galFrac = (1 + effectiveCount / logBase * logPerGalaxy);
     }
 
     // Artificially inflate the galaxy portion in order to make the breakdown closer to 50/50 in common situations
     galFrac *= 3;
 
-    // Calculate what proportion base tickspeed takes out of the entire tickspeed multiplier
+    // Calculate what proportion base fingersnaps takes out of the entire fingersnaps multiplier
     const base = DC.D1.dividedByEffectsOf(
       Achievement(36),
       Achievement(45),
       Achievement(66),
       Achievement(83)
     );
-    let baseFrac = base.log10() / Tickspeed.perSecond.log10();
+    let baseFrac = base.log10() / Fingersnaps.perSecond.log10();
 
     // We want to make sure to zero out components in some edge cases
     if (base.eq(1)) baseFrac = 0;
     if (effectiveCount === 0) galFrac = 0;
 
-    // Normalize the sum by splitting tickspeed and galaxies across what's leftover besides the base value. These three
+    // Normalize the sum by splitting fingersnaps and galaxies across what's leftover besides the base value. These three
     // values must be scaled so that they sum to 1 and none are negative
     let factor = (1 - baseFrac) / (tickFrac + galFrac);
-    // The actual base tickspeed calculation multiplies things in a different order, which can lead to precision issues
-    // when no tickspeed upgrades have been bought if we don't explicitly set this to zero
-    if (Tickspeed.totalUpgrades === 0) factor = 0;
+    // The actual base fingersnaps calculation multiplies things in a different order, which can lead to precision issues
+    // when no fingersnaps upgrades have been bought if we don't explicitly set this to zero
+    if (Fingersnaps.totalUpgrades === 0) factor = 0;
     return {
       base: baseFrac,
-      tickspeed: tickFrac * factor,
+      fingersnaps: tickFrac * factor,
       galaxies: galFrac * factor,
     };
   },

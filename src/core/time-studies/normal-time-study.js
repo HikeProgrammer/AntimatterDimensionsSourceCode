@@ -3,7 +3,7 @@ import { TimeStudyState } from "./time-studies";
 export const NormalTimeStudies = {};
 
 NormalTimeStudies.pathList = [
-  { path: TIME_STUDY_PATH.ANTIMATTER_DIM, studies: [71, 81, 91, 101], name: "Antimatter Dims" },
+  { path: TIME_STUDY_PATH.ANTIMATTER_DIM, studies: [71, 81, 91, 101], name: "Hi's Dims" },
   { path: TIME_STUDY_PATH.INFINITY_DIM, studies: [72, 82, 92, 102], name: "Infinity Dims" },
   { path: TIME_STUDY_PATH.TIME_DIM, studies: [73, 83, 93, 103], name: "Time Dims" },
   { path: TIME_STUDY_PATH.ACTIVE, studies: [121, 131, 141], name: "Active" },

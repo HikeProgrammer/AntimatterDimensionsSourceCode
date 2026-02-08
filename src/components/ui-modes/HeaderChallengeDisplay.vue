@@ -95,7 +95,7 @@ export default {
       }
       if (this.inPelle) return "a Doomed Reality. Good luck.";
       if (this.activeChallengeNames.length === 0) {
-        return "the Antimatter Universe (no active challenges)";
+        return "the Hi's Universe (no active challenges)";
       }
       return this.activeChallengeNames.join(" + ");
     },

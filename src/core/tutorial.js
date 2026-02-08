@@ -1,7 +1,7 @@
 export const TUTORIAL_STATE = {
   DIM1: 0,
   DIM2: 1,
-  TICKSPEED: 2,
+  FINGERSNAPS: 2,
   DIMBOOST: 3,
   GALAXY: 4,
   AUTOMATOR: 5
@@ -21,7 +21,7 @@ const tutorialStates = [
     condition: () => Currency.antimatter.gte(100)
   },
   {
-    id: TUTORIAL_STATE.TICKSPEED,
+    id: TUTORIAL_STATE.FINGERSNAPS,
     condition: () => AntimatterDimension(2).bought > 0
   },
   {
@@ -58,7 +58,7 @@ export const Tutorial = {
     player.tutorialActive = false;
     ui.view.tutorialActive = false;
     // Check if we can immediately enter next tutorial state. This is needed
-    // to correctly handle buying dimension 2 + tickspeed in the same tick,
+    // to correctly handle buying dimension 2 + fingersnaps in the same tick,
     // for example.
     this.tutorialLoop();
   },

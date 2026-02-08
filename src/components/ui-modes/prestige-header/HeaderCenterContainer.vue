@@ -2,17 +2,17 @@
 import ArmageddonButton from "../../tabs/celestial-pelle/ArmageddonButton";
 import RealityCurrencyHeader from "../../RealityCurrencyHeader";
 
-import HeaderTickspeedInfo from "../HeaderTickspeedInfo";
+import HeaderFingersnapsInfo from "../HeaderFingersnapsInfo";
 
 import RealityButton from "./RealityButton";
 
 // This component contains antimatter and antimatter rate at the start of the game, as well as some additional
-// information depending on the UI (tickspeed for Classic, game speed for Modern). Everything but antimatter is
+// information depending on the UI (fingersnaps for Classic, game speed for Modern). Everything but antimatter is
 // removed once Reality is unlocked, to make room for the reality button
 export default {
   name: "HeaderCenterContainer",
   components: {
-    HeaderTickspeedInfo,
+    HeaderFingersnapsInfo,
     RealityCurrencyHeader,
     RealityButton,
     ArmageddonButton,
@@ -47,7 +47,7 @@ export default {
     v-if="shouldDisplay"
     class="c-prestige-button-container"
   >
-    <span>You have <span class="c-game-header__antimatter">{{ format(antimatter, 2, 1) }}</span> antimatter.</span>
+    <span>You have <span class="c-game-header__antimatter">{{ format(antimatter, 2, 1) }}</span> hi's.</span>
     <div
       v-if="hasRealityButton"
       class="c-reality-container"
@@ -60,9 +60,9 @@ export default {
       <RealityButton v-else />
     </div>
     <div v-else>
-      You are getting {{ format(antimatterPerSec, 2) }} antimatter per second.
+      You are getting {{ format(antimatterPerSec, 2) }} hi's per second.
       <br>
-      <HeaderTickspeedInfo />
+      <HeaderFingersnapsInfo />
     </div>
   </div>
 </template>

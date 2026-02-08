@@ -56,7 +56,7 @@ export * from "./glyphs/glyph-purge-handler";
 export * from "./glyphs/auto-glyph-processor";
 
 export * from "./time";
-export * from "./tickspeed";
+export * from "./fingersnaps";
 
 export * from "./dimensions/antimatter-dimension";
 export * from "./dimensions/infinity-dimension";

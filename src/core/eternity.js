@@ -130,7 +130,7 @@ export function eternity(force, auto, specialConditions = {}) {
   player.records.thisEternity.bestInfinitiesPerMs = DC.D0;
   player.records.thisEternity.bestIPMsWithoutMaxAll = DC.D0;
   resetTimeDimensions();
-  resetTickspeed();
+  resetFingersnaps();
   playerInfinityUpgradesOnReset();
   AchievementTimers.marathon2.reset();
   applyEU1();

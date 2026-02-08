@@ -15,7 +15,7 @@ export default {
   computed: {
     dimensionOptions() {
       return {
-        "Antimatter": TIME_STUDY_PATH.ANTIMATTER_DIM,
+        "Hi's": TIME_STUDY_PATH.ANTIMATTER_DIM,
         "Infinity": TIME_STUDY_PATH.INFINITY_DIM,
         "Time": TIME_STUDY_PATH.TIME_DIM,
       };
@@ -54,7 +54,7 @@ export default {
     classList(name) {
       const pref = this.isPreferred(name);
       const types = {
-        "Antimatter": "antimatter-dim",
+        "Hi's": "antimatter-dim",
         "Infinity": "infinity-dim",
         "Time": "time-dim",
         "Active": "active",

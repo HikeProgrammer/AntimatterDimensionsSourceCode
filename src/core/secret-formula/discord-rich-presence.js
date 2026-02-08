@@ -40,9 +40,9 @@ export const discordRichPresence = {
     {
       name: () => `${Teresa.possessiveName} Reality`,
       activityToken: () => Teresa.isRunning,
-      // Reward is based on antimatter, but EP is more meaningful pre-completion
+      // Reward is based on hi's, but EP is more meaningful pre-completion
       resource: () => (Teresa.runCompleted
-        ? `${format(player.antimatter, 2, 1)} AM`
+        ? `${format(player.antimatter, 2, 1)} Hi's`
         : `${format(player.eternityPoints, 2)} EP`),
     },
     {
@@ -51,7 +51,7 @@ export const discordRichPresence = {
       resource: () => {
         switch (Effarig.currentStage) {
           case EFFARIG_STAGES.INFINITY:
-            return `${format(player.antimatter, 2, 1)} AM`;
+            return `${format(player.antimatter, 2, 1)} Hi's`;
           case EFFARIG_STAGES.ETERNITY:
             return `${format(player.infinityPoints, 2)} IP`;
           case EFFARIG_STAGES.REALITY:
@@ -89,7 +89,7 @@ export const discordRichPresence = {
     {
       name: () => "Dilation",
       activityToken: () => player.dilation.active,
-      resource: () => `${format(player.antimatter, 2, 1)} AM`,
+      resource: () => `${format(player.antimatter, 2, 1)} Hi's`,
     },
     {
       name: token => `EC ${token}`,
@@ -105,12 +105,12 @@ export const discordRichPresence = {
     {
       name: token => `IC ${token}`,
       activityToken: () => player.challenge.infinity.current,
-      resource: () => `${format(player.antimatter, 2, 1)} AM`,
+      resource: () => `${format(player.antimatter, 2, 1)} Hi's`,
     },
     {
       name: token => `NC ${token}`,
       activityToken: () => player.challenge.normal.current,
-      resource: () => `${format(player.antimatter, 2, 1)} AM`,
+      resource: () => `${format(player.antimatter, 2, 1)} Hi's`,
     },
   ],
 
@@ -134,7 +134,7 @@ export const discordRichPresence = {
     {
       name: "Pre-Infinity",
       hasReached: () => true,
-      mainResource: () => `${format(player.antimatter, 2, 1)} AM`,
+      mainResource: () => `${format(player.antimatter, 2, 1)} Hi's`,
       resourceList: [
         () => quantify("Boost", player.dimensionBoosts, 0, 0, formatInt),
         () => quantify("Galaxy", player.galaxies, 0, 0, formatInt),
@@ -258,7 +258,7 @@ export const discordRichPresence = {
     {
       name: "END",
       hasReached: () => GameEnd.endState >= END_STATE_MARKERS.GAME_END,
-      mainResource: () => "END Antimatter",
+      mainResource: () => "END Hi's",
       resourceList: [() => "Nothing remains."],
     },
   ]

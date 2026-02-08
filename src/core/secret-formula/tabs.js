@@ -8,7 +8,7 @@ export const tabs = [
     subtabs: [
       {
         key: "antimatter",
-        name: "Antimatter Dimensions",
+        name: "Hi Dimensions",
         symbol: "Ω",
         component: "AntimatterDimensionsTab",
         id: 0,
